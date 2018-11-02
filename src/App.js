@@ -1,18 +1,13 @@
 import React from 'react';
 import { Router, Link } from 'react-static';
 import { hot } from 'react-hot-loader';
-import config from '../config.json';
-import bugsnag from 'bugsnag-js';
-import createPlugin from 'bugsnag-react';
 import Routes from 'react-static-routes';
+import BugWrapper from './containers/BugWrapper';
 
 import './app.css';
 
-const bugsnagClient = bugsnag(config.bugsnag.key);
-const ErrorBoundary = bugsnagClient.use(createPlugin(React));
-
 const App = () => (
-    <ErrorBoundary>
+    <BugWrapper>
         <Router>
             <div>
                 <nav>
@@ -27,7 +22,7 @@ const App = () => (
                 </div>
             </div>
         </Router>
-    </ErrorBoundary>
+    </BugWrapper>
 );
 
 export default hot(module)(App);
