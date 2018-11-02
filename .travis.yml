@@ -1,7 +1,24 @@
+<<<<<<< HEAD
+=======
+language: node_js
+node_js:
+  - "stable"
+cache:
+  - yarn
+install:
+  - yarn install
+script:
+  - yarn build
+>>>>>>> master
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
+<<<<<<< HEAD
+=======
+  local_dir: dist
+  default_text_charset: "utf-8"
+>>>>>>> master
   on:
     branch: master
