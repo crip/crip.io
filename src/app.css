@@ -1,0 +1,10 @@
+:root {
+    --main-color: #3b007f;
+    --secondary-color: #22eaaa;
+}
+
+body {
+    background-color: var(--main-color);
+    color: white;
+    font-family: system-ui, sans-serif;
+}
