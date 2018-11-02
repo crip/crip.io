@@ -3,19 +3,17 @@ import bugsnag from 'bugsnag-js'
 import createPlugin from 'bugsnag-react'
 import * as pkg from '../../package.json'
 
-const config = require('../../config.json')
-
-const hasApiKey = Object.prototype.hasOwnProperty.apply(config.bugsnag, ['key'])
+const config = process.env.BUGSNAG_KEY || 'x'
 
 const bugsnagClient = bugsnag({
-  apiKey: hasApiKey ? config.bugsnag.key : process.env.BUGSNAG_KEY,
+  apiKey: config,
   appVersion: pkg.version,
 })
 
 const ErrorBoundary = bugsnagClient.use(createPlugin(React))
 
 const BugWrapper = ({ children }) => {
-  if (hasApiKey) {
+  if (config !== 'x') {
     return <ErrorBoundary>{children}</ErrorBoundary>
   }
 
