@@ -9,7 +9,7 @@ const hasApiKey = Object.prototype.hasOwnProperty.apply(config.bugsnag, ['key'])
 
 const bugsnagClient = bugsnag({
   apiKey: hasApiKey ? config.bugsnag.key : process.env.BUGSNAG_KEY,
-  appVersion: pkg.version
+  appVersion: pkg.version,
 })
 
 const ErrorBoundary = bugsnagClient.use(createPlugin(React))
