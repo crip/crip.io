@@ -11,8 +11,6 @@
         "serve": "serve dist -p 3000"
     },
     "dependencies": {
-        "bugsnag-js": "^4.7.3",
-        "bugsnag-react": "^1.1.1",
         "chokidar": "2.0.3",
         "htmr": "0.6.3",
         "jdown": "^0.3.0",
