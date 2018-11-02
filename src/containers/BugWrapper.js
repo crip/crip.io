@@ -1,25 +1,28 @@
 import React, { Fragment } from 'react';
-import config from '../../config.json';
 import * as pkg from '../../package.json';
 import bugsnag from 'bugsnag-js';
 import createPlugin from 'bugsnag-react';
 
+try {
+  import config from '../../config.json';
+} catch (e) {}
+
 const hasApiKey = Object.prototype.hasOwnProperty.apply(config.bugsnag, [
-    'key'
+  'key'
 ]);
 const bugsnagClient = bugsnag({
-    apiKey: hasApiKey ? config.bugsnag.key : process.env.BUGSNAG_KEY,
-    appVersion: pkg.version
+  apiKey: hasApiKey ? config.bugsnag.key : process.env.BUGSNAG_KEY,
+  appVersion: pkg.version
 });
 
 const ErrorBoundary = bugsnagClient.use(createPlugin(React));
 
 const BugWrapper = ({ children }) => {
-    if (hasApiKey) {
-        return <ErrorBoundary>{children}</ErrorBoundary>;
-    }
+  if (hasApiKey) {
+    return <ErrorBoundary>{children}</ErrorBoundary>;
+  }
 
-    return <Fragment>{children}</Fragment>;
+  return <Fragment>{children}</Fragment>;
 };
 
 export default BugWrapper;
