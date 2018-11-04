@@ -1,5 +1,5 @@
 import React from 'react'
-import { Router, Link, Head, withSiteData } from 'react-static'
+import { Router, Head, withSiteData } from 'react-static'
 import { hot } from 'react-hot-loader'
 
 import Routes from 'react-static-routes'
