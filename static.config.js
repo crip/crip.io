@@ -7,6 +7,7 @@ chokidar.watch('content').on('all', () => reloadRoutes())
 export default {
   getSiteData: () => ({
     title: 'Crip in Tech',
+    slogan: 'Unlocking your potential',
   }),
   getRoutes: async () => {
     const { posts, home, about } = await jdown('content')
