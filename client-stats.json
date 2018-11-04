@@ -2,17 +2,17 @@
   "errors": [],
   "warnings": [],
   "version": "3.12.0",
-  "hash": "f03e603c0ad2ae61571c",
-  "time": 7469,
+  "hash": "de32c7be7ff7a7116a6c",
+  "time": 8040,
   "publicPath": "/",
   "assetsByChunkName": {
-    "src/containers/Post": [
-      "templates/src/containers/Post.2895e109.js",
-      "templates/src/containers/Post.2895e109.js.map"
-    ],
     "src/containers/Home": [
-      "templates/src/containers/Home.271e83c7.js",
-      "templates/src/containers/Home.271e83c7.js.map"
+      "templates/src/containers/Home.29f6ed3c.js",
+      "templates/src/containers/Home.29f6ed3c.js.map"
+    ],
+    "src/containers/Post": [
+      "templates/src/containers/Post.616f0b35.js",
+      "templates/src/containers/Post.616f0b35.js.map"
     ],
     "src/containers/About": [
       "templates/src/containers/About.c593fc2d.js",
@@ -27,36 +27,36 @@
       "templates/src/containers/404.78fd131c.js.map"
     ],
     "main": [
-      "main.2441f66e.js",
-      "styles.f03e603c.css",
-      "main.2441f66e.js.map",
-      "styles.f03e603c.css.map"
+      "main.f42525c4.js",
+      "styles.de32c7be.css",
+      "main.f42525c4.js.map",
+      "styles.de32c7be.css.map"
     ],
     "bootstrap": [
-      "bootstrap.1db08d5f.js",
-      "bootstrap.1db08d5f.js.map"
+      "bootstrap.9c1df7f5.js",
+      "bootstrap.9c1df7f5.js.map"
     ]
   },
   "assets": [
     {
-      "name": "templates/src/containers/Post.2895e109.js",
-      "size": 3500,
+      "name": "templates/src/containers/Home.29f6ed3c.js",
+      "size": 5464,
       "chunks": [
         0
       ],
       "chunkNames": [
-        "src/containers/Post"
+        "src/containers/Home"
       ],
       "emitted": true
     },
     {
-      "name": "templates/src/containers/Home.271e83c7.js",
-      "size": 3487,
+      "name": "templates/src/containers/Post.616f0b35.js",
+      "size": 3500,
       "chunks": [
         1
       ],
       "chunkNames": [
-        "src/containers/Home"
+        "src/containers/Post"
       ],
       "emitted": true
     },
@@ -94,8 +94,8 @@
       "emitted": true
     },
     {
-      "name": "main.2441f66e.js",
-      "size": 274974,
+      "name": "main.f42525c4.js",
+      "size": 275114,
       "chunks": [
         5
       ],
@@ -106,7 +106,7 @@
       "isOverSizeLimit": true
     },
     {
-      "name": "bootstrap.1db08d5f.js",
+      "name": "bootstrap.9c1df7f5.js",
       "size": 1617,
       "chunks": [
         6
@@ -117,8 +117,8 @@
       "emitted": true
     },
     {
-      "name": "styles.f03e603c.css",
-      "size": 184,
+      "name": "styles.de32c7be.css",
+      "size": 800,
       "chunks": [
         5
       ],
@@ -128,24 +128,24 @@
       "emitted": true
     },
     {
-      "name": "templates/src/containers/Post.2895e109.js.map",
-      "size": 13245,
+      "name": "templates/src/containers/Home.29f6ed3c.js.map",
+      "size": 19564,
       "chunks": [
         0
       ],
       "chunkNames": [
-        "src/containers/Post"
+        "src/containers/Home"
       ],
       "emitted": true
     },
     {
-      "name": "templates/src/containers/Home.271e83c7.js.map",
-      "size": 13240,
+      "name": "templates/src/containers/Post.616f0b35.js.map",
+      "size": 13245,
       "chunks": [
         1
       ],
       "chunkNames": [
-        "src/containers/Home"
+        "src/containers/Post"
       ],
       "emitted": true
     },
@@ -183,8 +183,8 @@
       "emitted": true
     },
     {
-      "name": "main.2441f66e.js.map",
-      "size": 1497046,
+      "name": "main.f42525c4.js.map",
+      "size": 1497703,
       "chunks": [
         5
       ],
@@ -194,7 +194,7 @@
       "emitted": true
     },
     {
-      "name": "styles.f03e603c.css.map",
+      "name": "styles.de32c7be.css.map",
       "size": 96,
       "chunks": [
         5
@@ -205,7 +205,7 @@
       "emitted": true
     },
     {
-      "name": "bootstrap.1db08d5f.js.map",
+      "name": "bootstrap.9c1df7f5.js.map",
       "size": 14686,
       "chunks": [
         6
@@ -224,12 +224,12 @@
         5
       ],
       "assets": [
-        "bootstrap.1db08d5f.js",
-        "bootstrap.1db08d5f.js.map",
-        "main.2441f66e.js",
-        "styles.f03e603c.css",
-        "main.2441f66e.js.map",
-        "styles.f03e603c.css.map"
+        "bootstrap.9c1df7f5.js",
+        "bootstrap.9c1df7f5.js.map",
+        "main.f42525c4.js",
+        "styles.de32c7be.css",
+        "main.f42525c4.js.map",
+        "styles.de32c7be.css.map"
       ],
       "isOverSizeLimit": true
     }
@@ -241,15 +241,191 @@
       "initial": false,
       "entry": false,
       "extraAsync": false,
+      "size": 6799,
+      "names": [
+        "src/containers/Home"
+      ],
+      "files": [
+        "templates/src/containers/Home.29f6ed3c.js",
+        "templates/src/containers/Home.29f6ed3c.js.map"
+      ],
+      "hash": "29f6ed3cd77f2d02c6ff",
+      "parents": [
+        5
+      ],
+      "modules": [
+        {
+          "id": 50,
+          "identifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/Home.js",
+          "name": "./src/containers/Home.js",
+          "index": 131,
+          "index2": 130,
+          "size": 930,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/dist/react-static-routes.js",
+          "issuerId": 130,
+          "issuerName": "./dist/react-static-routes.js",
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 130,
+              "moduleIdentifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/dist/react-static-routes.js",
+              "module": "./dist/react-static-routes.js",
+              "moduleName": "./dist/react-static-routes.js",
+              "type": "require.resolve",
+              "userRequest": "../src/containers/Home",
+              "loc": "73:11-56"
+            },
+            {
+              "moduleId": 130,
+              "moduleIdentifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/dist/react-static-routes.js",
+              "module": "./dist/react-static-routes.js",
+              "moduleName": "./dist/react-static-routes.js",
+              "type": "import()",
+              "userRequest": "../src/containers/Home",
+              "loc": "63:24-102"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 3,
+          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactStatic = require('react-static');\n\nvar _htmr = require('htmr');\n\nvar _htmr2 = _interopRequireDefault(_htmr);\n\nvar _logo = require('../components/logo');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//\n\nexports.default = (0, _reactStatic.withRouteData)(function (_ref) {\n  var jdown = _ref.jdown,\n      reactStatic = _ref.reactStatic;\n  return _react2.default.createElement(\n    'div',\n    null,\n    _react2.default.createElement(_logo.LogoWrapper, { width: '15em' }),\n    _react2.default.createElement(\n      'section',\n      null,\n      (0, _htmr2.default)(reactStatic.contents)\n    ),\n    _react2.default.createElement(\n      'section',\n      null,\n      (0, _htmr2.default)(jdown.contents)\n    )\n  );\n});"
+        },
+        {
+          "id": 137,
+          "identifier": "/home/travis/build/crip/cripintech/node_modules/htmr/lib/htmr.min.js",
+          "name": "./node_modules/htmr/lib/htmr.min.js",
+          "index": 132,
+          "index2": 128,
+          "size": 3134,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0,
+            1,
+            2
+          ],
+          "assets": [],
+          "issuer": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/Home.js",
+          "issuerId": 50,
+          "issuerName": "./src/containers/Home.js",
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 50,
+              "moduleIdentifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/Home.js",
+              "module": "./src/containers/Home.js",
+              "moduleName": "./src/containers/Home.js",
+              "type": "cjs require",
+              "userRequest": "htmr",
+              "loc": "13:12-27"
+            },
+            {
+              "moduleId": 51,
+              "moduleIdentifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/About.js",
+              "module": "./src/containers/About.js",
+              "moduleName": "./src/containers/About.js",
+              "type": "cjs require",
+              "userRequest": "htmr",
+              "loc": "13:12-27"
+            },
+            {
+              "moduleId": 53,
+              "moduleIdentifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/Post.js",
+              "module": "./src/containers/Post.js",
+              "moduleName": "./src/containers/Post.js",
+              "type": "cjs require",
+              "userRequest": "htmr",
+              "loc": "13:12-27"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 4,
+          "source": "!function(e,t){\"object\"==typeof exports&&\"undefined\"!=typeof module?module.exports=t(require(\"react\")):\"function\"==typeof define&&define.amd?define([\"react\"],t):e.htmr=t(e.React)}(this,function(e){\"use strict\";function t(e){return e.replace(/(-|:)(.)/g,function(e,t,r){return r.toUpperCase()})}function r(e){var r={};return e.split(\";\").filter(function(e){return\"\"!==e.trim()}).forEach(function(e){var n,a=e.split(\":\");if(a.length>1){var o=function(e){return/^-ms-/.test(e)&&(e=e.substr(1)),t(e)}(a[0].trim()),l=(n=a.slice(1).join(\":\").trim(),/^\\d+$/.test(n)?Number(n):n.replace(/'/g,'\"'));r[o]=l}}),r}e=e&&e.hasOwnProperty(\"default\")?e.default:e;var n={for:\"htmlFor\",class:\"className\",acceptcharset:\"acceptCharset\",accesskey:\"accessKey\",allowfullscreen:\"allowFullScreen\",allowtransparency:\"allowTransparency\",autocomplete:\"autoComplete\",autofocus:\"autoFocus\",autoplay:\"autoPlay\",cellpadding:\"cellPadding\",cellspacing:\"cellSpacing\",charset:\"charSet\",classid:\"classID\",classname:\"className\",colspan:\"colSpan\",contenteditable:\"contentEditable\",contextmenu:\"contextMenu\",crossorigin:\"crossOrigin\",datetime:\"dateTime\",enctype:\"encType\",formaction:\"formAction\",formenctype:\"formEncType\",formmethod:\"formMethod\",formnovalidate:\"formNoValidate\",formtarget:\"formTarget\",frameborder:\"frameBorder\",hreflang:\"hrefLang\",htmlfor:\"htmlFor\",httpequiv:\"httpEquiv\",inputmode:\"inputMode\",keyparams:\"keyParams\",keytype:\"keyType\",marginheight:\"marginHeight\",marginwidth:\"marginWidth\",maxlength:\"maxLength\",mediagroup:\"mediaGroup\",minlength:\"minLength\",novalidate:\"noValidate\",radiogroup:\"radioGroup\",readonly:\"readOnly\",rowspan:\"rowSpan\",spellcheck:\"spellCheck\",srcdoc:\"srcDoc\",srclang:\"srcLang\",srcset:\"srcSet\",tabindex:\"tabIndex\",usemap:\"useMap\"};var a={ELEMENT:1,TEXT:3,COMMENT:8},o=[\"table\",\"tbody\",\"thead\",\"tfoot\",\"tr\"],l=document.createElement(\"div\");function c(i,s,u){var d,m=u.map._;if(i.nodeType===a.COMMENT)return null;if(i.nodeType===a.TEXT){var f=(d=i.textContent,l.innerHTML=d,l.textContent);return m?m(f):f}for(var p=i.tagName.toLowerCase(),h=u.map[p],g={},y=0;y<i.attributes.length;y++){var v=i.attributes[y].name,T=i.attributes[y].value;g[v]=T}g.key=s.toString();for(var E=function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return Object.keys(e).reduce(function(a,o){if(/^on.*/.test(o))return a;var l=o;/^(data|aria)-/.test(o)||(l=t(o));var c=n[l]||l;return a[c]=\"style\"===c?r(e.style):e[o],a},{})}(g),b=[],x=0;x<i.childNodes.length;x++){var C=i.childNodes[x],M=s+\".\"+x;if(!(o.indexOf(p)>-1&&C.nodeType===a.TEXT&&(C.textContent=C.textContent.trim(),\"\"===C.textContent))){var N=c(C,M,u);null!==N&&b.push(N)}}return\"style\"!==p||h||m?(0===b.length&&(b=null),h?e.createElement(h,E,b):m?m(p,E,b):e.createElement(p,E,b)):(E.dangerouslySetInnerHTML={__html:b[0]},e.createElement(p,E,null))}return function(e){var t={map:(arguments.length>1&&void 0!==arguments[1]?arguments[1]:{}).map||{}},r=document.createElement(\"div\");r.innerHTML=e.trim();for(var n=[],a=0;a<r.childNodes.length;a++)n.push(r.childNodes[a]);var o=n.map(function(e,r){return c(e,r,t)}).filter(function(e){return null!==e});return 1===o.length?o[0]:o}});\n"
+        },
+        {
+          "id": 138,
+          "identifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/components/logo.js",
+          "name": "./src/components/logo.js",
+          "index": 133,
+          "index2": 129,
+          "size": 2735,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/Home.js",
+          "issuerId": 50,
+          "issuerName": "./src/containers/Home.js",
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 50,
+              "moduleIdentifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/Home.js",
+              "module": "./src/containers/Home.js",
+              "moduleName": "./src/containers/Home.js",
+              "type": "cjs require",
+              "userRequest": "../components/logo",
+              "loc": "17:12-41"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 4,
+          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.LogoWrapper = undefined;\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactStatic = require('react-static');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Logo = function Logo(_ref) {\n  var _ref$fill = _ref.fill,\n      fill = _ref$fill === undefined ? 'white' : _ref$fill,\n      _ref$width = _ref.width,\n      width = _ref$width === undefined ? '100px' : _ref$width,\n      _ref$height = _ref.height,\n      height = _ref$height === undefined ? 'auto' : _ref$height;\n  return _react2.default.createElement(\n    'svg',\n    {\n      version: '1.1',\n      x: '0px',\n      y: '0px',\n      width: width,\n      height: height,\n      viewBox: '0 0 140.533 168',\n      enableBackground: 'new 0 0 140.533 168',\n      xmlSpace: 'preserve',\n      fill: fill\n    },\n    _react2.default.createElement(\n      'g',\n      null,\n      _react2.default.createElement('circle', { cx: '84', cy: '84.666', r: '17.977' }),\n      _react2.default.createElement('path', {\n        d: 'M104.593,105.968c-0.777-0.796-1.815-1.204-2.861-1.204c-0.81,0-1.622,0.244-2.322,0.744 c-4.425,3.156-9.638,4.825-15.076,4.825c-14.337,0-26.001-11.663-26.001-26s11.664-26,26.001-26c5.253,0,10.314,1.561,14.638,4.513 c0.686,0.468,1.472,0.697,2.255,0.697c1.041,0,2.075-0.406,2.851-1.193L139.382,26.5c0.774-0.786,1.189-1.856,1.147-2.958 c-0.042-1.103-0.537-2.138-1.368-2.863C123.866,7.344,104.276,0,84,0C37.682,0,0,37.682,0,84s37.682,84,84,84 c20.261,0,39.84-7.334,55.13-20.651c0.83-0.724,1.326-1.756,1.37-2.856c0.044-1.1-0.367-2.169-1.137-2.956L104.593,105.968z M103.566,143.023c-6.291,2.107-12.874,3.177-19.567,3.177c-33.93,0-61.534-27.604-61.534-61.534s27.604-61.534,61.534-61.534 c6.693,0,13.276,1.069,19.567,3.177c2.618,0.877,4.029,3.711,3.152,6.33c-0.878,2.619-3.712,4.03-6.33,3.152 c-5.265-1.764-10.778-2.659-16.39-2.659c-28.415,0-51.534,23.118-51.534,51.534c0,28.416,23.119,51.534,51.534,51.534 c5.611,0,11.125-0.895,16.39-2.659c2.617-0.873,5.452,0.533,6.33,3.152C107.595,139.311,106.184,142.145,103.566,143.023z'\n      })\n    )\n  );\n};\n\nvar LogoWrapper = function LogoWrapper(props) {\n  return _react2.default.createElement(\n    _reactStatic.SiteData,\n    null,\n    function (_ref2) {\n      var title = _ref2.title;\n      return _react2.default.createElement(\n        'div',\n        { className: 'logo', style: { fontSize: props.width } },\n        _react2.default.createElement(Logo, { width: '1em' }),\n        _react2.default.createElement(\n          'h1',\n          { rel: 'name' },\n          title\n        )\n      );\n    }\n  );\n};\n\nexports.LogoWrapper = LogoWrapper;\nexports.default = Logo;"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": 130,
+          "module": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/dist/react-static-routes.js",
+          "moduleIdentifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/dist/react-static-routes.js",
+          "moduleName": "./dist/react-static-routes.js",
+          "loc": "63:24-102",
+          "name": "src/containers/Home",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "extraAsync": false,
       "size": 3961,
       "names": [
         "src/containers/Post"
       ],
       "files": [
-        "templates/src/containers/Post.2895e109.js",
-        "templates/src/containers/Post.2895e109.js.map"
+        "templates/src/containers/Post.616f0b35.js",
+        "templates/src/containers/Post.616f0b35.js.map"
       ],
-      "hash": "2895e109f01b99668fc5",
+      "hash": "616f0b351dd209e0a54d",
       "parents": [
         5
       ],
@@ -258,15 +434,15 @@
           "id": 53,
           "identifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/Post.js",
           "name": "./src/containers/Post.js",
-          "index": 135,
-          "index2": 132,
+          "index": 136,
+          "index2": 133,
           "size": 827,
           "cacheable": true,
           "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "assets": [],
           "issuer": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/dist/react-static-routes.js",
@@ -374,144 +550,6 @@
       ]
     },
     {
-      "id": 1,
-      "rendered": true,
-      "initial": false,
-      "entry": false,
-      "extraAsync": false,
-      "size": 3947,
-      "names": [
-        "src/containers/Home"
-      ],
-      "files": [
-        "templates/src/containers/Home.271e83c7.js",
-        "templates/src/containers/Home.271e83c7.js.map"
-      ],
-      "hash": "271e83c70eed63686f17",
-      "parents": [
-        5
-      ],
-      "modules": [
-        {
-          "id": 50,
-          "identifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/Home.js",
-          "name": "./src/containers/Home.js",
-          "index": 131,
-          "index2": 129,
-          "size": 813,
-          "cacheable": true,
-          "built": true,
-          "optional": false,
-          "prefetched": false,
-          "chunks": [
-            1
-          ],
-          "assets": [],
-          "issuer": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/dist/react-static-routes.js",
-          "issuerId": 130,
-          "issuerName": "./dist/react-static-routes.js",
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "reasons": [
-            {
-              "moduleId": 130,
-              "moduleIdentifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/dist/react-static-routes.js",
-              "module": "./dist/react-static-routes.js",
-              "moduleName": "./dist/react-static-routes.js",
-              "type": "require.resolve",
-              "userRequest": "../src/containers/Home",
-              "loc": "73:11-56"
-            },
-            {
-              "moduleId": 130,
-              "moduleIdentifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/dist/react-static-routes.js",
-              "module": "./dist/react-static-routes.js",
-              "moduleName": "./dist/react-static-routes.js",
-              "type": "import()",
-              "userRequest": "../src/containers/Home",
-              "loc": "63:24-102"
-            }
-          ],
-          "usedExports": true,
-          "providedExports": null,
-          "optimizationBailout": [],
-          "depth": 3,
-          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactStatic = require('react-static');\n\nvar _htmr = require('htmr');\n\nvar _htmr2 = _interopRequireDefault(_htmr);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//\n\nexports.default = (0, _reactStatic.withRouteData)(function (_ref) {\n  var jdown = _ref.jdown,\n      reactStatic = _ref.reactStatic;\n  return _react2.default.createElement(\n    'div',\n    null,\n    _react2.default.createElement(\n      'section',\n      null,\n      (0, _htmr2.default)(reactStatic.contents)\n    ),\n    _react2.default.createElement(\n      'section',\n      null,\n      (0, _htmr2.default)(jdown.contents)\n    )\n  );\n});"
-        },
-        {
-          "id": 137,
-          "identifier": "/home/travis/build/crip/cripintech/node_modules/htmr/lib/htmr.min.js",
-          "name": "./node_modules/htmr/lib/htmr.min.js",
-          "index": 132,
-          "index2": 128,
-          "size": 3134,
-          "cacheable": true,
-          "built": true,
-          "optional": false,
-          "prefetched": false,
-          "chunks": [
-            0,
-            1,
-            2
-          ],
-          "assets": [],
-          "issuer": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/Home.js",
-          "issuerId": 50,
-          "issuerName": "./src/containers/Home.js",
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "reasons": [
-            {
-              "moduleId": 50,
-              "moduleIdentifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/Home.js",
-              "module": "./src/containers/Home.js",
-              "moduleName": "./src/containers/Home.js",
-              "type": "cjs require",
-              "userRequest": "htmr",
-              "loc": "13:12-27"
-            },
-            {
-              "moduleId": 51,
-              "moduleIdentifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/About.js",
-              "module": "./src/containers/About.js",
-              "moduleName": "./src/containers/About.js",
-              "type": "cjs require",
-              "userRequest": "htmr",
-              "loc": "13:12-27"
-            },
-            {
-              "moduleId": 53,
-              "moduleIdentifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/Post.js",
-              "module": "./src/containers/Post.js",
-              "moduleName": "./src/containers/Post.js",
-              "type": "cjs require",
-              "userRequest": "htmr",
-              "loc": "13:12-27"
-            }
-          ],
-          "usedExports": true,
-          "providedExports": null,
-          "optimizationBailout": [],
-          "depth": 4,
-          "source": "!function(e,t){\"object\"==typeof exports&&\"undefined\"!=typeof module?module.exports=t(require(\"react\")):\"function\"==typeof define&&define.amd?define([\"react\"],t):e.htmr=t(e.React)}(this,function(e){\"use strict\";function t(e){return e.replace(/(-|:)(.)/g,function(e,t,r){return r.toUpperCase()})}function r(e){var r={};return e.split(\";\").filter(function(e){return\"\"!==e.trim()}).forEach(function(e){var n,a=e.split(\":\");if(a.length>1){var o=function(e){return/^-ms-/.test(e)&&(e=e.substr(1)),t(e)}(a[0].trim()),l=(n=a.slice(1).join(\":\").trim(),/^\\d+$/.test(n)?Number(n):n.replace(/'/g,'\"'));r[o]=l}}),r}e=e&&e.hasOwnProperty(\"default\")?e.default:e;var n={for:\"htmlFor\",class:\"className\",acceptcharset:\"acceptCharset\",accesskey:\"accessKey\",allowfullscreen:\"allowFullScreen\",allowtransparency:\"allowTransparency\",autocomplete:\"autoComplete\",autofocus:\"autoFocus\",autoplay:\"autoPlay\",cellpadding:\"cellPadding\",cellspacing:\"cellSpacing\",charset:\"charSet\",classid:\"classID\",classname:\"className\",colspan:\"colSpan\",contenteditable:\"contentEditable\",contextmenu:\"contextMenu\",crossorigin:\"crossOrigin\",datetime:\"dateTime\",enctype:\"encType\",formaction:\"formAction\",formenctype:\"formEncType\",formmethod:\"formMethod\",formnovalidate:\"formNoValidate\",formtarget:\"formTarget\",frameborder:\"frameBorder\",hreflang:\"hrefLang\",htmlfor:\"htmlFor\",httpequiv:\"httpEquiv\",inputmode:\"inputMode\",keyparams:\"keyParams\",keytype:\"keyType\",marginheight:\"marginHeight\",marginwidth:\"marginWidth\",maxlength:\"maxLength\",mediagroup:\"mediaGroup\",minlength:\"minLength\",novalidate:\"noValidate\",radiogroup:\"radioGroup\",readonly:\"readOnly\",rowspan:\"rowSpan\",spellcheck:\"spellCheck\",srcdoc:\"srcDoc\",srclang:\"srcLang\",srcset:\"srcSet\",tabindex:\"tabIndex\",usemap:\"useMap\"};var a={ELEMENT:1,TEXT:3,COMMENT:8},o=[\"table\",\"tbody\",\"thead\",\"tfoot\",\"tr\"],l=document.createElement(\"div\");function c(i,s,u){var d,m=u.map._;if(i.nodeType===a.COMMENT)return null;if(i.nodeType===a.TEXT){var f=(d=i.textContent,l.innerHTML=d,l.textContent);return m?m(f):f}for(var p=i.tagName.toLowerCase(),h=u.map[p],g={},y=0;y<i.attributes.length;y++){var v=i.attributes[y].name,T=i.attributes[y].value;g[v]=T}g.key=s.toString();for(var E=function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return Object.keys(e).reduce(function(a,o){if(/^on.*/.test(o))return a;var l=o;/^(data|aria)-/.test(o)||(l=t(o));var c=n[l]||l;return a[c]=\"style\"===c?r(e.style):e[o],a},{})}(g),b=[],x=0;x<i.childNodes.length;x++){var C=i.childNodes[x],M=s+\".\"+x;if(!(o.indexOf(p)>-1&&C.nodeType===a.TEXT&&(C.textContent=C.textContent.trim(),\"\"===C.textContent))){var N=c(C,M,u);null!==N&&b.push(N)}}return\"style\"!==p||h||m?(0===b.length&&(b=null),h?e.createElement(h,E,b):m?m(p,E,b):e.createElement(p,E,b)):(E.dangerouslySetInnerHTML={__html:b[0]},e.createElement(p,E,null))}return function(e){var t={map:(arguments.length>1&&void 0!==arguments[1]?arguments[1]:{}).map||{}},r=document.createElement(\"div\");r.innerHTML=e.trim();for(var n=[],a=0;a<r.childNodes.length;a++)n.push(r.childNodes[a]);var o=n.map(function(e,r){return c(e,r,t)}).filter(function(e){return null!==e});return 1===o.length?o[0]:o}});\n"
-        }
-      ],
-      "filteredModules": 0,
-      "origins": [
-        {
-          "moduleId": 130,
-          "module": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/dist/react-static-routes.js",
-          "moduleIdentifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/dist/react-static-routes.js",
-          "moduleName": "./dist/react-static-routes.js",
-          "loc": "63:24-102",
-          "name": "src/containers/Home",
-          "reasons": []
-        }
-      ]
-    },
-    {
       "id": 2,
       "rendered": true,
       "initial": false,
@@ -534,8 +572,8 @@
           "id": 51,
           "identifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/About.js",
           "name": "./src/containers/About.js",
-          "index": 133,
-          "index2": 130,
+          "index": 134,
+          "index2": 131,
           "size": 584,
           "cacheable": true,
           "built": true,
@@ -672,8 +710,8 @@
           "id": 52,
           "identifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/Blog.js",
           "name": "./src/containers/Blog.js",
-          "index": 134,
-          "index2": 131,
+          "index": 135,
+          "index2": 132,
           "size": 996,
           "cacheable": true,
           "built": true,
@@ -752,8 +790,8 @@
           "id": 54,
           "identifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/404.js",
           "name": "./src/containers/404.js",
-          "index": 136,
-          "index2": 133,
+          "index": 137,
+          "index2": 134,
           "size": 481,
           "cacheable": true,
           "built": true,
@@ -815,17 +853,17 @@
       "initial": true,
       "entry": false,
       "extraAsync": false,
-      "size": 522057,
+      "size": 522315,
       "names": [
         "main"
       ],
       "files": [
-        "main.2441f66e.js",
-        "styles.f03e603c.css",
-        "main.2441f66e.js.map",
-        "styles.f03e603c.css.map"
+        "main.f42525c4.js",
+        "styles.de32c7be.css",
+        "main.f42525c4.js.map",
+        "styles.de32c7be.css.map"
       ],
-      "hash": "2441f66edc7afb74f96e",
+      "hash": "f42525c4d6ae4b6d8ef7",
       "parents": [
         6
       ],
@@ -1229,6 +1267,15 @@
               "type": "cjs require",
               "userRequest": "react",
               "loc": "1:85-101"
+            },
+            {
+              "moduleId": 138,
+              "moduleIdentifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/components/logo.js",
+              "module": "./src/components/logo.js",
+              "moduleName": "./src/components/logo.js",
+              "type": "cjs require",
+              "userRequest": "react",
+              "loc": "8:13-29"
             }
           ],
           "usedExports": true,
@@ -3439,6 +3486,15 @@
               "type": "cjs require",
               "userRequest": "react-static",
               "loc": "33:19-42"
+            },
+            {
+              "moduleId": 138,
+              "moduleIdentifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/components/logo.js",
+              "module": "./src/components/logo.js",
+              "moduleName": "./src/components/logo.js",
+              "type": "cjs require",
+              "userRequest": "react-static",
+              "loc": "12:19-42"
             }
           ],
           "usedExports": true,
@@ -4573,7 +4629,7 @@
           "identifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/index.js",
           "name": "./src/index.js",
           "index": 0,
-          "index2": 137,
+          "index2": 138,
           "size": 907,
           "cacheable": true,
           "built": true,
@@ -4791,8 +4847,8 @@
           "identifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/App.js",
           "name": "./src/App.js",
           "index": 8,
-          "index2": 136,
-          "size": 1360,
+          "index2": 137,
+          "size": 1618,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -4822,7 +4878,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 1,
-          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactStatic = require('react-static');\n\nvar _reactHotLoader = require('react-hot-loader');\n\nvar _reactStaticRoutes = require('react-static-routes');\n\nvar _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);\n\nrequire('./app.css');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar App = function App() {\n  return _react2.default.createElement(\n    _reactStatic.Router,\n    null,\n    _react2.default.createElement(\n      'div',\n      null,\n      _react2.default.createElement(\n        'nav',\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { exact: true, to: '/' },\n          'Home'\n        ),\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: '/about' },\n          'About'\n        ),\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: '/blog' },\n          'Blog'\n        )\n      ),\n      _react2.default.createElement(\n        'div',\n        { className: 'content' },\n        _react2.default.createElement(_reactStaticRoutes2.default, null)\n      )\n    )\n  );\n};\n\nexports.default = (0, _reactHotLoader.hot)(module)(App);"
+          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactStatic = require('react-static');\n\nvar _reactHotLoader = require('react-hot-loader');\n\nvar _reactStaticRoutes = require('react-static-routes');\n\nvar _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);\n\nrequire('./app.css');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar App = (0, _reactStatic.withSiteData)(function (_ref) {\n  var title = _ref.title,\n      slogan = _ref.slogan;\n  return _react2.default.createElement(\n    _reactStatic.Router,\n    null,\n    _react2.default.createElement(\n      _react2.default.Fragment,\n      null,\n      _react2.default.createElement(_reactStatic.Head, {\n        titleTemplate: title + ' - %s',\n        defaultTitle: title + ' - ' + slogan\n      }),\n      _react2.default.createElement(\n        'nav',\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { exact: true, to: '/' },\n          'Home'\n        ),\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: '/about' },\n          'About'\n        ),\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: '/blog' },\n          'Blog'\n        )\n      ),\n      _react2.default.createElement(\n        'div',\n        { className: 'content' },\n        _react2.default.createElement(_reactStaticRoutes2.default, null)\n      )\n    )\n  );\n});\n\nexports.default = (0, _reactHotLoader.hot)(module)(App);"
         },
         {
           "id": 62,
@@ -7496,7 +7552,7 @@
           "identifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/dist/react-static-routes.js",
           "name": "./dist/react-static-routes.js",
           "index": 123,
-          "index2": 134,
+          "index2": 135,
           "size": 9319,
           "cacheable": true,
           "built": true,
@@ -7723,8 +7779,8 @@
           "id": 136,
           "identifier": "/home/travis/build/crip/cripintech/node_modules/extract-text-webpack-plugin/dist/loader.js??ref--0-oneOf-1-0!/home/travis/build/crip/cripintech/node_modules/style-loader/index.js??ref--0-oneOf-1-1!/home/travis/build/crip/cripintech/node_modules/css-loader/index.js??ref--0-oneOf-1-2!/home/travis/build/crip/cripintech/node_modules/postcss-loader/lib/index.js??postcss!/home/travis/build/crip/cripintech/src/app.css",
           "name": "./src/app.css",
-          "index": 137,
-          "index2": 135,
+          "index": 138,
+          "index2": 136,
           "size": 41,
           "cacheable": true,
           "built": true,
@@ -7782,10 +7838,10 @@
         "bootstrap"
       ],
       "files": [
-        "bootstrap.1db08d5f.js",
-        "bootstrap.1db08d5f.js.map"
+        "bootstrap.9c1df7f5.js",
+        "bootstrap.9c1df7f5.js.map"
       ],
-      "hash": "1db08d5fc0f1ec7cde72",
+      "hash": "9c1df7f514b42ebe35d3",
       "parents": [],
       "modules": [],
       "filteredModules": 0,
@@ -8192,6 +8248,15 @@
           "type": "cjs require",
           "userRequest": "react",
           "loc": "1:85-101"
+        },
+        {
+          "moduleId": 138,
+          "moduleIdentifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/components/logo.js",
+          "module": "./src/components/logo.js",
+          "moduleName": "./src/components/logo.js",
+          "type": "cjs require",
+          "userRequest": "react",
+          "loc": "8:13-29"
         }
       ],
       "usedExports": true,
@@ -10402,6 +10467,15 @@
           "type": "cjs require",
           "userRequest": "react-static",
           "loc": "33:19-42"
+        },
+        {
+          "moduleId": 138,
+          "moduleIdentifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/components/logo.js",
+          "module": "./src/components/logo.js",
+          "moduleName": "./src/components/logo.js",
+          "type": "cjs require",
+          "userRequest": "react-static",
+          "loc": "12:19-42"
         }
       ],
       "usedExports": true,
@@ -11536,14 +11610,14 @@
       "identifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/Home.js",
       "name": "./src/containers/Home.js",
       "index": 131,
-      "index2": 129,
-      "size": 813,
+      "index2": 130,
+      "size": 930,
       "cacheable": true,
       "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
-        1
+        0
       ],
       "assets": [],
       "issuer": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/dist/react-static-routes.js",
@@ -11576,14 +11650,14 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 3,
-      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactStatic = require('react-static');\n\nvar _htmr = require('htmr');\n\nvar _htmr2 = _interopRequireDefault(_htmr);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//\n\nexports.default = (0, _reactStatic.withRouteData)(function (_ref) {\n  var jdown = _ref.jdown,\n      reactStatic = _ref.reactStatic;\n  return _react2.default.createElement(\n    'div',\n    null,\n    _react2.default.createElement(\n      'section',\n      null,\n      (0, _htmr2.default)(reactStatic.contents)\n    ),\n    _react2.default.createElement(\n      'section',\n      null,\n      (0, _htmr2.default)(jdown.contents)\n    )\n  );\n});"
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactStatic = require('react-static');\n\nvar _htmr = require('htmr');\n\nvar _htmr2 = _interopRequireDefault(_htmr);\n\nvar _logo = require('../components/logo');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//\n\nexports.default = (0, _reactStatic.withRouteData)(function (_ref) {\n  var jdown = _ref.jdown,\n      reactStatic = _ref.reactStatic;\n  return _react2.default.createElement(\n    'div',\n    null,\n    _react2.default.createElement(_logo.LogoWrapper, { width: '15em' }),\n    _react2.default.createElement(\n      'section',\n      null,\n      (0, _htmr2.default)(reactStatic.contents)\n    ),\n    _react2.default.createElement(\n      'section',\n      null,\n      (0, _htmr2.default)(jdown.contents)\n    )\n  );\n});"
     },
     {
       "id": 51,
       "identifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/About.js",
       "name": "./src/containers/About.js",
-      "index": 133,
-      "index2": 130,
+      "index": 134,
+      "index2": 131,
       "size": 584,
       "cacheable": true,
       "built": true,
@@ -11629,8 +11703,8 @@
       "id": 52,
       "identifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/Blog.js",
       "name": "./src/containers/Blog.js",
-      "index": 134,
-      "index2": 131,
+      "index": 135,
+      "index2": 132,
       "size": 996,
       "cacheable": true,
       "built": true,
@@ -11676,15 +11750,15 @@
       "id": 53,
       "identifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/Post.js",
       "name": "./src/containers/Post.js",
-      "index": 135,
-      "index2": 132,
+      "index": 136,
+      "index2": 133,
       "size": 827,
       "cacheable": true,
       "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
-        0
+        1
       ],
       "assets": [],
       "issuer": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/dist/react-static-routes.js",
@@ -11723,8 +11797,8 @@
       "id": 54,
       "identifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/404.js",
       "name": "./src/containers/404.js",
-      "index": 136,
-      "index2": 133,
+      "index": 137,
+      "index2": 134,
       "size": 481,
       "cacheable": true,
       "built": true,
@@ -11771,7 +11845,7 @@
       "identifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/index.js",
       "name": "./src/index.js",
       "index": 0,
-      "index2": 137,
+      "index2": 138,
       "size": 907,
       "cacheable": true,
       "built": true,
@@ -11989,8 +12063,8 @@
       "identifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/App.js",
       "name": "./src/App.js",
       "index": 8,
-      "index2": 136,
-      "size": 1360,
+      "index2": 137,
+      "size": 1618,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -12020,7 +12094,7 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 1,
-      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactStatic = require('react-static');\n\nvar _reactHotLoader = require('react-hot-loader');\n\nvar _reactStaticRoutes = require('react-static-routes');\n\nvar _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);\n\nrequire('./app.css');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar App = function App() {\n  return _react2.default.createElement(\n    _reactStatic.Router,\n    null,\n    _react2.default.createElement(\n      'div',\n      null,\n      _react2.default.createElement(\n        'nav',\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { exact: true, to: '/' },\n          'Home'\n        ),\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: '/about' },\n          'About'\n        ),\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: '/blog' },\n          'Blog'\n        )\n      ),\n      _react2.default.createElement(\n        'div',\n        { className: 'content' },\n        _react2.default.createElement(_reactStaticRoutes2.default, null)\n      )\n    )\n  );\n};\n\nexports.default = (0, _reactHotLoader.hot)(module)(App);"
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactStatic = require('react-static');\n\nvar _reactHotLoader = require('react-hot-loader');\n\nvar _reactStaticRoutes = require('react-static-routes');\n\nvar _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);\n\nrequire('./app.css');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar App = (0, _reactStatic.withSiteData)(function (_ref) {\n  var title = _ref.title,\n      slogan = _ref.slogan;\n  return _react2.default.createElement(\n    _reactStatic.Router,\n    null,\n    _react2.default.createElement(\n      _react2.default.Fragment,\n      null,\n      _react2.default.createElement(_reactStatic.Head, {\n        titleTemplate: title + ' - %s',\n        defaultTitle: title + ' - ' + slogan\n      }),\n      _react2.default.createElement(\n        'nav',\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { exact: true, to: '/' },\n          'Home'\n        ),\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: '/about' },\n          'About'\n        ),\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: '/blog' },\n          'Blog'\n        )\n      ),\n      _react2.default.createElement(\n        'div',\n        { className: 'content' },\n        _react2.default.createElement(_reactStaticRoutes2.default, null)\n      )\n    )\n  );\n});\n\nexports.default = (0, _reactHotLoader.hot)(module)(App);"
     },
     {
       "id": 62,
@@ -14694,7 +14768,7 @@
       "identifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/dist/react-static-routes.js",
       "name": "./dist/react-static-routes.js",
       "index": 123,
-      "index2": 134,
+      "index2": 135,
       "size": 9319,
       "cacheable": true,
       "built": true,
@@ -14921,8 +14995,8 @@
       "id": 136,
       "identifier": "/home/travis/build/crip/cripintech/node_modules/extract-text-webpack-plugin/dist/loader.js??ref--0-oneOf-1-0!/home/travis/build/crip/cripintech/node_modules/style-loader/index.js??ref--0-oneOf-1-1!/home/travis/build/crip/cripintech/node_modules/css-loader/index.js??ref--0-oneOf-1-2!/home/travis/build/crip/cripintech/node_modules/postcss-loader/lib/index.js??postcss!/home/travis/build/crip/cripintech/src/app.css",
       "name": "./src/app.css",
-      "index": 137,
-      "index2": 135,
+      "index": 138,
+      "index2": 136,
       "size": 41,
       "cacheable": true,
       "built": true,
@@ -15012,6 +15086,44 @@
       "optimizationBailout": [],
       "depth": 4,
       "source": "!function(e,t){\"object\"==typeof exports&&\"undefined\"!=typeof module?module.exports=t(require(\"react\")):\"function\"==typeof define&&define.amd?define([\"react\"],t):e.htmr=t(e.React)}(this,function(e){\"use strict\";function t(e){return e.replace(/(-|:)(.)/g,function(e,t,r){return r.toUpperCase()})}function r(e){var r={};return e.split(\";\").filter(function(e){return\"\"!==e.trim()}).forEach(function(e){var n,a=e.split(\":\");if(a.length>1){var o=function(e){return/^-ms-/.test(e)&&(e=e.substr(1)),t(e)}(a[0].trim()),l=(n=a.slice(1).join(\":\").trim(),/^\\d+$/.test(n)?Number(n):n.replace(/'/g,'\"'));r[o]=l}}),r}e=e&&e.hasOwnProperty(\"default\")?e.default:e;var n={for:\"htmlFor\",class:\"className\",acceptcharset:\"acceptCharset\",accesskey:\"accessKey\",allowfullscreen:\"allowFullScreen\",allowtransparency:\"allowTransparency\",autocomplete:\"autoComplete\",autofocus:\"autoFocus\",autoplay:\"autoPlay\",cellpadding:\"cellPadding\",cellspacing:\"cellSpacing\",charset:\"charSet\",classid:\"classID\",classname:\"className\",colspan:\"colSpan\",contenteditable:\"contentEditable\",contextmenu:\"contextMenu\",crossorigin:\"crossOrigin\",datetime:\"dateTime\",enctype:\"encType\",formaction:\"formAction\",formenctype:\"formEncType\",formmethod:\"formMethod\",formnovalidate:\"formNoValidate\",formtarget:\"formTarget\",frameborder:\"frameBorder\",hreflang:\"hrefLang\",htmlfor:\"htmlFor\",httpequiv:\"httpEquiv\",inputmode:\"inputMode\",keyparams:\"keyParams\",keytype:\"keyType\",marginheight:\"marginHeight\",marginwidth:\"marginWidth\",maxlength:\"maxLength\",mediagroup:\"mediaGroup\",minlength:\"minLength\",novalidate:\"noValidate\",radiogroup:\"radioGroup\",readonly:\"readOnly\",rowspan:\"rowSpan\",spellcheck:\"spellCheck\",srcdoc:\"srcDoc\",srclang:\"srcLang\",srcset:\"srcSet\",tabindex:\"tabIndex\",usemap:\"useMap\"};var a={ELEMENT:1,TEXT:3,COMMENT:8},o=[\"table\",\"tbody\",\"thead\",\"tfoot\",\"tr\"],l=document.createElement(\"div\");function c(i,s,u){var d,m=u.map._;if(i.nodeType===a.COMMENT)return null;if(i.nodeType===a.TEXT){var f=(d=i.textContent,l.innerHTML=d,l.textContent);return m?m(f):f}for(var p=i.tagName.toLowerCase(),h=u.map[p],g={},y=0;y<i.attributes.length;y++){var v=i.attributes[y].name,T=i.attributes[y].value;g[v]=T}g.key=s.toString();for(var E=function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return Object.keys(e).reduce(function(a,o){if(/^on.*/.test(o))return a;var l=o;/^(data|aria)-/.test(o)||(l=t(o));var c=n[l]||l;return a[c]=\"style\"===c?r(e.style):e[o],a},{})}(g),b=[],x=0;x<i.childNodes.length;x++){var C=i.childNodes[x],M=s+\".\"+x;if(!(o.indexOf(p)>-1&&C.nodeType===a.TEXT&&(C.textContent=C.textContent.trim(),\"\"===C.textContent))){var N=c(C,M,u);null!==N&&b.push(N)}}return\"style\"!==p||h||m?(0===b.length&&(b=null),h?e.createElement(h,E,b):m?m(p,E,b):e.createElement(p,E,b)):(E.dangerouslySetInnerHTML={__html:b[0]},e.createElement(p,E,null))}return function(e){var t={map:(arguments.length>1&&void 0!==arguments[1]?arguments[1]:{}).map||{}},r=document.createElement(\"div\");r.innerHTML=e.trim();for(var n=[],a=0;a<r.childNodes.length;a++)n.push(r.childNodes[a]);var o=n.map(function(e,r){return c(e,r,t)}).filter(function(e){return null!==e});return 1===o.length?o[0]:o}});\n"
+    },
+    {
+      "id": 138,
+      "identifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/components/logo.js",
+      "name": "./src/components/logo.js",
+      "index": 133,
+      "index2": 129,
+      "size": 2735,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/Home.js",
+      "issuerId": 50,
+      "issuerName": "./src/containers/Home.js",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 50,
+          "moduleIdentifier": "/home/travis/build/crip/cripintech/node_modules/babel-loader/lib/index.js??ref--0-oneOf-0-0!/home/travis/build/crip/cripintech/src/containers/Home.js",
+          "module": "./src/containers/Home.js",
+          "moduleName": "./src/containers/Home.js",
+          "type": "cjs require",
+          "userRequest": "../components/logo",
+          "loc": "17:12-41"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 4,
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.LogoWrapper = undefined;\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactStatic = require('react-static');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Logo = function Logo(_ref) {\n  var _ref$fill = _ref.fill,\n      fill = _ref$fill === undefined ? 'white' : _ref$fill,\n      _ref$width = _ref.width,\n      width = _ref$width === undefined ? '100px' : _ref$width,\n      _ref$height = _ref.height,\n      height = _ref$height === undefined ? 'auto' : _ref$height;\n  return _react2.default.createElement(\n    'svg',\n    {\n      version: '1.1',\n      x: '0px',\n      y: '0px',\n      width: width,\n      height: height,\n      viewBox: '0 0 140.533 168',\n      enableBackground: 'new 0 0 140.533 168',\n      xmlSpace: 'preserve',\n      fill: fill\n    },\n    _react2.default.createElement(\n      'g',\n      null,\n      _react2.default.createElement('circle', { cx: '84', cy: '84.666', r: '17.977' }),\n      _react2.default.createElement('path', {\n        d: 'M104.593,105.968c-0.777-0.796-1.815-1.204-2.861-1.204c-0.81,0-1.622,0.244-2.322,0.744 c-4.425,3.156-9.638,4.825-15.076,4.825c-14.337,0-26.001-11.663-26.001-26s11.664-26,26.001-26c5.253,0,10.314,1.561,14.638,4.513 c0.686,0.468,1.472,0.697,2.255,0.697c1.041,0,2.075-0.406,2.851-1.193L139.382,26.5c0.774-0.786,1.189-1.856,1.147-2.958 c-0.042-1.103-0.537-2.138-1.368-2.863C123.866,7.344,104.276,0,84,0C37.682,0,0,37.682,0,84s37.682,84,84,84 c20.261,0,39.84-7.334,55.13-20.651c0.83-0.724,1.326-1.756,1.37-2.856c0.044-1.1-0.367-2.169-1.137-2.956L104.593,105.968z M103.566,143.023c-6.291,2.107-12.874,3.177-19.567,3.177c-33.93,0-61.534-27.604-61.534-61.534s27.604-61.534,61.534-61.534 c6.693,0,13.276,1.069,19.567,3.177c2.618,0.877,4.029,3.711,3.152,6.33c-0.878,2.619-3.712,4.03-6.33,3.152 c-5.265-1.764-10.778-2.659-16.39-2.659c-28.415,0-51.534,23.118-51.534,51.534c0,28.416,23.119,51.534,51.534,51.534 c5.611,0,11.125-0.895,16.39-2.659c2.617-0.873,5.452,0.533,6.33,3.152C107.595,139.311,106.184,142.145,103.566,143.023z'\n      })\n    )\n  );\n};\n\nvar LogoWrapper = function LogoWrapper(props) {\n  return _react2.default.createElement(\n    _reactStatic.SiteData,\n    null,\n    function (_ref2) {\n      var title = _ref2.title;\n      return _react2.default.createElement(\n        'div',\n        { className: 'logo', style: { fontSize: props.width } },\n        _react2.default.createElement(Logo, { width: '1em' }),\n        _react2.default.createElement(\n          'h1',\n          { rel: 'name' },\n          title\n        )\n      );\n    }\n  );\n};\n\nexports.LogoWrapper = LogoWrapper;\nexports.default = Logo;"
     }
   ],
   "filteredModules": 0,
@@ -15040,12 +15152,12 @@
           "initial": true,
           "entry": true,
           "extraAsync": false,
-          "size": 2556,
+          "size": 3188,
           "names": [],
           "files": [
             "extract-text-webpack-plugin-output-filename"
           ],
-          "hash": "d755cc11d681fea1ce7c",
+          "hash": "d1c1896fc248ae93f3c6",
           "parents": [],
           "modules": [
             {
@@ -15054,7 +15166,7 @@
               "name": "./node_modules/css-loader??ref--0-oneOf-1-2!./node_modules/postcss-loader/lib??postcss!./src/app.css",
               "index": 0,
               "index2": 1,
-              "size": 296,
+              "size": 928,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -15074,7 +15186,7 @@
               "providedExports": null,
               "optimizationBailout": [],
               "depth": 0,
-              "source": "exports = module.exports = require(\"../node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.id, \":root{--main-color:#3b007f;--secondary-color:#22eaaa}body{background-color:var(--main-color);color:#fff;font-family:system-ui,sans-serif}\", \"\"]);\n\n// exports\n"
+              "source": "exports = module.exports = require(\"../node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.id, \":root{--main-color:#3b007f;--secondary-color:#22eaaa}@font-face{font-family:Gilroy;src:url(\\\"/public/assets/fonts/Gilroy-Light.woff2\\\") format(\\\"woff2\\\"),url(\\\"/public/assets/fonts/Gilroy-Light.woff\\\") format(\\\"woff\\\");font-weight:300;font-style:normal}@font-face{font-family:Gilroy;src:url(\\\"/public/assets/fonts/Gilroy-ExtraBold.woff2\\\") format(\\\"woff2\\\"),url(\\\"/public/assets/fonts/Gilroy-ExtraBold.woff\\\") format(\\\"woff\\\");font-weight:800;font-style:normal}body{background-color:var(--main-color);color:#fff;font-family:Gilroy,system-ui,sans-serif}.logo{display:inline-block;-webkit-box-sizing:border-box;box-sizing:border-box;font-size:10rem}.logo h1,.logo svg{display:inline-block;vertical-align:middle}.logo h1{margin:0;padding:0;margin-left:.4em;font-size:.8em}\", \"\"]);\n\n// exports\n"
             },
             {
               "id": 1,
@@ -15135,7 +15247,7 @@
           "name": "./node_modules/css-loader??ref--0-oneOf-1-2!./node_modules/postcss-loader/lib??postcss!./src/app.css",
           "index": 0,
           "index2": 1,
-          "size": 296,
+          "size": 928,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -15155,7 +15267,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 0,
-          "source": "exports = module.exports = require(\"../node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.id, \":root{--main-color:#3b007f;--secondary-color:#22eaaa}body{background-color:var(--main-color);color:#fff;font-family:system-ui,sans-serif}\", \"\"]);\n\n// exports\n"
+          "source": "exports = module.exports = require(\"../node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.id, \":root{--main-color:#3b007f;--secondary-color:#22eaaa}@font-face{font-family:Gilroy;src:url(\\\"/public/assets/fonts/Gilroy-Light.woff2\\\") format(\\\"woff2\\\"),url(\\\"/public/assets/fonts/Gilroy-Light.woff\\\") format(\\\"woff\\\");font-weight:300;font-style:normal}@font-face{font-family:Gilroy;src:url(\\\"/public/assets/fonts/Gilroy-ExtraBold.woff2\\\") format(\\\"woff2\\\"),url(\\\"/public/assets/fonts/Gilroy-ExtraBold.woff\\\") format(\\\"woff\\\");font-weight:800;font-style:normal}body{background-color:var(--main-color);color:#fff;font-family:Gilroy,system-ui,sans-serif}.logo{display:inline-block;-webkit-box-sizing:border-box;box-sizing:border-box;font-size:10rem}.logo h1,.logo svg{display:inline-block;vertical-align:middle}.logo h1{margin:0;padding:0;margin-left:.4em;font-size:.8em}\", \"\"]);\n\n// exports\n"
         },
         {
           "id": 1,
