@@ -8,7 +8,8 @@
         "start": "react-static start",
         "stage": "react-static build --staging",
         "build": "react-static build",
-        "serve": "serve dist -p 3000"
+        "serve": "serve dist -p 3000",
+        "eslint": "eslint src"
     },
     "dependencies": {
         "chokidar": "2.0.3",
@@ -18,7 +19,8 @@
         "react-dom": "^16.0.0",
         "react-hot-loader": "^4.0.0-beta.21",
         "react-router": "^4.2.0",
-        "react-static": "^5.9.12"
+        "react-static": "^5.9.12",
+        "styled-components": "^4.0.3"
     },
     "devDependencies": {
         "eslint": "^5.8.0",

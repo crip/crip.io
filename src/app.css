@@ -20,26 +20,7 @@
 }
 
 body {
-  background-color: var(--main-color);
-  color: white;
   font-family: 'Gilroy', system-ui, sans-serif;
-}
-
-.logo {
-  display: inline-block;
-  box-sizing: border-box;
-  font-size: 10rem;
-}
-
-.logo h1,
-.logo svg {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.logo h1 {
   margin: 0;
   padding: 0;
-  margin-left: 0.4em;
-  font-size: 0.8em;
 }

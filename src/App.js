@@ -13,13 +13,6 @@ const App = withSiteData(({ title, slogan }) => (
         titleTemplate={`${title} - %s`}
         defaultTitle={`${title} - ${slogan}`}
       />
-      <nav>
-        <Link exact to="/">
-          Home
-        </Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
-      </nav>
       <div className="content">
         <Routes />
       </div>
