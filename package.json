@@ -38,7 +38,6 @@
     },
     "lint-staged": {
         "*.js": [
-            "prettier --write",
             "eslint",
             "git add"
         ]
@@ -47,6 +46,7 @@
         "trailingComma": "es5",
         "tabWidth": 2,
         "semi": false,
-        "singleQuote": true
+        "singleQuote": true,
+        "spaceBeforeFunctionParen": true
     }
 }
