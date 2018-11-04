@@ -1,6 +1,27 @@
-import React from 'react';
-import { SiteData } from 'react-static';
+import React from 'react'
+import { SiteData } from 'react-static'
+import styled from 'styled-components'
 
+const LogoStyles = styled.div`
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: ${props => props.width};
+  color: ${props => props.color};
+
+  h1,
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    color: inherit;
+  }
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    margin-left: 0.4em;
+    font-size: 0.8em;
+  }
+`
 const Logo = ({ fill = 'white', width = '100px', height = 'auto' }) => (
   <svg
     version="1.1"
@@ -28,19 +49,19 @@ const Logo = ({ fill = 'white', width = '100px', height = 'auto' }) => (
       />
     </g>
   </svg>
-);
+)
 
 const LogoWrapper = props => (
   <SiteData>
     {({ title }) => (
-      <div className="logo" style={{ fontSize: props.width }}>
-        <Logo width="1em" />
+      <LogoStyles width={props.width} color={props.color}>
+        <Logo width="1em" fill={props.color} />
         <h1 rel="name">{title}</h1>
-      </div>
+      </LogoStyles>
     )}
   </SiteData>
-);
+)
 
-export { LogoWrapper };
+export { LogoWrapper }
 
-export default Logo;
+export default Logo

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Router, Link, Head, withSiteData } from 'react-static'
+import { Router, Head, withSiteData } from 'react-static'
 import { hot } from 'react-hot-loader'
 
 import Routes from 'react-static-routes'
@@ -13,13 +13,6 @@ const App = withSiteData(({ title, slogan }) => (
         titleTemplate={`${title} - %s`}
         defaultTitle={`${title} - ${slogan}`}
       />
-      <nav>
-        <Link exact to="/">
-          Home
-        </Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
-      </nav>
       <div className="content">
         <Routes />
       </div>
