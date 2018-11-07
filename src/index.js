@@ -9,7 +9,19 @@ export default App
 
 // Render your app
 if (typeof document !== 'undefined') {
-  const renderMethod = module.hot ? ReactDOM.render : ReactDOM.hydrate || ReactDOM.render
+  window.addEventListener('load', () => {
+    const ga = window.ga
+    ga('create', process.env.GOOGLE_ANALYTICS, 'auto')
+
+    ga('require', 'outboundLinkTracker')
+    ga('require', 'urlChangeTracker')
+    // Require additional plugins imported in the build:autotrack.
+
+    ga('send', 'pageview')
+  })
+  const renderMethod = module.hot
+    ? ReactDOM.render
+    : ReactDOM.hydrate || ReactDOM.render
   const render = Comp => {
     renderMethod(<Comp />, document.getElementById('root'))
   }
