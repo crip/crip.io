@@ -18,6 +18,9 @@ if (typeof document !== 'undefined') {
     // Require additional plugins imported in the build:autotrack.
 
     ga('send', 'pageview')
+
+    // bugsnag
+    window.bugsnagClient = window.bugsnag(process.env.BUGSNAG_KEY)
   })
   const renderMethod = module.hot
     ? ReactDOM.render

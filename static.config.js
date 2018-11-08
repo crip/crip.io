@@ -78,6 +78,7 @@ export default {
             {renderMeta.styleTags}
             <script async src="https://www.google-analytics.com/analytics.js" />
             <script async src="/assets/js/autotrack.custom.js" />
+            <script async src="//d2wy8f7a9ursnm.cloudfront.net/v4/bugsnag.min.js" />
           </Head>
           <Body>{children}</Body>
         </Html>
