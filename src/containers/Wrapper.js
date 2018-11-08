@@ -3,7 +3,7 @@ import bugsnag from 'bugsnag-js'
 import createPlugin from 'bugsnag-react'
 import * as pkg from '../../package.json'
 
-const config = process.env.BUGSNAG_KEY || 'x'
+const config = process.env.BUGSNAG_KEY
 
 const bugsnagClient = bugsnag({
   apiKey: config,
@@ -12,12 +12,12 @@ const bugsnagClient = bugsnag({
 
 const ErrorBoundary = bugsnagClient.use(createPlugin(React))
 
-const BugWrapper = ({ children }) => {
-  if (config !== 'x') {
+const Wrapper = ({ children }) => {
+  if (config) {
     return <ErrorBoundary>{children}</ErrorBoundary>
   }
 
   return <Fragment>{children}</Fragment>
 }
 
-export default BugWrapper
+export default Wrapper
