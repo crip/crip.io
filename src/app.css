@@ -5,10 +5,34 @@
   --note-color: #fff0cc;
 }
 
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/assets/fonts/BrandonGrotesque-Regular.eot');
+  src: url('/assets/fonts/BrandonGrotesque-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('/assets/fonts/BrandonGrotesque-Regular.woff') format('woff'),
+    url('/assets/fonts/BrandonGrotesque-Regular.ttf##{Brandon Grotesque}')
+      format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/assets/fonts/BrandonGrotesque-Bold.eot');
+  src: url('/assets/fonts/BrandonGrotesque-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('/assets/fonts/BrandonGrotesque-Bold.woff') format('woff'),
+    url('/assets/fonts/BrandonGrotesque-Bold.ttf##{Brandon Grotesque}')
+      format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', sans-serif;
+  font-family: 'Brandon Grotesque', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -22,16 +46,10 @@ h1 {
   margin: 0;
 }
 
-.header {
-  background-color: var(--main-color-dark);
-  padding: 100px;
-}
-
-.header-after {
-  width: 100%;
-  height: 250px;
-  background-size: 100%;
-  background: transparent url('/assets/images/waves.svg') top center no-repeat;
-  position: relative;
-  top: -1px;
+.logo-text {
+  opacity: 0;
+  transform: translateX(-25px);
+  transition-property: transform, opacity;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
 }

@@ -30,7 +30,9 @@ const Logo = ({ fill = 'white', width = '100px', height = 'auto' }) => (
   </svg>
 )
 
-const LogoFull = ({ fill = 'white', width = '150px', height = 'auto' }) => (
+const LogoFull = ({
+  fill = 'white', width = '180px', height = 'auto', textClass = '',
+}) => (
   <svg
     version="1.1"
     x="0px"
@@ -54,7 +56,7 @@ const LogoFull = ({ fill = 'white', width = '150px', height = 'auto' }) => (
     C107.6,139.3,106.2,142.1,103.6,143z"
       />
     </g>
-    <g>
+    <g className={textClass}>
       <path
         d="M181.2,84.4c0-24.7,18.4-43.7,43.7-43.7c15.2,0,28.7,7.6,36,19.4l-16.6,9.6c-3.7-6.5-10.9-10.3-19.4-10.3
     c-14.9,0-24.5,10-24.5,25c0,15,9.6,25,24.5,25c8.5,0,15.8-3.8,19.4-10.3l16.6,9.6c-7.2,11.9-20.6,19.4-36,19.4
