@@ -42,8 +42,18 @@ h1 {
   font-weight: 900;
   letter-spacing: 0.025rem;
   font-size: 3.5em;
-  color: white;
   margin: 0;
+  color: var(--main-color-dark);
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  letter-spacing: 0.025rem;
+  font-size: 2.5em;
+  margin: 0;
+  color: var(--main-color-dark);
+  margin-bottom: 0.75em;
 }
 
 .logo-text {
