@@ -13,7 +13,7 @@ const Header = styled.div`
 `
 
 const Inner = styled.div`
-  max-width: 1080px;
+  max-width: var(--main-width);
   margin: 0 auto;
   padding: 50px 0;
 `
