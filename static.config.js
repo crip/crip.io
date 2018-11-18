@@ -15,7 +15,7 @@ chokidar.watch('content').on('all', () => reloadRoutes())
 export default {
   getSiteData: () => ({
     title: 'Crip in Tech',
-    slogan: 'Unlocking your potential',
+    slogan: 'We are set to make a difference in the tech industry',
   }),
   getRoutes: async () => {
     const { posts, home, about } = await jdown('content')
@@ -79,6 +79,7 @@ export default {
             <script async src="https://www.google-analytics.com/analytics.js" />
             <script async src="/assets/js/autotrack.custom.js" />
             <script async src="//d2wy8f7a9ursnm.cloudfront.net/v4/bugsnag.min.js" />
+            <script async src="https://embed.small.chat/TANCJ6NKBGDS2R3CCS.js" />
           </Head>
           <Body>{children}</Body>
         </Html>
