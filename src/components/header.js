@@ -34,4 +34,12 @@ const HeroHeader = ({ children }) => (
   </HeaderWrapper>
 )
 
-export { HeroHeader }
+const SmallHeader = ({ children }) => (
+  <HeaderWrapper>
+    <Header>
+      <Inner>{children}</Inner>
+    </Header>
+  </HeaderWrapper>
+)
+
+export { HeroHeader, SmallHeader }

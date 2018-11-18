@@ -18,7 +18,9 @@ export default {
     slogan: 'We are set to make a difference in the tech industry',
   }),
   getRoutes: async () => {
-    const { posts, home, about } = await jdown('content')
+    const {
+      posts, home, about, privacyPolicy,
+    } = await jdown('content')
     return [
       {
         path: '/',
@@ -32,6 +34,13 @@ export default {
         component: 'src/containers/About',
         getData: () => ({
           about,
+        }),
+      },
+      {
+        path: '/privacy',
+        component: 'src/containers/Page',
+        getData: () => ({
+          page: privacyPolicy,
         }),
       },
       {
