@@ -16,6 +16,66 @@ export default {
   getSiteData: () => ({
     title: 'Crip in Tech',
     slogan: 'We are set to make a difference in the tech industry',
+    menus: {
+      main: [
+        {
+          path: '/',
+          name: 'Home',
+        },
+        {
+          path: '/about',
+          name: 'About us',
+        },
+        {
+          path: '/for-crips',
+          name: 'For Crips',
+        },
+        {
+          path: '/for-partners',
+          name: 'For Partners',
+        },
+        {
+          path: '/contact',
+          name: 'Contact',
+        },
+      ],
+      legal: [
+        {
+          path: '/cookies',
+          name: 'Cookies',
+        },
+        {
+          path: '/privacy',
+          name: 'Privacy policy',
+        },
+        {
+          path: '/terms',
+          name: 'Terms and conditions',
+        },
+      ],
+      follow: [
+        {
+          path: 'https://www.linkedin.com/company/cripintech/',
+          name: 'Linkedin',
+        },
+        {
+          path: 'https://facebook.com/cripintech/',
+          name: 'Facebook',
+        },
+        {
+          path: 'https://instagram.com/cripintech/',
+          name: 'Instagram',
+        },
+        {
+          path: 'https://twitter.com/cripintech/',
+          name: 'Twitter',
+        },
+        {
+          path: 'https://github.com/crip/',
+          name: 'Github',
+        },
+      ],
+    },
   }),
   getRoutes: async () => {
     const {

@@ -12,6 +12,7 @@
         "eslint": "eslint src"
     },
     "dependencies": {
+        "@rebass/grid": "^6.0.0-4",
         "chokidar": "2.0.3",
         "cloudinary-react": "^1.0.6",
         "htmr": "0.6.3",

@@ -1,32 +1,26 @@
 import React from 'react'
 import { withRouteData } from 'react-static'
+import { Box } from '@rebass/grid'
 import styled from 'styled-components'
+import convert from 'htmr'
 import { Image, Transformation } from 'cloudinary-react'
 import celebrate from 'assets/images/celebrate.svg'
 import { HeroHeader } from '../components/header'
 import Navigation from '../components/navigation'
 //
 
-const HeroContent = styled.div`
+const HeroContent = styled(Box)`
   position: relative;
-  padding-top: 80px;
-  margin-bottom: -100px;
   z-index: 5;
-
-  span {
-    font-size: 2em;
-  }
 
   h1 {
     letter-spacing: 1px;
     font-size: 4em;
     margin-bottom: 2rem;
-    max-width: 800px;
     color: white;
   }
 
   p {
-    max-width: 750px;
     font-size: 1.4em;
     line-height: 1.5;
   }
@@ -83,20 +77,15 @@ const ProfileImg = styled(Img)`
   margin: 0 1em;
 `
 
-class Home extends React.PureComponent {
+class Home extends React.Component {
   render () {
+    const { header } = this.props
     return (
       <div>
         <Navigation />
         <HeroHeader>
-          <HeroContent>
-            <h1>We are set to make a difference in the tech industry</h1>
-            <p>
-              Technology is changing how people interact. How products and services are imagined,
-              created and delivered. It is transforming and reshaping businesses, economies and life
-              itself. Allowing us to connect people with businesses in a innovative and
-              groundbreaking way.
-            </p>
+          <HeroContent width={[1, 1, 2 / 3, 1 / 2]} p={3}>
+            {convert(header.contents)}
           </HeroContent>
         </HeroHeader>
         <Section>
