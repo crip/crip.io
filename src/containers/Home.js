@@ -122,7 +122,7 @@ const Engage = styled(Box)`
     ${props => (props.theme === 'light' ? '--secondary-color' : '--main-color')}
   );
   color: var(${props => (props.theme === 'light' ? '--main-color-dark' : '--light-color')});
-  clip-path: polygon(0 100%, 100% 85%, 100% 0, 0 15%);
+  clip-path: polygon(0 100%, 100% 90%, 100% 0, 0 10%);
   position: relative;
 
   h2 {
@@ -184,6 +184,7 @@ class Home extends React.Component {
       })
     }
   }
+
   render () {
     const { header } = this.props
     return (

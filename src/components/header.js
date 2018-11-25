@@ -3,7 +3,7 @@ import { Flex } from '@rebass/grid'
 import wavesLarge from 'assets/images/waves.svg'
 import styled from 'styled-components'
 
-const HeaderWrapper = styled.header`
+const HeaderWrapper = styled.div`
   position: relative;
   overflow: hidden;
 `

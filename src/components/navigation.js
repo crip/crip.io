@@ -4,12 +4,17 @@ import { Flex, Box } from '@rebass/grid'
 import styled from 'styled-components'
 import { LogoFull } from './logo'
 
-const NavigationWrap = styled(Flex)`
+const NavigationWrap = styled.div`
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
+`
+
+const Inner = styled(Flex)`
+  max-width: var(--main-width);
+  margin: 0 auto;
 `
 
 // const NavLink = styled(Link)`
@@ -24,18 +29,20 @@ const NavigationWrap = styled(Flex)`
 class Navigation extends Component {
   render () {
     return (
-      <NavigationWrap role="banner" p={3} alignItems="center" justifyContent="space-between">
-        <Box>
-          <Link exact to="/">
-            <LogoFull />
-          </Link>
-        </Box>
-        {/* <Box>
+      <NavigationWrap as="header" role="banner">
+        <Inner p={3} alignItems="center" justifyContent="space-between">
+          <Box>
+            <Link exact to="/">
+              <LogoFull />
+            </Link>
+          </Box>
+          {/* <Box>
           <nav role="navigation">
             <NavLink>Home</NavLink>
             <NavLink to="/privacy">Privacy policy</NavLink>
           </nav>
         </Box> */}
+        </Inner>
       </NavigationWrap>
     )
   }

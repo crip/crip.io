@@ -52,10 +52,6 @@ export default {
           path: '/privacy',
           name: 'Privacy policy',
         },
-        {
-          path: '/terms',
-          name: 'Terms and conditions',
-        },
       ],
       follow: [
         {
@@ -82,7 +78,9 @@ export default {
     },
   }),
   getRoutes: async () => {
-    const { home, about, privacyPolicy } = await jdown('content')
+    const {
+      home, about, cookies, privacyPolicy,
+    } = await jdown('content')
     return [
       {
         path: '/',
@@ -103,6 +101,13 @@ export default {
         component: 'src/containers/Page',
         getData: () => ({
           page: privacyPolicy,
+        }),
+      },
+      {
+        path: '/cookies',
+        component: 'src/containers/Page',
+        getData: () => ({
+          page: cookies,
         }),
       },
       {
