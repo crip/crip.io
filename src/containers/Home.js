@@ -1,5 +1,5 @@
 import React from 'react'
-import { withRouteData } from 'react-static'
+import { withRouteData, scrollTo } from 'react-static'
 import { Flex, Box } from '@rebass/grid'
 import styled from 'styled-components'
 import convert from 'htmr'
@@ -95,6 +95,7 @@ const Poly = styled.div`
   clip-path: polygon(-15% 100%, 100% 85%, 100% 0, 0 15%);
   overflow: hidden;
   position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 
   &:last-of-type {
     margin-top: -36%;
@@ -116,7 +117,73 @@ const Poly = styled.div`
 
 const ProfileImg = styled(Image)``
 
+const Engage = styled(Box)`
+  background-color: var(
+    ${props => (props.theme === 'light' ? '--secondary-color' : '--main-color')}
+  );
+  color: var(${props => (props.theme === 'light' ? '--main-color-dark' : '--light-color')});
+  clip-path: polygon(0 100%, 100% 85%, 100% 0, 0 15%);
+  position: relative;
+
+  h2 {
+    color: inherit;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    font-size: 3em;
+  }
+
+  .subtitle {
+    color: var(${props => (props.theme === 'light' ? '--main-color' : '--secondary-color')});
+    margin: 0;
+    font-size: 1.7em;
+    font-weight: 600;
+    margin-bottom: 1.5em;
+  }
+
+  ${Text} {
+    color: var(${props => (props.theme === 'light' ? '--main-color-dark' : '--light-color')});
+  }
+
+  @media (max-width: 32em) {
+    clip-path: polygon(0 100%, 100% 95%, 100% 0, 0 5%);
+
+    h2 {
+      font-size: 2em;
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+    }
+  }
+`
+
+const Btn = styled.a`
+  display: inline-block;
+  background-color: var(
+    ${props => (props.theme === 'light' ? '--main-color' : '--secondary-color')}
+  );
+  color: var(${props => (props.theme === 'light' ? '--light-color' : '--main-color-dark')});
+  line-height: 2.5;
+  padding: 0 1.2em;
+  border-radius: 4em;
+  font-size: 1.4em;
+  text-decoration: none;
+  font-weight: 600;
+
+  @media (max-width: 32em) {
+    font-size: 1em;
+  }
+`
+
 class Home extends React.Component {
+  async goToContent () {
+    const content = document.querySelector('#content')
+    if (content) {
+      await scrollTo(content, {
+        duration: 500,
+      })
+    }
+  }
   render () {
     const { header } = this.props
     return (
@@ -126,13 +193,14 @@ class Home extends React.Component {
           <Flex>
             <HeroContent width={[1, 1, 2 / 3, 1 / 2]} p={3}>
               {convert(header.contents)}
+              <Btn onClick={async () => this.goToContent()}>Tell me more</Btn>
             </HeroContent>
             <HeroImage width={[1, 1, 2 / 3, 1 / 2]} p={3} justifyContent="center">
               <img src={cripcommunity} alt="" />
             </HeroImage>
           </Flex>
         </HeroHeader>
-        <Section>
+        <Section id="content">
           <Flex>
             <Box width={[1, 1 / 2]} ml={[0, '25%']} px={[3, 0]}>
               <h2>Why we are here</h2>
@@ -143,12 +211,16 @@ class Home extends React.Component {
               <Text>
                 Crip in Tech is the culmination of years spent working passionately within tech.
                 Over time, this passion blossomed into this consultant company that we hope will
-                touch nearly every corner of our lives and others.{' '}
+                touch nearly every corner of our lives and others.
               </Text>
             </Box>
           </Flex>
           <Box width={1} my={[0, 2]} px={3}>
-            <Img cloudName="crip" publicId="Company/People/Crips/one-strong-crew.jpg" />
+            <Img
+              cloudName="crip"
+              publicId="Company/People/Crips/one-strong-crew.jpg"
+              secureDistribution
+            />
           </Box>
         </Section>
         <Section type="gradient">
@@ -174,6 +246,7 @@ class Home extends React.Component {
                 <ProfileImg
                   cloudName="crip"
                   publicId="Company/People/Management/viktor.jpg"
+                  secureDistribution
                   alt="Viktor Johansson"
                 >
                   <Transformation width="400" crop="scale" />
@@ -183,6 +256,7 @@ class Home extends React.Component {
                 <ProfileImg
                   cloudName="crip"
                   publicId="Company/People/Management/johnie.jpg"
+                  secureDistribution
                   alt="Johnie Hjelm"
                 >
                   <Transformation width="400" crop="scale" />
@@ -241,6 +315,7 @@ class Home extends React.Component {
                 <ProfileImg
                   cloudName="crip"
                   publicId="Company/People/Management/coffe.jpg"
+                  secureDistribution
                   alt="Viktor Johansson"
                 >
                   <Transformation width="400" crop="scale" />
@@ -250,12 +325,47 @@ class Home extends React.Component {
                 <ProfileImg
                   cloudName="crip"
                   publicId="Company/People/Management/fredrik.jpg"
+                  secureDistribution
                   alt="Johnie Hjelm"
                 >
                   <Transformation width="400" crop="scale" />
                 </ProfileImg>
               </Poly>
             </Box>
+          </Container>
+        </Section>
+        <Section>
+          <Container p={3}>
+            <Engage theme="light" width={[1, 1 / 2]} py={[5, '10%']} px={[3, 5]}>
+              <h2>For Crips</h2>
+              <p className="subtitle">Let us launch your career in tech</p>
+              <Text>
+                The Nordic tech industry needs you. We are currently missing 30 000 technology
+                professionals in Sweden and that number is growing fast.
+              </Text>
+              <Text>
+                We are investing in you, knowing that you will be a successful software developer or
+                QA consultant within our hiring ecosystem.
+              </Text>
+              <Btn href="mailto:info@crip.io" theme="light">
+                Join us now
+              </Btn>
+            </Engage>
+            <Engage width={[1, 1 / 2]} py={[5, '10%']} px={[3, 5]}>
+              <h2>For Partners</h2>
+              <p className="subtitle">We are stronger together.</p>
+              <Text>
+                Diversity is everything about us that makes us who we are. We seek to celebrate our
+                diverse identities. Diversity is where we acknowledge that our different backgrounds
+                bring unique perspectives to our work.
+              </Text>
+              <Text>
+                Let's develop a predicable and stable recruitment pipeline of software developers
+                and QA's to your company by bringing in diverse and technical talents to your
+                company directly from Crip in Tech.
+              </Text>
+              <Btn href="mailto:engage@crip.io">Become our partner</Btn>
+            </Engage>
           </Container>
         </Section>
       </div>

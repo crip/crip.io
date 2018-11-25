@@ -118,7 +118,7 @@ const Footer = ({ title, menus }) => {
             <FooterMenu menu={legal} />
           </Box>
         </Inner>
-        <Inner px={3}>
+        <Inner px={3} justifyContent="space-between">
           <Box>
             <Copyright>
               © {currentYear} {title}. All Rights Reserved.
