@@ -55,14 +55,16 @@ class Cookies extends React.Component {
   }
 
   componentWillMount () {
-    if (localStorage.getItem('accept-cookies')) {
+    if (typeof window !== 'undefined' && window.localStorage.getItem('accept-cookies')) {
       this.setState(() => ({ noAction: false }))
     }
   }
 
   acceptCookies () {
     this.setState(() => ({ noAction: false }))
-    localStorage.setItem('accept-cookies', true)
+    if (typeof window !== 'undefined') {
+      window.localStorage.setItem('accept-cookies', true)
+    }
   }
 
   render () {
