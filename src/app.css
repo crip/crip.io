@@ -66,10 +66,12 @@ h3 {
   margin-bottom: 0.25em;
 }
 
-.logo-text {
-  opacity: 0;
-  transform: translateX(-25px);
-  transition-property: transform, opacity;
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
+@media (max-width: 32em) {
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
 }

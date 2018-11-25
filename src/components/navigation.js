@@ -12,14 +12,14 @@ const NavigationWrap = styled(Flex)`
   z-index: 10;
 `
 
-const NavLink = styled(Link)`
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  margin-left: 16px;
-`
+// const NavLink = styled(Link)`
+//   color: white;
+//   text-decoration: none;
+//   font-weight: 700;
+//   text-transform: uppercase;
+//   letter-spacing: 0.04em;
+//   margin-left: 16px;
+// `
 
 class Navigation extends Component {
   render () {
@@ -30,12 +30,12 @@ class Navigation extends Component {
             <LogoFull />
           </Link>
         </Box>
-        <Box>
+        {/* <Box>
           <nav role="navigation">
             <NavLink>Home</NavLink>
             <NavLink to="/privacy">Privacy policy</NavLink>
           </nav>
-        </Box>
+        </Box> */}
       </NavigationWrap>
     )
   }

@@ -2,12 +2,20 @@ import React from 'react'
 import { withSiteData, Link } from 'react-static'
 import styled from 'styled-components'
 import { Flex, Box } from '@rebass/grid'
+import footerbg from 'assets/images/footerbg.svg'
 import Logo from '../components/logo'
 
 const Wrapper = styled.footer`
   background-color: var(--main-color-dark);
   color: white;
   padding: 3em 0;
+`
+
+const FooterCurve = styled.img`
+  display: block;
+  margin-bottom: -5px;
+  width: 100%;
+  height: auto;
 `
 
 const Inner = styled(Flex)`
@@ -29,6 +37,10 @@ const Inner = styled(Flex)`
   a:hover,
   a:focus {
     border-bottom: 1px solid var(--secondary-color);
+  }
+
+  @media (max-width: 32em) {
+    flex-direction: column;
   }
 `
 
@@ -67,51 +79,54 @@ const Footer = ({ title, menus }) => {
   const currentYear = new Date().getFullYear()
   const { main, follow, legal } = menus
   return (
-    <Wrapper>
-      <Inner pb={4}>
-        <Box px={3} width={[1, 1 / 5]}>
-          <Logo width="50" />
-          <p>
-            We create possibilities for the connected world. <strong>Be Bold.</strong>
-          </p>
-        </Box>
-        <Box px={3} width={[1, 1 / 5]}>
-          <FooterTitle>Explore</FooterTitle>
-          <FooterMenu menu={main} />
-        </Box>
-        <Box px={3} width={[1, 1 / 5]}>
-          <FooterTitle>Visit</FooterTitle>
-          <p>
-            Convendum Coworking Space
-            <br />
-            Regeringsgatan 48,
-            <br />
-            111 56 Stockholm
-          </p>
-          <FooterTitle>New business</FooterTitle>
-          <p>
-            <a href="mailto:engage@crip.io">engage@crip.io</a>
-            <br />
-            +4670-458 09 74
-          </p>
-        </Box>
-        <Box px={3} width={[1, 1 / 5]}>
-          <FooterTitle>Follow</FooterTitle>
-          <FooterMenu menu={follow} />
-        </Box>
-        <Box px={3} width={[1, 1 / 5]}>
-          <FooterTitle>Legal</FooterTitle>
-          <FooterMenu menu={legal} />
-        </Box>
-      </Inner>
-      <Inner px={3}>
-        <Box>
-          <Copyright>
-            © {currentYear} {title}. All Rights Reserved.
-          </Copyright>
-        </Box>
-      </Inner>
-    </Wrapper>
+    <React.Fragment>
+      <FooterCurve src={footerbg} role="img" />
+      <Wrapper>
+        <Inner pb={4}>
+          <Box px={3} width={[1, 1 / 5]} pb={[3, 0]}>
+            <Logo width="50" />
+            <p>
+              We create possibilities for the connected world. <strong>Be Bold.</strong>
+            </p>
+          </Box>
+          <Box px={3} width={[1, 1 / 5]} pb={[3, 0]}>
+            <FooterTitle>Explore</FooterTitle>
+            <FooterMenu menu={main} />
+          </Box>
+          <Box px={3} width={[1, 1 / 5]} pb={[3, 0]}>
+            <FooterTitle>Visit</FooterTitle>
+            <p>
+              Convendum Coworking Space
+              <br />
+              Regeringsgatan 48,
+              <br />
+              111 56 Stockholm
+            </p>
+            <FooterTitle>New business</FooterTitle>
+            <p>
+              <a href="mailto:engage@crip.io">engage@crip.io</a>
+              <br />
+              +4670-458 09 74
+            </p>
+          </Box>
+          <Box px={3} width={[1, 1 / 5]} pb={[3, 0]}>
+            <FooterTitle>Follow</FooterTitle>
+            <FooterMenu menu={follow} />
+          </Box>
+          <Box px={3} width={[1, 1 / 5]} pb={[3, 0]}>
+            <FooterTitle>Legal</FooterTitle>
+            <FooterMenu menu={legal} />
+          </Box>
+        </Inner>
+        <Inner px={3}>
+          <Box>
+            <Copyright>
+              © {currentYear} {title}. All Rights Reserved.
+            </Copyright>
+          </Box>
+        </Inner>
+      </Wrapper>
+    </React.Fragment>
   )
 }
 

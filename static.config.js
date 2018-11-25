@@ -139,7 +139,6 @@ export default {
         <Html>
           <Head>
             <meta charSet="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png" />
             <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png" />
             <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png" />
@@ -157,6 +156,7 @@ export default {
             <meta name="msapplication-TileColor" content="#3b007f" />
             <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png" />
             <meta name="theme-color" content="#3b007f" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link
               href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900"
               rel="stylesheet"
