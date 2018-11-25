@@ -4,6 +4,7 @@ import { hot } from 'react-hot-loader'
 
 import Routes from 'react-static-routes'
 import Footer from './partials/footer'
+import Cookies from './components/cookies'
 
 import './app.css'
 
@@ -15,6 +16,7 @@ const App = withSiteData(({ title, slogan }) => (
         <Routes />
       </div>
       <Footer />
+      <Cookies />
     </React.Fragment>
   </Router>
 ))
