@@ -208,11 +208,11 @@ class Home extends React.Component {
               <h2>Why we are here</h2>
               <Text>
                 Ok. First of all, welcome. We know you are busy so we'll get straight to the point.
-                You have found Crip in Tech.
+                You have discovered Crip in Tech.
               </Text>
               <Text>
                 Crip in Tech is the culmination of years spent working passionately within tech.
-                Over time, this passion blossomed into this consultant company that we hope will
+                Over time, this passion blossomed into this consultant agency that we hope will
                 touch nearly every corner of our lives and others.
               </Text>
             </Box>
@@ -228,15 +228,15 @@ class Home extends React.Component {
         <Section type="gradient">
           <Container>
             <Box width={[1, 1 / 2]} p={3}>
-              <h2>Two hearts, one beat.</h2>
+              <h2>Two hearts, one beat</h2>
               <Text>
                 We are two professional crips who imagine a world where people wake up every day
-                inspired to go to work and return home at the end of the day feeling fulfilled by
-                the work they do, feeling that they have contributed to something greater than
+                inspired to go to work. Return home at the end of the day feeling fulfilled by the
+                work they do, feeling that they have contributed to something greater than
                 themselves.
               </Text>
               <Text>
-                By harnessing the powers of disrupting culture, technology and incredible people, we
+                By harnessing the powers of disrupting culture, technology and incredible people; we
                 hack creative crips and make them shine.
               </Text>
               <Text>Bright like a diamond, that is.</Text>
@@ -276,13 +276,13 @@ class Home extends React.Component {
               <h2>Our ethos</h2>
               <h3>Be Different</h3>
 
-              <Text>We approach life & work with an unique perspective.</Text>
+              <Text>We approach life & work with a unique perspective.</Text>
 
               <h3>Be intellectually honest</h3>
 
               <Text>
-                Everyone, from our mentors to our CEO, is upfront with feedback, direct, honest, and
-                without ego.
+                Everyone is direct, honest, and without ego. From our mentors to our CEO, all are
+                upfront with feedback.
               </Text>
 
               <h3>Be meaningful</h3>
@@ -300,15 +300,15 @@ class Home extends React.Component {
             <Box width={[1, 1 / 2]} p={3}>
               <h2>Our igniters</h2>
               <Text>
-                Over the years we’ve met some amazing people who embraced our ideas and
+                Over the years we’ve met some amazing people who have embraced our ideas and
                 philosophies. We call them Igniters because they were using those ideas to ignite
-                positive change in their and other organizations. We were so impressed with their
+                positive change in their and other's organizations. We are in awe of their impactful
                 work. Today, they work with us, arm-in-arm, to inspire people and advance our
                 vision.
               </Text>
               <Text>
-                Fredrik and Christofer are two unshakable optimists who believes in a bright future
-                and our ability to build it together. We are all marching toward the same vision,
+                Fredrik and Christofer are two unshakable optimists who believe in a bright future
+                and our ability to build it together. We are all marching toward the same vision;
                 together we can have greater impact than any of us could have alone.
               </Text>
             </Box>
@@ -340,14 +340,14 @@ class Home extends React.Component {
           <Container p={3}>
             <Engage theme="light" width={[1, 1 / 2]} py={[5, '10%']} px={[3, 5]}>
               <h2>For Crips</h2>
-              <p className="subtitle">Let us launch your career in tech</p>
+              <p className="subtitle">Let us launch your career in tech.</p>
               <Text>
-                The Nordic tech industry needs you. We are currently missing 30 000 technology
+                The Nordic tech industry needs you. We are currently missing 30 000 tech
                 professionals in Sweden and that number is growing fast.
               </Text>
               <Text>
-                We are investing in you, knowing that you will be a successful software developer or
-                QA consultant within our hiring ecosystem.
+                We know that you will become the next big software developer or QA consultant within
+                our hiring ecosystem. That is why we are investing in you.
               </Text>
               <Btn href="mailto:info@crip.io" theme="light">
                 Join us now
@@ -357,14 +357,14 @@ class Home extends React.Component {
               <h2>For Partners</h2>
               <p className="subtitle">We are stronger together.</p>
               <Text>
-                Diversity is everything about us that makes us who we are. We seek to celebrate our
-                diverse identities. Diversity is where we acknowledge that our different backgrounds
-                bring unique perspectives to our work.
+                Diversity is what makes us who we are. We seek to celebrate our diverse identities.
+                Diversity is where we acknowledge that our different backgrounds bring unique
+                perspectives to our work.
               </Text>
               <Text>
-                Let's develop a predicable and stable recruitment pipeline of software developers
-                and QA's to your company by bringing in diverse and technical talents to your
-                company directly from Crip in Tech.
+                Let's develop a reliable and stable recruitment pipeline of software developers and
+                QA:s to your company by bringing in diverse and technical talents to your company.
+                Pipin' hot, directly from Crip in Tech.
               </Text>
               <Btn href="mailto:engage@crip.io">Become our partner</Btn>
             </Engage>
