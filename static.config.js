@@ -205,6 +205,19 @@ export default {
             <meta name="msapplication-TileColor" content="#3b007f" />
             <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png" />
             <meta name="theme-color" content="#3b007f" />
+            <meta property="og:title" content="Crip in Tech" />
+            <meta
+              property="og:description"
+              content="We are set to make a difference in the tech industry"
+            />
+            <meta property="og:image" content="/assets/favicon/android-icon-192x192.png" />
+            <meta property="og:url" content="https://crip.io" />
+            <meta property="og:site_name" content="Crip in Tech" />
+            <meta
+              name="twitter:image:alt"
+              content="We are set to make a difference in the tech industry"
+            />
+            <meta name="twitter:site" content="@cripintech" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link
               href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900"

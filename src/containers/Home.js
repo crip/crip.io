@@ -169,6 +169,7 @@ const Btn = styled.a`
   font-size: 1.4em;
   text-decoration: none;
   font-weight: 600;
+  cursor: pointer;
 
   @media (max-width: 32em) {
     font-size: 1em;
