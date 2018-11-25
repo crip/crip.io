@@ -1,8 +1,9 @@
 import React from 'react'
+import { Flex } from '@rebass/grid'
 import wavesLarge from 'assets/images/waves.svg'
 import styled from 'styled-components'
 
-const HeaderWrapper = styled.header`
+const HeaderWrapper = styled.div`
   position: relative;
   overflow: hidden;
 `
@@ -10,12 +11,12 @@ const HeaderWrapper = styled.header`
 const Header = styled.div`
   background-color: var(--main-color-dark);
   color: white;
+  padding-top: 80px;
 `
 
-const Inner = styled.div`
+const Inner = styled(Flex)`
   max-width: var(--main-width);
   margin: 0 auto;
-  padding: 50px 0;
 `
 
 const HeaderWavesLarge = styled.img`
@@ -28,10 +29,20 @@ const HeaderWavesLarge = styled.img`
 const HeroHeader = ({ children }) => (
   <HeaderWrapper>
     <Header>
-      <Inner>{children}</Inner>
+      <Inner alignItems="baseline">{children}</Inner>
     </Header>
     <HeaderWavesLarge src={wavesLarge} />
   </HeaderWrapper>
 )
 
-export { HeroHeader }
+const SmallHeader = ({ children }) => (
+  <HeaderWrapper>
+    <Header>
+      <Inner alignItems="center" justifyContent="center">
+        {children}
+      </Inner>
+    </Header>
+  </HeaderWrapper>
+)
+
+export { HeroHeader, SmallHeader }

@@ -16,9 +16,71 @@ export default {
   getSiteData: () => ({
     title: 'Crip in Tech',
     slogan: 'We are set to make a difference in the tech industry',
+    menus: {
+      main: [
+        {
+          path: '/',
+          name: 'Home',
+        },
+        {
+          path: 'https://podcast.crip.io',
+          name: 'Podcast',
+        },
+        // {
+        //   path: '/about',
+        //   name: 'About us',
+        // },
+        // {
+        //   path: '/for-crips',
+        //   name: 'For Crips',
+        // },
+        // {
+        //   path: '/for-partners',
+        //   name: 'For Partners',
+        // },
+        // {
+        //   path: '/contact',
+        //   name: 'Contact',
+        // },
+      ],
+      legal: [
+        {
+          path: '/cookies',
+          name: 'Cookies',
+        },
+        {
+          path: '/privacy',
+          name: 'Privacy policy',
+        },
+      ],
+      follow: [
+        {
+          path: 'https://www.linkedin.com/company/cripintech/',
+          name: 'Linkedin',
+        },
+        {
+          path: 'https://facebook.com/cripintech/',
+          name: 'Facebook',
+        },
+        {
+          path: 'https://instagram.com/cripintech/',
+          name: 'Instagram',
+        },
+        {
+          path: 'https://twitter.com/cripintech/',
+          name: 'Twitter',
+        },
+        {
+          path: 'https://github.com/crip/',
+          name: 'Github',
+        },
+      ],
+    },
   }),
   getRoutes: async () => {
-    const { posts, home, about } = await jdown('content')
+    const {
+      home, about, cookies, privacyPolicy,
+    } = await jdown('content')
     return [
       {
         path: '/',
@@ -35,18 +97,18 @@ export default {
         }),
       },
       {
-        path: '/blog',
-        component: 'src/containers/Blog',
+        path: '/privacy',
+        component: 'src/containers/Page',
         getData: () => ({
-          posts,
+          page: privacyPolicy,
         }),
-        children: posts.map(post => ({
-          path: `/post/${post.slug}`,
-          component: 'src/containers/Post',
-          getData: () => ({
-            post,
-          }),
-        })),
+      },
+      {
+        path: '/cookies',
+        component: 'src/containers/Page',
+        getData: () => ({
+          page: cookies,
+        }),
       },
       {
         is404: true,
@@ -70,6 +132,92 @@ export default {
         <Html>
           <Head>
             <meta charSet="UTF-8" />
+            <link
+              rel="apple-touch-icon"
+              sizes="57x57"
+              href="/assets/favicon/apple-icon-57x57.png"
+            />
+            <link
+              rel="apple-touch-icon"
+              sizes="60x60"
+              href="/assets/favicon/apple-icon-60x60.png"
+            />
+            <link
+              rel="apple-touch-icon"
+              sizes="72x72"
+              href="/assets/favicon/apple-icon-72x72.png"
+            />
+            <link
+              rel="apple-touch-icon"
+              sizes="76x76"
+              href="/assets/favicon/apple-icon-76x76.png"
+            />
+            <link
+              rel="apple-touch-icon"
+              sizes="114x114"
+              href="/assets/favicon/apple-icon-114x114.png"
+            />
+            <link
+              rel="apple-touch-icon"
+              sizes="120x120"
+              href="/assets/favicon/apple-icon-120x120.png"
+            />
+            <link
+              rel="apple-touch-icon"
+              sizes="144x144"
+              href="/assets/favicon/apple-icon-144x144.png"
+            />
+            <link
+              rel="apple-touch-icon"
+              sizes="152x152"
+              href="/assets/favicon/apple-icon-152x152.png"
+            />
+            <link
+              rel="apple-touch-icon"
+              sizes="180x180"
+              href="/assets/favicon/apple-icon-180x180.png"
+            />
+            <link
+              rel="icon"
+              type="image/png"
+              sizes="192x192"
+              href="/assets/favicon/android-icon-192x192.png"
+            />
+            <link
+              rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="/assets/favicon/favicon-32x32.png"
+            />
+            <link
+              rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="/assets/favicon/favicon-96x96.png"
+            />
+            <link
+              rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="/assets/favicon/favicon-16x16.png"
+            />
+            <link rel="manifest" href="/manifest.json" />
+            <meta name="msapplication-TileColor" content="#3b007f" />
+            <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png" />
+            <meta name="theme-color" content="#3b007f" />
+            <meta property="og:title" content="Crip in Tech" />
+            <meta
+              property="og:description"
+              content="We are set to make a difference in the tech industry"
+            />
+            <meta property="og:image" content="/assets/favicon/android-icon-192x192.png" />
+            <meta property="og:url" content="https://crip.io" />
+            <meta property="og:site_name" content="Crip in Tech" />
+            <meta
+              name="twitter:image:alt"
+              content="We are set to make a difference in the tech industry"
+            />
+            <meta name="twitter:site" content="@cripintech" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link
               href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900"

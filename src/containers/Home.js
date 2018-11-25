@@ -1,34 +1,51 @@
 import React from 'react'
-import { withRouteData } from 'react-static'
+import { withRouteData, scrollTo } from 'react-static'
+import { Flex, Box } from '@rebass/grid'
 import styled from 'styled-components'
+import convert from 'htmr'
 import { Image, Transformation } from 'cloudinary-react'
 import celebrate from 'assets/images/celebrate.svg'
+import cripcommunity from 'assets/images/cripcommunity.svg'
 import { HeroHeader } from '../components/header'
 import Navigation from '../components/navigation'
 //
 
-const HeroContent = styled.div`
+const HeroContent = styled(Box)`
   position: relative;
-  padding-top: 80px;
-  margin-bottom: -100px;
   z-index: 5;
-
-  span {
-    font-size: 2em;
-  }
 
   h1 {
     letter-spacing: 1px;
     font-size: 4em;
     margin-bottom: 2rem;
-    max-width: 800px;
     color: white;
   }
 
   p {
-    max-width: 750px;
     font-size: 1.4em;
     line-height: 1.5;
+  }
+
+  @media (max-width: 32em) {
+    h1 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.1em;
+    }
+  }
+`
+
+const HeroImage = styled(Flex)`
+  @media (max-width: 32em) {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
   }
 `
 
@@ -38,25 +55,19 @@ const Section = styled.section`
   background-image: ${props => (props.type === 'gradient' ? grad : '')};
   text-align: ${props => props.textAlign || 'center'};
   padding: 6em 0;
+
+  @media (max-width: 32em) {
+    padding: 2em 0;
+  }
 `
 
-const Inner = styled.div`
+const Container = styled(Flex)`
   max-width: var(--main-width);
   margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
   text-align: ${props => props.textAlign || 'left'};
-`
 
-const Double = styled(Section)`
-  display: flex;
-  flex-wrap: column;
-  padding: 0;
-  margin: 0;
-
-  div {
-    width: 50%;
-    margin: 0;
+  @media (max-width: 32em) {
+    flex-direction: column;
   }
 `
 
@@ -67,122 +78,297 @@ const Text = styled.p`
   font-size: 1.4em;
   margin-bottom: 1em;
   color: #444;
+
+  @media (max-width: 32em) {
+    font-size: 1em;
+  }
 `
 
 const Img = styled(Image)`
-  margin: 4em 0;
   max-width: 100%;
   height: auto;
   display: block;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 `
 
-const ProfileImg = styled(Img)`
-  border-radius: 100%;
-  display: inline-block;
-  margin: 0 1em;
+const Poly = styled.div`
+  clip-path: polygon(-15% 100%, 100% 85%, 100% 0, 0 15%);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+  &:last-of-type {
+    margin-top: -36%;
+    left: 34%;
+    position: relative;
+    overflow: hidden;
+    width: auto;
+  }
+
+  @media (max-width: 32em) {
+    width: 90%;
+    &:last-of-type {
+      width: 90%;
+      margin-top: -50%;
+      left: 10%;
+    }
+  }
 `
 
-class Home extends React.PureComponent {
+const ProfileImg = styled(Image)``
+
+const Engage = styled(Box)`
+  background-color: var(
+    ${props => (props.theme === 'light' ? '--secondary-color' : '--main-color')}
+  );
+  color: var(${props => (props.theme === 'light' ? '--main-color-dark' : '--light-color')});
+  clip-path: polygon(0 100%, 100% 90%, 100% 0, 0 10%);
+  position: relative;
+
+  h2 {
+    color: inherit;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    font-size: 3em;
+  }
+
+  .subtitle {
+    color: var(${props => (props.theme === 'light' ? '--main-color' : '--secondary-color')});
+    margin: 0;
+    font-size: 1.7em;
+    font-weight: 600;
+    margin-bottom: 1.5em;
+  }
+
+  ${Text} {
+    color: var(${props => (props.theme === 'light' ? '--main-color-dark' : '--light-color')});
+  }
+
+  @media (max-width: 32em) {
+    clip-path: polygon(0 100%, 100% 95%, 100% 0, 0 5%);
+
+    h2 {
+      font-size: 2em;
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+    }
+  }
+`
+
+const Btn = styled.a`
+  display: inline-block;
+  background-color: var(
+    ${props => (props.theme === 'light' ? '--main-color' : '--secondary-color')}
+  );
+  color: var(${props => (props.theme === 'light' ? '--light-color' : '--main-color-dark')});
+  line-height: 2.5;
+  padding: 0 1.2em;
+  border-radius: 4em;
+  font-size: 1.4em;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+
+  @media (max-width: 32em) {
+    font-size: 1em;
+  }
+`
+
+class Home extends React.Component {
+  async goToContent () {
+    const content = document.querySelector('#content')
+    if (content) {
+      await scrollTo(content, {
+        duration: 500,
+      })
+    }
+  }
+
   render () {
+    const { header } = this.props
     return (
       <div>
         <Navigation />
         <HeroHeader>
-          <HeroContent>
-            <h1>We are set to make a difference in the tech industry</h1>
-            <p>
-              Technology is changing how people interact. How products and services are imagined,
-              created and delivered. It is transforming and reshaping businesses, economies and life
-              itself. Allowing us to connect people with businesses in a innovative and
-              groundbreaking way.
-            </p>
-          </HeroContent>
+          <Flex>
+            <HeroContent width={[1, 1, 2 / 3, 1 / 2]} p={3}>
+              {convert(header.contents)}
+              <Btn onClick={async () => this.goToContent()}>Tell me more</Btn>
+            </HeroContent>
+            <HeroImage width={[1, 1, 2 / 3, 1 / 2]} p={3} justifyContent="center">
+              <img src={cripcommunity} alt="" />
+            </HeroImage>
+          </Flex>
         </HeroHeader>
-        <Section>
-          <Inner textAlign="center">
-            <h2>Why we're here</h2>
-            <Text maxWidth="1000px">
-              Ok. First of all, welcome. We know you are busy so we'll get straight to the point.
-              You have found Crip in Tech.
-            </Text>
-            <Text maxWidth="1000px">
-              Crip in Tech is the culmination of years spent working passionately within tech. Over
-              time, this passion blossomed into this consultant company that we hope will touch
-              nearly every corner of our lives and others.{' '}
-            </Text>
-            <Img cloudName="crip" publicId="Company/People/Crips/one-strong-crew.jpg" />
-          </Inner>
+        <Section id="content">
+          <Flex>
+            <Box width={[1, 1 / 2]} ml={[0, '25%']} px={[3, 0]}>
+              <h2>Why we are here</h2>
+              <Text>
+                Ok. First of all, welcome. We know you are busy so we'll get straight to the point.
+                You have found Crip in Tech.
+              </Text>
+              <Text>
+                Crip in Tech is the culmination of years spent working passionately within tech.
+                Over time, this passion blossomed into this consultant company that we hope will
+                touch nearly every corner of our lives and others.
+              </Text>
+            </Box>
+          </Flex>
+          <Box width={1} my={[0, 2]} px={3}>
+            <Img
+              cloudName="crip"
+              publicId="Company/People/Crips/one-strong-crew.jpg"
+              secureDistribution
+            />
+          </Box>
         </Section>
         <Section type="gradient">
-          <Inner>
-            <Double textAlign="left">
-              <Inner maxWidth="20%">
-                <h2>Two hearts, one beat.</h2>
-                <Text>
-                  We are two professional crips who imagine a world where people wake up every day
-                  inspired to go to work and return home at the end of the day feeling fulfilled by
-                  the work they do, feeling that they have contributed to something greater than
-                  themselves.
-                </Text>
-                <Text>
-                  By harnessing the powers of disrupting culture, technology and incredible people,
-                  we hack creative crips and make them shine.
-                </Text>
-                <Text>Bright like a diamond, that is.</Text>
+          <Container>
+            <Box width={[1, 1 / 2]} p={3}>
+              <h2>Two hearts, one beat.</h2>
+              <Text>
+                We are two professional crips who imagine a world where people wake up every day
+                inspired to go to work and return home at the end of the day feeling fulfilled by
+                the work they do, feeling that they have contributed to something greater than
+                themselves.
+              </Text>
+              <Text>
+                By harnessing the powers of disrupting culture, technology and incredible people, we
+                hack creative crips and make them shine.
+              </Text>
+              <Text>Bright like a diamond, that is.</Text>
 
-                <Text>
-                  It’ll be our business to do pleasure with you. Or, you know what we mean.
-                </Text>
-              </Inner>
-              <Inner textAlign="center">
+              <Text>It’ll be our business to do pleasure with you. Or, you know what we mean.</Text>
+            </Box>
+            <Box width={[1, 1 / 2]} p={3} style={{ overflow: 'hidden' }}>
+              <Poly>
                 <ProfileImg
                   cloudName="crip"
-                  publicId="Company/People/Management/Viktor_Johansson.jpg"
+                  publicId="Company/People/Management/viktor.jpg"
+                  secureDistribution
                   alt="Viktor Johansson"
                 >
-                  <Transformation width="250" crop="scale" />
+                  <Transformation width="400" crop="scale" />
                 </ProfileImg>
+              </Poly>
+              <Poly>
                 <ProfileImg
                   cloudName="crip"
-                  publicId="Company/People/Management/Johnie_Hjelm.jpg"
+                  publicId="Company/People/Management/johnie.jpg"
+                  secureDistribution
                   alt="Johnie Hjelm"
                 >
-                  <Transformation width="250" crop="scale" />
+                  <Transformation width="400" crop="scale" />
                 </ProfileImg>
-              </Inner>
-            </Double>
-          </Inner>
+              </Poly>
+            </Box>
+          </Container>
         </Section>
         <Section>
-          <Inner>
-            <Double>
-              <Inner>
-                <img src={celebrate} alt="Celebrate" />
-              </Inner>
-              <Inner style={{ paddingLeft: '2em' }}>
-                <h2>Our ethos</h2>
-                <h3>Be Different</h3>
+          <Container>
+            <Box width={[1, 1 / 2]} px={3}>
+              <img src={celebrate} alt="Celebrate" />
+            </Box>
+            <Box width={[1, 1 / 2]} px={3}>
+              <h2>Our ethos</h2>
+              <h3>Be Different</h3>
 
-                <Text>We approach life & work with an unique perspective.</Text>
+              <Text>We approach life & work with an unique perspective.</Text>
 
-                <h3>Be intellectually honest</h3>
+              <h3>Be intellectually honest</h3>
 
-                <Text>
-                  Everyone, from our mentors to our CEO, is upfront with feedback, direct, honest,
-                  and without ego.
-                </Text>
+              <Text>
+                Everyone, from our mentors to our CEO, is upfront with feedback, direct, honest, and
+                without ego.
+              </Text>
 
-                <h3>Be meaningful</h3>
+              <h3>Be meaningful</h3>
 
-                <Text>We strive to create lasting value in everything we do.</Text>
+              <Text>We strive to create lasting value in everything we do.</Text>
 
-                <h3>Be passionate</h3>
+              <h3>Be passionate</h3>
 
-                <Text>We take a stand for what we believe is right.</Text>
-              </Inner>
-            </Double>
-          </Inner>
+              <Text>We take a stand for what we believe is right.</Text>
+            </Box>
+          </Container>
+        </Section>
+        <Section type="gradient">
+          <Container>
+            <Box width={[1, 1 / 2]} p={3}>
+              <h2>Our igniters</h2>
+              <Text>
+                Over the years we’ve met some amazing people who embraced our ideas and
+                philosophies. We call them Igniters because they were using those ideas to ignite
+                positive change in their and other organizations. We were so impressed with their
+                work. Today, they work with us, arm-in-arm, to inspire people and advance our
+                vision.
+              </Text>
+              <Text>
+                Fredrik and Christofer are two unshakable optimists who believes in a bright future
+                and our ability to build it together. We are all marching toward the same vision,
+                together we can have greater impact than any of us could have alone.
+              </Text>
+            </Box>
+            <Box width={[1, 1 / 2]} p={3} style={{ overflow: 'hidden' }}>
+              <Poly>
+                <ProfileImg
+                  cloudName="crip"
+                  publicId="Company/People/Management/coffe.jpg"
+                  secureDistribution
+                  alt="Viktor Johansson"
+                >
+                  <Transformation width="400" crop="scale" />
+                </ProfileImg>
+              </Poly>
+              <Poly>
+                <ProfileImg
+                  cloudName="crip"
+                  publicId="Company/People/Management/fredrik.jpg"
+                  secureDistribution
+                  alt="Johnie Hjelm"
+                >
+                  <Transformation width="400" crop="scale" />
+                </ProfileImg>
+              </Poly>
+            </Box>
+          </Container>
+        </Section>
+        <Section>
+          <Container p={3}>
+            <Engage theme="light" width={[1, 1 / 2]} py={[5, '10%']} px={[3, 5]}>
+              <h2>For Crips</h2>
+              <p className="subtitle">Let us launch your career in tech</p>
+              <Text>
+                The Nordic tech industry needs you. We are currently missing 30 000 technology
+                professionals in Sweden and that number is growing fast.
+              </Text>
+              <Text>
+                We are investing in you, knowing that you will be a successful software developer or
+                QA consultant within our hiring ecosystem.
+              </Text>
+              <Btn href="mailto:info@crip.io" theme="light">
+                Join us now
+              </Btn>
+            </Engage>
+            <Engage width={[1, 1 / 2]} py={[5, '10%']} px={[3, 5]}>
+              <h2>For Partners</h2>
+              <p className="subtitle">We are stronger together.</p>
+              <Text>
+                Diversity is everything about us that makes us who we are. We seek to celebrate our
+                diverse identities. Diversity is where we acknowledge that our different backgrounds
+                bring unique perspectives to our work.
+              </Text>
+              <Text>
+                Let's develop a predicable and stable recruitment pipeline of software developers
+                and QA's to your company by bringing in diverse and technical talents to your
+                company directly from Crip in Tech.
+              </Text>
+              <Btn href="mailto:engage@crip.io">Become our partner</Btn>
+            </Engage>
+          </Container>
         </Section>
       </div>
     )
