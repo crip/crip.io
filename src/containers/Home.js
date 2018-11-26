@@ -16,14 +16,15 @@ const HeroContent = styled(Box)`
 
   h1 {
     letter-spacing: 1px;
-    font-size: 4em;
+    font-size: 3.5em;
     margin-bottom: 2rem;
     color: white;
   }
 
   p {
-    font-size: 1.4em;
-    line-height: 1.5;
+    font-size: 1.2em;
+    line-height: 1.56;
+    margin-bottom: 2em;
   }
 
   @media (max-width: 32em) {
@@ -75,7 +76,7 @@ const Text = styled.p`
   max-width: ${props => props.maxWidth || '100%'};
   margin: 0 auto;
   line-height: 1.68;
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin-bottom: 1em;
   color: #444;
 
@@ -127,16 +128,16 @@ const Engage = styled(Box)`
 
   h2 {
     color: inherit;
-    font-family: 'Playfair Display', serif;
     margin: 0;
     font-size: 3em;
+    font-weight: bold;
   }
 
   .subtitle {
     color: var(${props => (props.theme === 'light' ? '--main-color' : '--secondary-color')});
     margin: 0;
     font-size: 1.7em;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 1.5em;
   }
 
@@ -166,10 +167,33 @@ const Btn = styled.a`
   line-height: 2.5;
   padding: 0 1.2em;
   border-radius: 4em;
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-decoration: none;
   font-weight: 600;
   cursor: pointer;
+
+  .icon {
+    margin-left: 0.5em;
+    font-size: 0.9em;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: var(${props => (props.theme === 'light' ? '--light-color' : '--main-color-dark')});
+
+    .icon-plus {
+      transform: rotate(90deg);
+    }
+
+    .icon-arrow-right {
+      margin-left: 1em;
+    }
+  }
 
   @media (max-width: 32em) {
     font-size: 1em;
@@ -195,7 +219,9 @@ class Home extends React.Component {
           <Flex>
             <HeroContent width={[1, 1, 2 / 3, 1 / 2]} p={3}>
               {convert(header.contents)}
-              <Btn onClick={async () => this.goToContent()}>Tell me more</Btn>
+              <Btn onClick={async () => this.goToContent()}>
+                Join the ride <i className="icon icon-plus" />
+              </Btn>
             </HeroContent>
             <HeroImage width={[1, 1, 2 / 3, 1 / 2]} p={3} justifyContent="center">
               <img src={cripcommunity} alt="" />
@@ -208,11 +234,11 @@ class Home extends React.Component {
               <h2>Why we are here</h2>
               <Text>
                 Ok. First of all, welcome. We know you are busy so we'll get straight to the point.
-                You have found Crip in Tech.
+                You have discovered Crip in Tech.
               </Text>
               <Text>
                 Crip in Tech is the culmination of years spent working passionately within tech.
-                Over time, this passion blossomed into this consultant company that we hope will
+                Over time, this passion blossomed into this consultant agency that we hope will
                 touch nearly every corner of our lives and others.
               </Text>
             </Box>
@@ -228,15 +254,15 @@ class Home extends React.Component {
         <Section type="gradient">
           <Container>
             <Box width={[1, 1 / 2]} p={3}>
-              <h2>Two hearts, one beat.</h2>
+              <h2>Two hearts, one beat</h2>
               <Text>
                 We are two professional crips who imagine a world where people wake up every day
-                inspired to go to work and return home at the end of the day feeling fulfilled by
-                the work they do, feeling that they have contributed to something greater than
+                inspired to go to work. Return home at the end of the day feeling fulfilled by the
+                work they do, feeling that they have contributed to something greater than
                 themselves.
               </Text>
               <Text>
-                By harnessing the powers of disrupting culture, technology and incredible people, we
+                By harnessing the powers of disrupting culture, technology and incredible people; we
                 hack creative crips and make them shine.
               </Text>
               <Text>Bright like a diamond, that is.</Text>
@@ -276,13 +302,13 @@ class Home extends React.Component {
               <h2>Our ethos</h2>
               <h3>Be Different</h3>
 
-              <Text>We approach life & work with an unique perspective.</Text>
+              <Text>We approach life & work with a unique perspective.</Text>
 
               <h3>Be intellectually honest</h3>
 
               <Text>
-                Everyone, from our mentors to our CEO, is upfront with feedback, direct, honest, and
-                without ego.
+                Everyone is direct, honest, and without ego. From our mentors to our CEO, all are
+                upfront with feedback.
               </Text>
 
               <h3>Be meaningful</h3>
@@ -300,15 +326,15 @@ class Home extends React.Component {
             <Box width={[1, 1 / 2]} p={3}>
               <h2>Our igniters</h2>
               <Text>
-                Over the years we’ve met some amazing people who embraced our ideas and
+                Over the years we’ve met some amazing people who have embraced our ideas and
                 philosophies. We call them Igniters because they were using those ideas to ignite
-                positive change in their and other organizations. We were so impressed with their
+                positive change in their and other's organizations. We are in awe of their impactful
                 work. Today, they work with us, arm-in-arm, to inspire people and advance our
                 vision.
               </Text>
               <Text>
-                Fredrik and Christofer are two unshakable optimists who believes in a bright future
-                and our ability to build it together. We are all marching toward the same vision,
+                Fredrik and Christofer are two unshakable optimists who believe in a bright future
+                and our ability to build it together. We are all marching toward the same vision;
                 together we can have greater impact than any of us could have alone.
               </Text>
             </Box>
@@ -340,33 +366,35 @@ class Home extends React.Component {
           <Container p={3}>
             <Engage theme="light" width={[1, 1 / 2]} py={[5, '10%']} px={[3, 5]}>
               <h2>For Crips</h2>
-              <p className="subtitle">Let us launch your career in tech</p>
+              <p className="subtitle">Let us launch your career in tech.</p>
               <Text>
-                The Nordic tech industry needs you. We are currently missing 30 000 technology
+                The Nordic tech industry needs you. We are currently missing 30 000 tech
                 professionals in Sweden and that number is growing fast.
               </Text>
               <Text>
-                We are investing in you, knowing that you will be a successful software developer or
-                QA consultant within our hiring ecosystem.
+                We know that you will become the next big software developer or QA consultant within
+                our hiring ecosystem. That is why we are investing in you.
               </Text>
               <Btn href="mailto:info@crip.io" theme="light">
-                Join us now
+                Join us now <i className="icon icon-arrow-right" />
               </Btn>
             </Engage>
             <Engage width={[1, 1 / 2]} py={[5, '10%']} px={[3, 5]}>
               <h2>For Partners</h2>
               <p className="subtitle">We are stronger together.</p>
               <Text>
-                Diversity is everything about us that makes us who we are. We seek to celebrate our
-                diverse identities. Diversity is where we acknowledge that our different backgrounds
-                bring unique perspectives to our work.
+                Diversity is what makes us who we are. We seek to celebrate our diverse identities.
+                Diversity is where we acknowledge that our different backgrounds bring unique
+                perspectives to our work.
               </Text>
               <Text>
-                Let's develop a predicable and stable recruitment pipeline of software developers
-                and QA's to your company by bringing in diverse and technical talents to your
-                company directly from Crip in Tech.
+                Let us show you how we can bring a new generation of software developers and QA's to
+                your company by connecting diverse and technical talents to your teams. Pipin' hot,
+                directly from Crip in Tech.
               </Text>
-              <Btn href="mailto:engage@crip.io">Become our partner</Btn>
+              <Btn href="mailto:engage@crip.io">
+                Become our partner <i className="icon icon-arrow-right" />
+              </Btn>
             </Engage>
           </Container>
         </Section>

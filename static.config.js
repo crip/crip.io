@@ -219,10 +219,6 @@ export default {
             />
             <meta name="twitter:site" content="@cripintech" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link
-              href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900"
-              rel="stylesheet"
-            />
             {renderMeta.styleTags}
             <script async src="https://www.google-analytics.com/analytics.js" />
             <script async src="/assets/js/autotrack.custom.js" />
