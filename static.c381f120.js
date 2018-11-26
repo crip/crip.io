@@ -271,16 +271,16 @@ var _regenerator2 = _interopRequireDefault(_regenerator);
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _templateObject = _taggedTemplateLiteral(['\n  position: relative;\n  z-index: 5;\n\n  h1 {\n    letter-spacing: 1px;\n    font-size: 4em;\n    margin-bottom: 2rem;\n    color: white;\n  }\n\n  p {\n    font-size: 1.4em;\n    line-height: 1.5;\n  }\n\n  @media (max-width: 32em) {\n    h1 {\n      font-size: 2em;\n    }\n\n    p {\n      font-size: 1.1em;\n    }\n  }\n'], ['\n  position: relative;\n  z-index: 5;\n\n  h1 {\n    letter-spacing: 1px;\n    font-size: 4em;\n    margin-bottom: 2rem;\n    color: white;\n  }\n\n  p {\n    font-size: 1.4em;\n    line-height: 1.5;\n  }\n\n  @media (max-width: 32em) {\n    h1 {\n      font-size: 2em;\n    }\n\n    p {\n      font-size: 1.1em;\n    }\n  }\n']),
+var _templateObject = _taggedTemplateLiteral(['\n  position: relative;\n  z-index: 5;\n\n  h1 {\n    letter-spacing: 1px;\n    font-size: 3.5em;\n    margin-bottom: 2rem;\n    color: white;\n  }\n\n  p {\n    font-size: 1.2em;\n    line-height: 1.56;\n    margin-bottom: 2em;\n  }\n\n  @media (max-width: 32em) {\n    h1 {\n      font-size: 2em;\n    }\n\n    p {\n      font-size: 1.1em;\n    }\n  }\n'], ['\n  position: relative;\n  z-index: 5;\n\n  h1 {\n    letter-spacing: 1px;\n    font-size: 3.5em;\n    margin-bottom: 2rem;\n    color: white;\n  }\n\n  p {\n    font-size: 1.2em;\n    line-height: 1.56;\n    margin-bottom: 2em;\n  }\n\n  @media (max-width: 32em) {\n    h1 {\n      font-size: 2em;\n    }\n\n    p {\n      font-size: 1.1em;\n    }\n  }\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n  @media (max-width: 32em) {\n    display: none;\n  }\n\n  img {\n    width: 100%;\n    max-width: 350px;\n    height: auto;\n  }\n'], ['\n  @media (max-width: 32em) {\n    display: none;\n  }\n\n  img {\n    width: 100%;\n    max-width: 350px;\n    height: auto;\n  }\n']),
     _templateObject3 = _taggedTemplateLiteral(['\n  background-image: ', ';\n  text-align: ', ';\n  padding: 6em 0;\n\n  @media (max-width: 32em) {\n    padding: 2em 0;\n  }\n'], ['\n  background-image: ', ';\n  text-align: ', ';\n  padding: 6em 0;\n\n  @media (max-width: 32em) {\n    padding: 2em 0;\n  }\n']),
     _templateObject4 = _taggedTemplateLiteral(['\n  max-width: var(--main-width);\n  margin: 0 auto;\n  text-align: ', ';\n\n  @media (max-width: 32em) {\n    flex-direction: column;\n  }\n'], ['\n  max-width: var(--main-width);\n  margin: 0 auto;\n  text-align: ', ';\n\n  @media (max-width: 32em) {\n    flex-direction: column;\n  }\n']),
-    _templateObject5 = _taggedTemplateLiteral(['\n  max-width: ', ';\n  margin: 0 auto;\n  line-height: 1.68;\n  font-size: 1.4em;\n  margin-bottom: 1em;\n  color: #444;\n\n  @media (max-width: 32em) {\n    font-size: 1em;\n  }\n'], ['\n  max-width: ', ';\n  margin: 0 auto;\n  line-height: 1.68;\n  font-size: 1.4em;\n  margin-bottom: 1em;\n  color: #444;\n\n  @media (max-width: 32em) {\n    font-size: 1em;\n  }\n']),
+    _templateObject5 = _taggedTemplateLiteral(['\n  max-width: ', ';\n  margin: 0 auto;\n  line-height: 1.68;\n  font-size: 1.2em;\n  margin-bottom: 1em;\n  color: #444;\n\n  @media (max-width: 32em) {\n    font-size: 1em;\n  }\n'], ['\n  max-width: ', ';\n  margin: 0 auto;\n  line-height: 1.68;\n  font-size: 1.2em;\n  margin-bottom: 1em;\n  color: #444;\n\n  @media (max-width: 32em) {\n    font-size: 1em;\n  }\n']),
     _templateObject6 = _taggedTemplateLiteral(['\n  max-width: 100%;\n  height: auto;\n  display: block;\n  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);\n'], ['\n  max-width: 100%;\n  height: auto;\n  display: block;\n  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);\n']),
     _templateObject7 = _taggedTemplateLiteral(['\n  clip-path: polygon(-15% 100%, 100% 85%, 100% 0, 0 15%);\n  overflow: hidden;\n  position: relative;\n  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);\n\n  &:last-of-type {\n    margin-top: -36%;\n    left: 34%;\n    position: relative;\n    overflow: hidden;\n    width: auto;\n  }\n\n  @media (max-width: 32em) {\n    width: 90%;\n    &:last-of-type {\n      width: 90%;\n      margin-top: -50%;\n      left: 10%;\n    }\n  }\n'], ['\n  clip-path: polygon(-15% 100%, 100% 85%, 100% 0, 0 15%);\n  overflow: hidden;\n  position: relative;\n  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);\n\n  &:last-of-type {\n    margin-top: -36%;\n    left: 34%;\n    position: relative;\n    overflow: hidden;\n    width: auto;\n  }\n\n  @media (max-width: 32em) {\n    width: 90%;\n    &:last-of-type {\n      width: 90%;\n      margin-top: -50%;\n      left: 10%;\n    }\n  }\n']),
     _templateObject8 = _taggedTemplateLiteral([''], ['']),
-    _templateObject9 = _taggedTemplateLiteral(['\n  background-color: var(\n    ', '\n  );\n  color: var(', ');\n  clip-path: polygon(0 100%, 100% 90%, 100% 0, 0 10%);\n  position: relative;\n\n  h2 {\n    color: inherit;\n    font-family: \'Playfair Display\', serif;\n    margin: 0;\n    font-size: 3em;\n  }\n\n  .subtitle {\n    color: var(', ');\n    margin: 0;\n    font-size: 1.7em;\n    font-weight: 600;\n    margin-bottom: 1.5em;\n  }\n\n  ', ' {\n    color: var(', ');\n  }\n\n  @media (max-width: 32em) {\n    clip-path: polygon(0 100%, 100% 95%, 100% 0, 0 5%);\n\n    h2 {\n      font-size: 2em;\n    }\n\n    .subtitle {\n      font-size: 1.2em;\n    }\n  }\n'], ['\n  background-color: var(\n    ', '\n  );\n  color: var(', ');\n  clip-path: polygon(0 100%, 100% 90%, 100% 0, 0 10%);\n  position: relative;\n\n  h2 {\n    color: inherit;\n    font-family: \'Playfair Display\', serif;\n    margin: 0;\n    font-size: 3em;\n  }\n\n  .subtitle {\n    color: var(', ');\n    margin: 0;\n    font-size: 1.7em;\n    font-weight: 600;\n    margin-bottom: 1.5em;\n  }\n\n  ', ' {\n    color: var(', ');\n  }\n\n  @media (max-width: 32em) {\n    clip-path: polygon(0 100%, 100% 95%, 100% 0, 0 5%);\n\n    h2 {\n      font-size: 2em;\n    }\n\n    .subtitle {\n      font-size: 1.2em;\n    }\n  }\n']),
-    _templateObject10 = _taggedTemplateLiteral(['\n  display: inline-block;\n  background-color: var(\n    ', '\n  );\n  color: var(', ');\n  line-height: 2.5;\n  padding: 0 1.2em;\n  border-radius: 4em;\n  font-size: 1.4em;\n  text-decoration: none;\n  font-weight: 600;\n  cursor: pointer;\n\n  @media (max-width: 32em) {\n    font-size: 1em;\n  }\n'], ['\n  display: inline-block;\n  background-color: var(\n    ', '\n  );\n  color: var(', ');\n  line-height: 2.5;\n  padding: 0 1.2em;\n  border-radius: 4em;\n  font-size: 1.4em;\n  text-decoration: none;\n  font-weight: 600;\n  cursor: pointer;\n\n  @media (max-width: 32em) {\n    font-size: 1em;\n  }\n']);
+    _templateObject9 = _taggedTemplateLiteral(['\n  background-color: var(\n    ', '\n  );\n  color: var(', ');\n  clip-path: polygon(0 100%, 100% 90%, 100% 0, 0 10%);\n  position: relative;\n\n  h2 {\n    color: inherit;\n    margin: 0;\n    font-size: 3em;\n    font-weight: bold;\n  }\n\n  .subtitle {\n    color: var(', ');\n    margin: 0;\n    font-size: 1.7em;\n    font-weight: 400;\n    margin-bottom: 1.5em;\n  }\n\n  ', ' {\n    color: var(', ');\n  }\n\n  @media (max-width: 32em) {\n    clip-path: polygon(0 100%, 100% 95%, 100% 0, 0 5%);\n\n    h2 {\n      font-size: 2em;\n    }\n\n    .subtitle {\n      font-size: 1.2em;\n    }\n  }\n'], ['\n  background-color: var(\n    ', '\n  );\n  color: var(', ');\n  clip-path: polygon(0 100%, 100% 90%, 100% 0, 0 10%);\n  position: relative;\n\n  h2 {\n    color: inherit;\n    margin: 0;\n    font-size: 3em;\n    font-weight: bold;\n  }\n\n  .subtitle {\n    color: var(', ');\n    margin: 0;\n    font-size: 1.7em;\n    font-weight: 400;\n    margin-bottom: 1.5em;\n  }\n\n  ', ' {\n    color: var(', ');\n  }\n\n  @media (max-width: 32em) {\n    clip-path: polygon(0 100%, 100% 95%, 100% 0, 0 5%);\n\n    h2 {\n      font-size: 2em;\n    }\n\n    .subtitle {\n      font-size: 1.2em;\n    }\n  }\n']),
+    _templateObject10 = _taggedTemplateLiteral(['\n  display: inline-block;\n  background-color: var(\n    ', '\n  );\n  color: var(', ');\n  line-height: 2.5;\n  padding: 0 1.2em;\n  border-radius: 4em;\n  font-size: 1.2em;\n  text-decoration: none;\n  font-weight: 600;\n  cursor: pointer;\n\n  .icon {\n    margin-left: 0.5em;\n    font-size: 0.9em;\n    vertical-align: middle;\n    display: inline-block;\n    position: relative;\n    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;\n  }\n\n  &:hover,\n  &:focus {\n    text-decoration: none;\n    color: var(', ');\n\n    .icon-plus {\n      transform: rotate(90deg);\n    }\n\n    .icon-arrow-right {\n      margin-left: 1em;\n    }\n  }\n\n  @media (max-width: 32em) {\n    font-size: 1em;\n  }\n'], ['\n  display: inline-block;\n  background-color: var(\n    ', '\n  );\n  color: var(', ');\n  line-height: 2.5;\n  padding: 0 1.2em;\n  border-radius: 4em;\n  font-size: 1.2em;\n  text-decoration: none;\n  font-weight: 600;\n  cursor: pointer;\n\n  .icon {\n    margin-left: 0.5em;\n    font-size: 0.9em;\n    vertical-align: middle;\n    display: inline-block;\n    position: relative;\n    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;\n  }\n\n  &:hover,\n  &:focus {\n    text-decoration: none;\n    color: var(', ');\n\n    .icon-plus {\n      transform: rotate(90deg);\n    }\n\n    .icon-arrow-right {\n      margin-left: 1em;\n    }\n  }\n\n  @media (max-width: 32em) {\n    font-size: 1em;\n  }\n']);
 
 var _react = __webpack_require__(0);
 
@@ -368,6 +368,8 @@ var Btn = _styledComponents2.default.a(_templateObject10, function (props) {
   return props.theme === 'light' ? '--main-color' : '--secondary-color';
 }, function (props) {
   return props.theme === 'light' ? '--light-color' : '--main-color-dark';
+}, function (props) {
+  return props.theme === 'light' ? '--light-color' : '--main-color-dark';
 });
 
 var Home = function (_React$Component) {
@@ -451,7 +453,8 @@ var Home = function (_React$Component) {
                       }
                     }, _callee2, _this2);
                   })) },
-                'Tell me more'
+                'Join the ride ',
+                _react2.default.createElement('i', { className: 'icon icon-plus' })
               )
             ),
             _react2.default.createElement(
@@ -478,12 +481,12 @@ var Home = function (_React$Component) {
               _react2.default.createElement(
                 Text,
                 null,
-                'Ok. First of all, welcome. We know you are busy so we\'ll get straight to the point. You have found Crip in Tech.'
+                'Ok. First of all, welcome. We know you are busy so we\'ll get straight to the point. You have discovered Crip in Tech.'
               ),
               _react2.default.createElement(
                 Text,
                 null,
-                'Crip in Tech is the culmination of years spent working passionately within tech. Over time, this passion blossomed into this consultant company that we hope will touch nearly every corner of our lives and others.'
+                'Crip in Tech is the culmination of years spent working passionately within tech. Over time, this passion blossomed into this consultant agency that we hope will touch nearly every corner of our lives and others.'
               )
             )
           ),
@@ -509,17 +512,17 @@ var Home = function (_React$Component) {
               _react2.default.createElement(
                 'h2',
                 null,
-                'Two hearts, one beat.'
+                'Two hearts, one beat'
               ),
               _react2.default.createElement(
                 Text,
                 null,
-                'We are two professional crips who imagine a world where people wake up every day inspired to go to work and return home at the end of the day feeling fulfilled by the work they do, feeling that they have contributed to something greater than themselves.'
+                'We are two professional crips who imagine a world where people wake up every day inspired to go to work. Return home at the end of the day feeling fulfilled by the work they do, feeling that they have contributed to something greater than themselves.'
               ),
               _react2.default.createElement(
                 Text,
                 null,
-                'By harnessing the powers of disrupting culture, technology and incredible people, we hack creative crips and make them shine.'
+                'By harnessing the powers of disrupting culture, technology and incredible people; we hack creative crips and make them shine.'
               ),
               _react2.default.createElement(
                 Text,
@@ -593,7 +596,7 @@ var Home = function (_React$Component) {
               _react2.default.createElement(
                 Text,
                 null,
-                'We approach life & work with an unique perspective.'
+                'We approach life & work with a unique perspective.'
               ),
               _react2.default.createElement(
                 'h3',
@@ -603,7 +606,7 @@ var Home = function (_React$Component) {
               _react2.default.createElement(
                 Text,
                 null,
-                'Everyone, from our mentors to our CEO, is upfront with feedback, direct, honest, and without ego.'
+                'Everyone is direct, honest, and without ego. From our mentors to our CEO, all are upfront with feedback.'
               ),
               _react2.default.createElement(
                 'h3',
@@ -645,12 +648,12 @@ var Home = function (_React$Component) {
               _react2.default.createElement(
                 Text,
                 null,
-                'Over the years we\u2019ve met some amazing people who embraced our ideas and philosophies. We call them Igniters because they were using those ideas to ignite positive change in their and other organizations. We were so impressed with their work. Today, they work with us, arm-in-arm, to inspire people and advance our vision.'
+                'Over the years we\u2019ve met some amazing people who have embraced our ideas and philosophies. We call them Igniters because they were using those ideas to ignite positive change in their and other\'s organizations. We are in awe of their impactful work. Today, they work with us, arm-in-arm, to inspire people and advance our vision.'
               ),
               _react2.default.createElement(
                 Text,
                 null,
-                'Fredrik and Christofer are two unshakable optimists who believes in a bright future and our ability to build it together. We are all marching toward the same vision, together we can have greater impact than any of us could have alone.'
+                'Fredrik and Christofer are two unshakable optimists who believe in a bright future and our ability to build it together. We are all marching toward the same vision; together we can have greater impact than any of us could have alone.'
               )
             ),
             _react2.default.createElement(
@@ -704,22 +707,23 @@ var Home = function (_React$Component) {
               _react2.default.createElement(
                 'p',
                 { className: 'subtitle' },
-                'Let us launch your career in tech'
+                'Let us launch your career in tech.'
               ),
               _react2.default.createElement(
                 Text,
                 null,
-                'The Nordic tech industry needs you. We are currently missing 30 000 technology professionals in Sweden and that number is growing fast.'
+                'The Nordic tech industry needs you. We are currently missing 30 000 tech professionals in Sweden and that number is growing fast.'
               ),
               _react2.default.createElement(
                 Text,
                 null,
-                'We are investing in you, knowing that you will be a successful software developer or QA consultant within our hiring ecosystem.'
+                'We know that you will become the next big software developer or QA consultant within our hiring ecosystem. That is why we are investing in you.'
               ),
               _react2.default.createElement(
                 Btn,
                 { href: 'mailto:info@crip.io', theme: 'light' },
-                'Join us now'
+                'Join us now ',
+                _react2.default.createElement('i', { className: 'icon icon-arrow-right' })
               )
             ),
             _react2.default.createElement(
@@ -738,17 +742,18 @@ var Home = function (_React$Component) {
               _react2.default.createElement(
                 Text,
                 null,
-                'Diversity is everything about us that makes us who we are. We seek to celebrate our diverse identities. Diversity is where we acknowledge that our different backgrounds bring unique perspectives to our work.'
+                'Diversity is what makes us who we are. We seek to celebrate our diverse identities. Diversity is where we acknowledge that our different backgrounds bring unique perspectives to our work.'
               ),
               _react2.default.createElement(
                 Text,
                 null,
-                'Let\'s develop a predicable and stable recruitment pipeline of software developers and QA\'s to your company by bringing in diverse and technical talents to your company directly from Crip in Tech.'
+                'Let us show you how we can bring a new generation of software developers and QA\'s to your company by connecting diverse and technical talents to your teams. Pipin\' hot, directly from Crip in Tech.'
               ),
               _react2.default.createElement(
                 Btn,
                 { href: 'mailto:engage@crip.io' },
-                'Become our partner'
+                'Become our partner ',
+                _react2.default.createElement('i', { className: 'icon icon-arrow-right' })
               )
             )
           )
@@ -775,9 +780,10 @@ Object.defineProperty(exports, "__esModule", {
 exports.SmallHeader = exports.HeroHeader = undefined;
 
 var _templateObject = _taggedTemplateLiteral(['\n  position: relative;\n  overflow: hidden;\n'], ['\n  position: relative;\n  overflow: hidden;\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n  background-color: var(--main-color-dark);\n  color: white;\n  padding-top: 80px;\n'], ['\n  background-color: var(--main-color-dark);\n  color: white;\n  padding-top: 80px;\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  background-color: var(--main-color-dark);\n  color: white;\n  padding-top: 80px;\n  position: relative;\n'], ['\n  background-color: var(--main-color-dark);\n  color: white;\n  padding-top: 80px;\n  position: relative;\n']),
     _templateObject3 = _taggedTemplateLiteral(['\n  max-width: var(--main-width);\n  margin: 0 auto;\n'], ['\n  max-width: var(--main-width);\n  margin: 0 auto;\n']),
-    _templateObject4 = _taggedTemplateLiteral(['\n  position: relative;\n  top: -1px;\n  width: 101%;\n  height: auto;\n'], ['\n  position: relative;\n  top: -1px;\n  width: 101%;\n  height: auto;\n']);
+    _templateObject4 = _taggedTemplateLiteral(['\n  position: relative;\n  top: -1px;\n  width: 101%;\n  height: auto;\n'], ['\n  position: relative;\n  top: -1px;\n  width: 101%;\n  height: auto;\n']),
+    _templateObject5 = _taggedTemplateLiteral(['\n  height: 50px;\n  width: 100%;\n  position: relative;\n  overflow: hidden;\n  background: transparent url(\'assets/images/wave-blue.svg\') top left repeat-x;\n  animation: wave 6s linear infinite;\n  margin-bottom: 2em;\n\n  &::before {\n    content: \'\';\n    display: block;\n    height: 100%;\n    width: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: -1;\n    background: transparent url(\'assets/images/wave-green.svg\') top center repeat-x;\n  }\n\n  @media (max-width: 32em) {\n  }\n'], ['\n  height: 50px;\n  width: 100%;\n  position: relative;\n  overflow: hidden;\n  background: transparent url(\'assets/images/wave-blue.svg\') top left repeat-x;\n  animation: wave 6s linear infinite;\n  margin-bottom: 2em;\n\n  &::before {\n    content: \'\';\n    display: block;\n    height: 100%;\n    width: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: -1;\n    background: transparent url(\'assets/images/wave-green.svg\') top center repeat-x;\n  }\n\n  @media (max-width: 32em) {\n  }\n']);
 
 var _react = __webpack_require__(0);
 
@@ -804,6 +810,8 @@ var Header = _styledComponents2.default.div(_templateObject2);
 var Inner = (0, _styledComponents2.default)(_grid.Flex)(_templateObject3);
 
 var HeaderWavesLarge = _styledComponents2.default.img(_templateObject4);
+
+var HeaderWavesSmall = _styledComponents2.default.div(_templateObject5);
 
 var HeroHeader = function HeroHeader(_ref) {
   var children = _ref.children;
@@ -836,7 +844,8 @@ var SmallHeader = function SmallHeader(_ref2) {
         { alignItems: 'center', justifyContent: 'center' },
         children
       )
-    )
+    ),
+    _react2.default.createElement(HeaderWavesSmall, null)
   );
 };
 
@@ -2199,10 +2208,10 @@ Object.defineProperty(exports, "__esModule", {
 
 var _templateObject = _taggedTemplateLiteral(['\n  background-color: var(--main-color-dark);\n  color: white;\n  padding: 3em 0;\n'], ['\n  background-color: var(--main-color-dark);\n  color: white;\n  padding: 3em 0;\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n  display: block;\n  margin-bottom: -5px;\n  width: 100%;\n  height: auto;\n'], ['\n  display: block;\n  margin-bottom: -5px;\n  width: 100%;\n  height: auto;\n']),
-    _templateObject3 = _taggedTemplateLiteral(['\n  max-width: var(--main-width);\n  margin: 0 auto;\n\n  svg {\n    height: auto;\n  }\n\n  a {\n    color: white;\n    text-decoration: none;\n    margin-bottom: 4px;\n    display: inline-block;\n    border-bottom: 1px solid transparent;\n  }\n\n  a:hover,\n  a:focus {\n    border-bottom: 1px solid var(--secondary-color);\n  }\n\n  @media (max-width: 32em) {\n    flex-direction: column;\n  }\n'], ['\n  max-width: var(--main-width);\n  margin: 0 auto;\n\n  svg {\n    height: auto;\n  }\n\n  a {\n    color: white;\n    text-decoration: none;\n    margin-bottom: 4px;\n    display: inline-block;\n    border-bottom: 1px solid transparent;\n  }\n\n  a:hover,\n  a:focus {\n    border-bottom: 1px solid var(--secondary-color);\n  }\n\n  @media (max-width: 32em) {\n    flex-direction: column;\n  }\n']),
-    _templateObject4 = _taggedTemplateLiteral(['\n  color: var(--secondary-color);\n  font-size: 1em;\n  margin-bottom: 1em;\n'], ['\n  color: var(--secondary-color);\n  font-size: 1em;\n  margin-bottom: 1em;\n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n  max-width: var(--main-width);\n  margin: 0 auto;\n\n  svg {\n    height: auto;\n  }\n\n  a {\n    color: white;\n    text-decoration: none;\n    margin-bottom: 8px;\n    display: inline-block;\n    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;\n  }\n\n  a::before {\n    content: \'\';\n    display: block;\n    width: 15px;\n    height: 1px;\n    border-top: 2px solid var(--secondary-color);\n    position: absolute;\n    top: 50%;\n    left: 0;\n    transform: translateY(-50%);\n    transition: inherit;\n    opacity: 0;\n  }\n\n  a:hover,\n  a:focus {\n    transform: translateX(10px);\n    color: var(--secondary-color);\n    text-decoration: none;\n\n    &::before {\n      opacity: 1;\n      transform: translateX(-25px) translateY(-50%);\n    }\n  }\n\n  @media (max-width: 32em) {\n    flex-direction: column;\n  }\n'], ['\n  max-width: var(--main-width);\n  margin: 0 auto;\n\n  svg {\n    height: auto;\n  }\n\n  a {\n    color: white;\n    text-decoration: none;\n    margin-bottom: 8px;\n    display: inline-block;\n    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;\n  }\n\n  a::before {\n    content: \'\';\n    display: block;\n    width: 15px;\n    height: 1px;\n    border-top: 2px solid var(--secondary-color);\n    position: absolute;\n    top: 50%;\n    left: 0;\n    transform: translateY(-50%);\n    transition: inherit;\n    opacity: 0;\n  }\n\n  a:hover,\n  a:focus {\n    transform: translateX(10px);\n    color: var(--secondary-color);\n    text-decoration: none;\n\n    &::before {\n      opacity: 1;\n      transform: translateX(-25px) translateY(-50%);\n    }\n  }\n\n  @media (max-width: 32em) {\n    flex-direction: column;\n  }\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n  color: var(--secondary-color);\n  font-size: 1em;\n  margin-bottom: 1em;\n  font-weight: bold;\n'], ['\n  color: var(--secondary-color);\n  font-size: 1em;\n  margin-bottom: 1em;\n  font-weight: bold;\n']),
     _templateObject5 = _taggedTemplateLiteral(['\n  margin: 0;\n  font-size: 14px;\n'], ['\n  margin: 0;\n  font-size: 14px;\n']),
-    _templateObject6 = _taggedTemplateLiteral(['\n  margin: 0;\n  padding: 0;\n  list-style: none;\n'], ['\n  margin: 0;\n  padding: 0;\n  list-style: none;\n']);
+    _templateObject6 = _taggedTemplateLiteral(['\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  font-size: 1em;\n'], ['\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  font-size: 1em;\n']);
 
 var _react = __webpack_require__(0);
 
@@ -2469,6 +2478,12 @@ var Cookies = function (_React$Component) {
         return { noAction: false };
       });
       if (typeof window !== 'undefined') {
+        window.ga('send', {
+          hitType: 'event',
+          eventCategory: 'Cookies',
+          eventAction: 'accept',
+          eventLabel: 'Accepted Cookies'
+        });
         window.localStorage.setItem('accept-cookies', true);
       }
     }
@@ -2530,7 +2545,7 @@ exports = module.exports = __webpack_require__(38)(false);
 
 
 // module
-exports.push([module.i, ":root{--main-color:#3b007f;--main-color-dark:#24124d;--secondary-color:#22eaaa;--light-color:#f3f7fc;--note-color:#fff0cc;--main-width:1280px}@font-face{font-family:Brandon Grotesque;src:url(\"/assets/fonts/BrandonGrotesque-Regular.eot\");src:url(\"/assets/fonts/BrandonGrotesque-Regular.eot?#iefix\") format(\"embedded-opentype\"),url(\"/assets/fonts/BrandonGrotesque-Regular.woff\") format(\"woff\"),url(\"/assets/fonts/BrandonGrotesque-Regular.ttf##{Brandon Grotesque}\") format(\"truetype\");font-weight:400;font-style:normal}@font-face{font-family:Brandon Grotesque;src:url(\"/assets/fonts/BrandonGrotesque-Bold.eot\");src:url(\"/assets/fonts/BrandonGrotesque-Bold.eot?#iefix\") format(\"embedded-opentype\"),url(\"/assets/fonts/BrandonGrotesque-Bold.woff\") format(\"woff\"),url(\"/assets/fonts/BrandonGrotesque-Bold.ttf##{Brandon Grotesque}\") format(\"truetype\");font-weight:700;font-style:normal}body{font-family:Brandon Grotesque,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;margin:0;padding:0}h1{font-size:3.5em}h1,h2{font-family:Playfair Display,serif;font-weight:900;letter-spacing:.025rem;margin:0;color:var(--main-color-dark)}h2{font-size:2.8em;margin-bottom:.75em}h3{font-weight:900;letter-spacing:.025rem;font-size:1.8em;margin:0;color:var(--main-color-dark);margin-bottom:.25em}@media (max-width:32em){h2{font-size:1.8em}h3{font-size:1.2em}}", ""]);
+exports.push([module.i, ":root{--main-color:#3b007f;--main-color-dark:#24124d;--secondary-color:#22eaaa;--light-color:#f3f7fc;--note-color:#fff0cc;--main-width:1280px;--blue:#0063ff;--indigo:#6610f2;--purple:#876cff;--pink:#ff3e7f;--red:#e93d3d;--orange:#ff6f00;--yellow:#f1da09;--green:#37ca37;--teal:#17cfbc;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#0063ff;--secondary:#ff6f00;--success:#37ca37;--info:#17cfbc;--warning:#f1da09;--danger:#e93d3d;--light:#adb5bd;--dark:#0c0c0c;--breakpoint-xs:32em;--breakpoint-sm:48em;--breakpoint-md:64em;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace}@font-face{font-family:Brandon Grotesque;src:url(\"/assets/fonts/BrandonGrotesque-Regular.eot\");src:url(\"/assets/fonts/BrandonGrotesque-Regular.eot?#iefix\") format(\"embedded-opentype\"),url(\"/assets/fonts/BrandonGrotesque-Regular.woff\") format(\"woff\"),url(\"/assets/fonts/BrandonGrotesque-Regular.ttf##{Brandon Grotesque}\") format(\"truetype\");font-weight:400;font-style:normal}@font-face{font-family:Brandon Grotesque;src:url(\"/assets/fonts/BrandonGrotesque-Bold.eot\");src:url(\"/assets/fonts/BrandonGrotesque-Bold.eot?#iefix\") format(\"embedded-opentype\"),url(\"/assets/fonts/BrandonGrotesque-Bold.woff\") format(\"woff\"),url(\"/assets/fonts/BrandonGrotesque-Bold.ttf##{Brandon Grotesque}\") format(\"truetype\");font-weight:700;font-style:normal}@font-face{font-family:NeutrifPro;src:url(\"/assets/fonts/neutrif-pro.eot\");src:url(\"/assets/fonts/neutrif-pro.eot%3F\") format(\"embedded-opentype\"),url(\"/assets/fonts/neutrif-pro.woff2\") format(\"woff2\"),url(\"/assets/fonts/neutrif-pro.woff\") format(\"woff\"),url(\"/assets/fonts/neutrif-pro.ttf\") format(\"truetype\"),url(\"/assets/fonts/neutrif-pro.svg\") format(\"svg\");font-weight:400;font-style:normal}@font-face{font-family:NeutrifPro;src:url(\"/assets/fonts/neutrif-pro-medium.eot\");src:url(\"/assets/fonts/neutrif-pro-medium.eot%3F\") format(\"embedded-opentype\"),url(\"/assets/fonts/neutrif-pro-medium.woff2\") format(\"woff2\"),url(\"/assets/fonts/neutrif-pro-medium.woff\") format(\"woff\"),url(\"/assets/fonts/neutrif-pro-medium.ttf\") format(\"truetype\"),url(\"/assets/fonts/neutrif-pro-medium.svg\") format(\"svg\");font-weight:500;font-style:normal}@font-face{font-family:NeutrifPro;src:url(\"/assets/fonts/neutrif-pro-bold.eot\");src:url(\"/assets/fonts/neutrif-pro-bold.eot%3F\") format(\"embedded-opentype\"),url(\"/assets/fonts/neutrif-pro-bold.woff2\") format(\"woff2\"),url(\"/assets/fonts/neutrif-pro-bold.woff\") format(\"woff\"),url(\"/assets/fonts/neutrif-pro-bold.ttf\") format(\"truetype\"),url(\"/assets/fonts/neutrif-pro-bold.svg\") format(\"svg\");font-weight:700;font-style:normal}@font-face{font-family:iconfont;src:url(\"/assets/icons/iconfont.eot\");src:url(\"/assets/icons/iconfont.eot%3F\") format(\"eot\"),url(\"/assets/icons/iconfont.woff2\") format(\"woff2\"),url(\"/assets/icons/iconfont.woff\") format(\"woff\"),url(\"/assets/icons/iconfont.ttf\") format(\"truetype\"),url(\"/assets/icons/iconfont.svg\") format(\"svg\")}@-webkit-keyframes wave{0%{background-position:0 0}to{background-position:-1600px 0}}@keyframes wave{0%{background-position:0 0}to{background-position:-1600px 0}}body{font-family:NeutrifPro,Brandon Grotesque,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;margin:0;padding:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}a{color:var(--main-color);text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects}a:hover{color:#004fcc;text-decoration:underline}h1{font-size:3.5em}h1,h2{font-weight:500;letter-spacing:-1px;margin:0;color:var(--main-color-dark)}h2{font-size:calc(1.25rem + 2vw);margin-bottom:.75em}h3{font-weight:500;letter-spacing:.025rem;font-size:1.5em;margin:0;color:var(--main-color-dark);margin-bottom:.25em}@media (max-width:32em){h2{font-size:1.8em}h3{font-size:1.2em}}.icon:before{font-family:iconfont;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-style:normal;font-variant:normal;font-weight:400;text-decoration:none;text-transform:none}.icon-arrow-down:before{content:\"\\E001\"}.icon-arrow-left:before{content:\"\\E002\"}.icon-arrow-right:before{content:\"\\E003\"}.icon-arrow-up:before{content:\"\\E004\"}.icon-cap-icon1:before{content:\"\\E005\"}.icon-cap-icon2:before{content:\"\\E006\"}.icon-cap-icon3:before{content:\"\\E007\"}.icon-cap-icon4:before{content:\"\\E008\"}.icon-cap-icon5:before{content:\"\\E009\"}.icon-cap-icon6:before{content:\"\\E00A\"}.icon-cap-icon7:before{content:\"\\E00B\"}.icon-car:before{content:\"\\E00C\"}.icon-caret:before{content:\"\\E00D\"}.icon-check:before{content:\"\\E00E\"}.icon-comment:before{content:\"\\E00F\"}.icon-comments:before{content:\"\\E010\"}.icon-download:before{content:\"\\E011\"}.icon-dribbble:before{content:\"\\E012\"}.icon-facebook:before{content:\"\\E013\"}.icon-github:before{content:\"\\E014\"}.icon-instagram:before{content:\"\\E015\"}.icon-internet:before{content:\"\\E016\"}.icon-linkedin:before{content:\"\\E017\"}.icon-map:before{content:\"\\E018\"}.icon-megaphone:before{content:\"\\E019\"}.icon-plus:before{content:\"\\E01A\"}.icon-send:before{content:\"\\E01B\"}.icon-signal:before{content:\"\\E01C\"}.icon-time:before{content:\"\\E01D\"}.icon-twitter:before{content:\"\\E01E\"}", ""]);
 
 // exports
 
@@ -2620,4 +2635,4 @@ function toComment(sourceMap) {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.1af1cf9a.js.map
+//# sourceMappingURL=static.c381f120.js.map
