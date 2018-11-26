@@ -31,6 +31,15 @@
   font-style: normal;
 }
 
+@keyframes wave {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1600px 0;
+  }
+}
+
 body {
   font-family: 'Brandon Grotesque', system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
