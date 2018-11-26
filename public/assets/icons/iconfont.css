@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot%3F') format('eot'),
+    url('iconfont.woff2') format('woff2'), url('iconfont.woff') format('woff'),
+    url('iconfont.ttf') format('truetype'),
+    url('/assets/icons/iconfont.svg') format('svg');
+}
+
+.icon:before {
+  font-family: 'iconfont';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  /* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+  text-decoration: none;
+  text-transform: none;
+}
+
+.icon-arrow-down:before {
+  content: '\E001';
+}
+
+.icon-arrow-left:before {
+  content: '\E002';
+}
+
+.icon-arrow-right:before {
+  content: '\E003';
+}
+
+.icon-arrow-up:before {
+  content: '\E004';
+}
+
+.icon-cap-icon1:before {
+  content: '\E005';
+}
+
+.icon-cap-icon2:before {
+  content: '\E006';
+}
+
+.icon-cap-icon3:before {
+  content: '\E007';
+}
+
+.icon-cap-icon4:before {
+  content: '\E008';
+}
+
+.icon-cap-icon5:before {
+  content: '\E009';
+}
+
+.icon-cap-icon6:before {
+  content: '\E00A';
+}
+
+.icon-cap-icon7:before {
+  content: '\E00B';
+}
+
+.icon-car:before {
+  content: '\E00C';
+}
+
+.icon-caret:before {
+  content: '\E00D';
+}
+
+.icon-check:before {
+  content: '\E00E';
+}
+
+.icon-comment:before {
+  content: '\E00F';
+}
+
+.icon-comments:before {
+  content: '\E010';
+}
+
+.icon-download:before {
+  content: '\E011';
+}
+
+.icon-dribbble:before {
+  content: '\E012';
+}
+
+.icon-facebook:before {
+  content: '\E013';
+}
+
+.icon-github:before {
+  content: '\E014';
+}
+
+.icon-instagram:before {
+  content: '\E015';
+}
+
+.icon-internet:before {
+  content: '\E016';
+}
+
+.icon-linkedin:before {
+  content: '\E017';
+}
+
+.icon-map:before {
+  content: '\E018';
+}
+
+.icon-megaphone:before {
+  content: '\E019';
+}
+
+.icon-plus:before {
+  content: '\E01A';
+}
+
+.icon-send:before {
+  content: '\E01B';
+}
+
+.icon-signal:before {
+  content: '\E01C';
+}
+
+.icon-time:before {
+  content: '\E01D';
+}
+
+.icon-twitter:before {
+  content: '\E01E';
+}

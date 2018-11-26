@@ -29,14 +29,35 @@ const Inner = styled(Flex)`
   a {
     color: white;
     text-decoration: none;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     display: inline-block;
-    border-bottom: 1px solid transparent;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  }
+
+  a::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 1px;
+    border-top: 2px solid var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: inherit;
+    opacity: 0;
   }
 
   a:hover,
   a:focus {
-    border-bottom: 1px solid var(--secondary-color);
+    transform: translateX(10px);
+    color: var(--secondary-color);
+    text-decoration: none;
+
+    &::before {
+      opacity: 1;
+      transform: translateX(-25px) translateY(-50%);
+    }
   }
 
   @media (max-width: 32em) {
@@ -48,6 +69,7 @@ const FooterTitle = styled.h3`
   color: var(--secondary-color);
   font-size: 1em;
   margin-bottom: 1em;
+  font-weight: bold;
 `
 
 const Copyright = styled.p`
@@ -59,6 +81,7 @@ const Menu = styled.ul`
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 1em;
 `
 
 const FooterMenu = ({ menu }) => {

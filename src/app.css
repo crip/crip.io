@@ -5,6 +5,35 @@
   --light-color: #f3f7fc;
   --note-color: #fff0cc;
   --main-width: 1280px;
+  --blue: #0063ff;
+  --indigo: #6610f2;
+  --purple: #876cff;
+  --pink: #ff3e7f;
+  --red: #e93d3d;
+  --orange: #ff6f00;
+  --yellow: #f1da09;
+  --green: #37ca37;
+  --teal: #17cfbc;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #0063ff;
+  --secondary: #ff6f00;
+  --success: #37ca37;
+  --info: #17cfbc;
+  --warning: #f1da09;
+  --danger: #e93d3d;
+  --light: #adb5bd;
+  --dark: #0c0c0c;
+  --breakpoint-xs: 32em;
+  --breakpoint-sm: 48em;
+  --breakpoint-md: 64em;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
 }
 
 @font-face {
@@ -31,6 +60,51 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'NeutrifPro';
+  src: url('/assets/fonts/neutrif-pro.eot');
+  src: url('/assets/fonts/neutrif-pro.eot%3F') format('embedded-opentype'),
+    url('/assets/fonts/neutrif-pro.woff2') format('woff2'),
+    url('/assets/fonts/neutrif-pro.woff') format('woff'),
+    url('/assets/fonts/neutrif-pro.ttf') format('truetype'),
+    url('/assets/fonts/neutrif-pro.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NeutrifPro';
+  src: url('/assets/fonts/neutrif-pro-medium.eot');
+  src: url('/assets/fonts/neutrif-pro-medium.eot%3F')
+      format('embedded-opentype'),
+    url('/assets/fonts/neutrif-pro-medium.woff2') format('woff2'),
+    url('/assets/fonts/neutrif-pro-medium.woff') format('woff'),
+    url('/assets/fonts/neutrif-pro-medium.ttf') format('truetype'),
+    url('/assets/fonts/neutrif-pro-medium.svg') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NeutrifPro';
+  src: url('/assets/fonts/neutrif-pro-bold.eot');
+  src: url('/assets/fonts/neutrif-pro-bold.eot%3F') format('embedded-opentype'),
+    url('/assets/fonts/neutrif-pro-bold.woff2') format('woff2'),
+    url('/assets/fonts/neutrif-pro-bold.woff') format('woff'),
+    url('/assets/fonts/neutrif-pro-bold.ttf') format('truetype'),
+    url('/assets/fonts/neutrif-pro-bold.svg') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('/assets/icons/iconfont.eot');
+  src: url('/assets/icons/iconfont.eot%3F') format('eot'),
+    url('/assets/icons/iconfont.woff2') format('woff2'),
+    url('/assets/icons/iconfont.woff') format('woff'),
+    url('/assets/icons/iconfont.ttf') format('truetype'),
+    url('/assets/icons/iconfont.svg') format('svg');
+}
+
 @keyframes wave {
   from {
     background-position: 0 0;
@@ -41,36 +115,47 @@
 }
 
 body {
-  font-family: 'Brandon Grotesque', system-ui, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'NeutrifPro', 'Brandon Grotesque', system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+a:hover {
+  color: #004fcc;
+  text-decoration: underline;
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
-  letter-spacing: 0.025rem;
+  font-weight: 500;
+  letter-spacing: -1px;
   font-size: 3.5em;
   margin: 0;
   color: var(--main-color-dark);
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
-  letter-spacing: 0.025rem;
-  font-size: 2.8em;
+  font-weight: 500;
+  letter-spacing: -1px;
+  font-size: calc(1.25rem + 2vw);
   margin: 0;
   color: var(--main-color-dark);
   margin-bottom: 0.75em;
 }
 
 h3 {
-  font-weight: 900;
+  font-weight: 500;
   letter-spacing: 0.025rem;
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin: 0;
   color: var(--main-color-dark);
   margin-bottom: 0.25em;
@@ -84,4 +169,136 @@ h3 {
   h3 {
     font-size: 1.2em;
   }
+}
+
+.icon:before {
+  font-family: 'iconfont';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  /* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+  text-decoration: none;
+  text-transform: none;
+}
+
+.icon-arrow-down:before {
+  content: '\E001';
+}
+
+.icon-arrow-left:before {
+  content: '\E002';
+}
+
+.icon-arrow-right:before {
+  content: '\E003';
+}
+
+.icon-arrow-up:before {
+  content: '\E004';
+}
+
+.icon-cap-icon1:before {
+  content: '\E005';
+}
+
+.icon-cap-icon2:before {
+  content: '\E006';
+}
+
+.icon-cap-icon3:before {
+  content: '\E007';
+}
+
+.icon-cap-icon4:before {
+  content: '\E008';
+}
+
+.icon-cap-icon5:before {
+  content: '\E009';
+}
+
+.icon-cap-icon6:before {
+  content: '\E00A';
+}
+
+.icon-cap-icon7:before {
+  content: '\E00B';
+}
+
+.icon-car:before {
+  content: '\E00C';
+}
+
+.icon-caret:before {
+  content: '\E00D';
+}
+
+.icon-check:before {
+  content: '\E00E';
+}
+
+.icon-comment:before {
+  content: '\E00F';
+}
+
+.icon-comments:before {
+  content: '\E010';
+}
+
+.icon-download:before {
+  content: '\E011';
+}
+
+.icon-dribbble:before {
+  content: '\E012';
+}
+
+.icon-facebook:before {
+  content: '\E013';
+}
+
+.icon-github:before {
+  content: '\E014';
+}
+
+.icon-instagram:before {
+  content: '\E015';
+}
+
+.icon-internet:before {
+  content: '\E016';
+}
+
+.icon-linkedin:before {
+  content: '\E017';
+}
+
+.icon-map:before {
+  content: '\E018';
+}
+
+.icon-megaphone:before {
+  content: '\E019';
+}
+
+.icon-plus:before {
+  content: '\E01A';
+}
+
+.icon-send:before {
+  content: '\E01B';
+}
+
+.icon-signal:before {
+  content: '\E01C';
+}
+
+.icon-time:before {
+  content: '\E01D';
+}
+
+.icon-twitter:before {
+  content: '\E01E';
 }

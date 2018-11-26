@@ -63,6 +63,12 @@ class Cookies extends React.Component {
   acceptCookies () {
     this.setState(() => ({ noAction: false }))
     if (typeof window !== 'undefined') {
+      window.ga('send', {
+        hitType: 'event',
+        eventCategory: 'Cookies',
+        eventAction: 'accept',
+        eventLabel: 'Accepted Cookies',
+      })
       window.localStorage.setItem('accept-cookies', true)
     }
   }

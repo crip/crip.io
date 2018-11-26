@@ -16,14 +16,15 @@ const HeroContent = styled(Box)`
 
   h1 {
     letter-spacing: 1px;
-    font-size: 4em;
+    font-size: 3.5em;
     margin-bottom: 2rem;
     color: white;
   }
 
   p {
-    font-size: 1.4em;
-    line-height: 1.5;
+    font-size: 1.2em;
+    line-height: 1.56;
+    margin-bottom: 2em;
   }
 
   @media (max-width: 32em) {
@@ -75,7 +76,7 @@ const Text = styled.p`
   max-width: ${props => props.maxWidth || '100%'};
   margin: 0 auto;
   line-height: 1.68;
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin-bottom: 1em;
   color: #444;
 
@@ -127,16 +128,16 @@ const Engage = styled(Box)`
 
   h2 {
     color: inherit;
-    font-family: 'Playfair Display', serif;
     margin: 0;
     font-size: 3em;
+    font-weight: bold;
   }
 
   .subtitle {
     color: var(${props => (props.theme === 'light' ? '--main-color' : '--secondary-color')});
     margin: 0;
     font-size: 1.7em;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 1.5em;
   }
 
@@ -166,10 +167,33 @@ const Btn = styled.a`
   line-height: 2.5;
   padding: 0 1.2em;
   border-radius: 4em;
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-decoration: none;
   font-weight: 600;
   cursor: pointer;
+
+  .icon {
+    margin-left: 0.5em;
+    font-size: 0.9em;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: var(${props => (props.theme === 'light' ? '--light-color' : '--main-color-dark')});
+
+    .icon-plus {
+      transform: rotate(90deg);
+    }
+
+    .icon-arrow-right {
+      margin-left: 1em;
+    }
+  }
 
   @media (max-width: 32em) {
     font-size: 1em;
@@ -195,7 +219,9 @@ class Home extends React.Component {
           <Flex>
             <HeroContent width={[1, 1, 2 / 3, 1 / 2]} p={3}>
               {convert(header.contents)}
-              <Btn onClick={async () => this.goToContent()}>Tell me more</Btn>
+              <Btn onClick={async () => this.goToContent()}>
+                Join the ride <i className="icon icon-plus" />
+              </Btn>
             </HeroContent>
             <HeroImage width={[1, 1, 2 / 3, 1 / 2]} p={3} justifyContent="center">
               <img src={cripcommunity} alt="" />
@@ -350,7 +376,7 @@ class Home extends React.Component {
                 our hiring ecosystem. That is why we are investing in you.
               </Text>
               <Btn href="mailto:info@crip.io" theme="light">
-                Join us now
+                Join us now <i className="icon icon-arrow-right" />
               </Btn>
             </Engage>
             <Engage width={[1, 1 / 2]} py={[5, '10%']} px={[3, 5]}>
@@ -362,11 +388,13 @@ class Home extends React.Component {
                 perspectives to our work.
               </Text>
               <Text>
-                Let's develop a reliable and stable recruitment pipeline of software developers and
-                QA:s to your company by bringing in diverse and technical talents to your company.
-                Pipin' hot, directly from Crip in Tech.
+                Let us show you how we can bring a new generation of software developers and QA's to
+                your company by connecting diverse and technical talents to your teams. Pipin' hot,
+                directly from Crip in Tech.
               </Text>
-              <Btn href="mailto:engage@crip.io">Become our partner</Btn>
+              <Btn href="mailto:engage@crip.io">
+                Become our partner <i className="icon icon-arrow-right" />
+              </Btn>
             </Engage>
           </Container>
         </Section>
