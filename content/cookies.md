@@ -25,7 +25,7 @@ Google Analytics privacy advice – [https://goo.gl/8we5NV](https://goo.gl/8we5N
 
 If you would like to restrict the use of cookies you can control this in your Internet browser. Links to advice on how to do this for the most popular Internet browsers are provided below for convenience.
 
-- Internet Explorer – [https://support.microsoft.com/en-gb/help/17442/windows-internet-explorer-delete-manage-cookies](https://support.microsoft.com/en-gb/help/17442/windows-internet-explorer-delete-manage-cookies)
-- Google Chrome – [https://support.google.com/chrome/bin/answer.py](https://support.google.com/chrome/bin/answer.py)
-- Mozilla Firefox – [https://support.mozilla.org/en-US/kb/block-websites-storing-site-preferences](https://support.mozilla.org/en-US/kb/block-websites-storing-site-preferences)
-- Apple Safari – [https://support.apple.com/kb/ph21411?locale=en_GB](https://support.apple.com/kb/ph21411?locale=en_GB)
+- [Internet Explorer](https://support.microsoft.com/en-gb/help/17442/windows-internet-explorer-delete-manage-cookies)
+- [Google Chrome](https://support.google.com/chrome/bin/answer.py)
+- [Mozilla Firefox](https://support.mozilla.org/en-US/kb/block-websites-storing-site-preferences)
+- [Apple Safari](https://support.apple.com/kb/ph21411?locale=en_GB)
