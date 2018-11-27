@@ -97,8 +97,8 @@ const ReadMoreBtn = styled.a`
 `
 
 const ReadMore = ({ subtitle = 'Read more' }) => {
-  const cnt = document.querySelector('.maincontent')
-  if (typeof document !== 'undefined' && cnt) {
+  if (typeof document !== 'undefined') {
+    const cnt = document.querySelector('.maincontent')
     return (
       <ReadMoreBtn onClick={() => scrollTo(cnt, { duration: 250 })}>
         <i className="icon icon-arrow-down" />
