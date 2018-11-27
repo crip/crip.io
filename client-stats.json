@@ -2,9 +2,9 @@
   "errors": [],
   "warnings": [],
   "version": "3.12.0",
-  "hash": "f1356ad63a92b9644fc2",
-  "time": 14439,
-  "publicPath": "/",
+  "hash": "2f1dac35683204a144a2",
+  "time": 12626,
+  "publicPath": "https://crip.io/",
   "assetsByChunkName": {
     "src/containers/Home": [
       "templates/src/containers/Home.5dd2407b.js",
@@ -23,14 +23,14 @@
       "templates/src/containers/404.56b0bf5d.js.map"
     ],
     "main": [
-      "main.5e9ae0d4.js",
-      "styles.f1356ad6.css",
-      "main.5e9ae0d4.js.map",
-      "styles.f1356ad6.css.map"
+      "main.4737e012.js",
+      "styles.2f1dac35.css",
+      "main.4737e012.js.map",
+      "styles.2f1dac35.css.map"
     ],
     "bootstrap": [
-      "bootstrap.b5c7d01d.js",
-      "bootstrap.b5c7d01d.js.map"
+      "bootstrap.395aa372.js",
+      "bootstrap.395aa372.js.map"
     ]
   },
   "assets": [
@@ -86,8 +86,8 @@
       "emitted": true
     },
     {
-      "name": "main.5e9ae0d4.js",
-      "size": 350746,
+      "name": "main.4737e012.js",
+      "size": 350821,
       "chunks": [
         4
       ],
@@ -98,8 +98,8 @@
       "isOverSizeLimit": true
     },
     {
-      "name": "bootstrap.b5c7d01d.js",
-      "size": 1580,
+      "name": "bootstrap.395aa372.js",
+      "size": 1595,
       "chunks": [
         5
       ],
@@ -109,7 +109,7 @@
       "emitted": true
     },
     {
-      "name": "styles.f1356ad6.css",
+      "name": "styles.2f1dac35.css",
       "size": 20899,
       "chunks": [
         4
@@ -164,8 +164,8 @@
       "emitted": true
     },
     {
-      "name": "main.5e9ae0d4.js.map",
-      "size": 1885156,
+      "name": "main.4737e012.js.map",
+      "size": 1885236,
       "chunks": [
         4
       ],
@@ -175,7 +175,7 @@
       "emitted": true
     },
     {
-      "name": "styles.f1356ad6.css.map",
+      "name": "styles.2f1dac35.css.map",
       "size": 96,
       "chunks": [
         4
@@ -186,8 +186,8 @@
       "emitted": true
     },
     {
-      "name": "bootstrap.b5c7d01d.js.map",
-      "size": 14561,
+      "name": "bootstrap.395aa372.js.map",
+      "size": 14592,
       "chunks": [
         5
       ],
@@ -205,12 +205,12 @@
         4
       ],
       "assets": [
-        "bootstrap.b5c7d01d.js",
-        "bootstrap.b5c7d01d.js.map",
-        "main.5e9ae0d4.js",
-        "styles.f1356ad6.css",
-        "main.5e9ae0d4.js.map",
-        "styles.f1356ad6.css.map"
+        "bootstrap.395aa372.js",
+        "bootstrap.395aa372.js.map",
+        "main.4737e012.js",
+        "styles.2f1dac35.css",
+        "main.4737e012.js.map",
+        "styles.2f1dac35.css.map"
       ],
       "isOverSizeLimit": true
     }
@@ -9633,12 +9633,12 @@
         "main"
       ],
       "files": [
-        "main.5e9ae0d4.js",
-        "styles.f1356ad6.css",
-        "main.5e9ae0d4.js.map",
-        "styles.f1356ad6.css.map"
+        "main.4737e012.js",
+        "styles.2f1dac35.css",
+        "main.4737e012.js.map",
+        "styles.2f1dac35.css.map"
       ],
-      "hash": "5e9ae0d4485b3090224d",
+      "hash": "4737e012f50635d77614",
       "parents": [
         5
       ],
@@ -17743,10 +17743,10 @@
         "bootstrap"
       ],
       "files": [
-        "bootstrap.b5c7d01d.js",
-        "bootstrap.b5c7d01d.js.map"
+        "bootstrap.395aa372.js",
+        "bootstrap.395aa372.js.map"
       ],
-      "hash": "b5c7d01d56c2a4b8ac4e",
+      "hash": "395aa372fa6c0a476a55",
       "parents": [],
       "modules": [],
       "filteredModules": 0,
@@ -34858,7 +34858,7 @@
     {
       "errors": [],
       "warnings": [],
-      "publicPath": "/",
+      "publicPath": "https://crip.io/",
       "assetsByChunkName": {},
       "assets": [],
       "filteredAssets": 0,
@@ -34884,7 +34884,7 @@
           "files": [
             "extract-text-webpack-plugin-output-filename"
           ],
-          "hash": "73b3ca86495a9ef354bc",
+          "hash": "ec5a4ddc5a3e59fb7f5b",
           "parents": [],
           "modules": [
             {
@@ -35042,7 +35042,7 @@
     {
       "errors": [],
       "warnings": [],
-      "publicPath": "/",
+      "publicPath": "https://crip.io/",
       "assetsByChunkName": {},
       "assets": [],
       "filteredAssets": 0,
@@ -35068,7 +35068,7 @@
           "files": [
             "extract-text-webpack-plugin-output-filename"
           ],
-          "hash": "3ff07b27619167b48ee7",
+          "hash": "23fcc6c9f50458d70f2b",
           "parents": [],
           "modules": [
             {
