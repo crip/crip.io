@@ -13,6 +13,7 @@ if (!process.env.PROD) {
 chokidar.watch('content').on('all', () => reloadRoutes())
 
 export default {
+  siteRoot: 'https://crip.io',
   getSiteData: () => ({
     title: 'Crip in Tech',
     slogan: 'We are set to make a difference in the tech industry',
