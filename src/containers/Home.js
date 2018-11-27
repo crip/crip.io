@@ -259,7 +259,7 @@ class Home extends React.Component {
             <Img
               cloudName="crip"
               publicId="Company/People/Crips/one-strong-crew.jpg"
-              secureDistribution
+              secure="true"
             />
           </Box>
         </Section>
@@ -286,7 +286,7 @@ class Home extends React.Component {
                 <ProfileImg
                   cloudName="crip"
                   publicId="Company/People/Management/viktor.jpg"
-                  secureDistribution
+                  secure="true"
                   alt="Viktor Johansson"
                 >
                   <Transformation width="400" crop="scale" />
@@ -296,7 +296,7 @@ class Home extends React.Component {
                 <ProfileImg
                   cloudName="crip"
                   publicId="Company/People/Management/johnie.jpg"
-                  secureDistribution
+                  secure="true"
                   alt="Johnie Hjelm"
                 >
                   <Transformation width="400" crop="scale" />
@@ -355,7 +355,7 @@ class Home extends React.Component {
                 <ProfileImg
                   cloudName="crip"
                   publicId="Company/People/Management/coffe.jpg"
-                  secureDistribution
+                  secure="true"
                   alt="Viktor Johansson"
                 >
                   <Transformation width="400" crop="scale" />
@@ -365,7 +365,7 @@ class Home extends React.Component {
                 <ProfileImg
                   cloudName="crip"
                   publicId="Company/People/Management/fredrik.jpg"
-                  secureDistribution
+                  secure="true"
                   alt="Johnie Hjelm"
                 >
                   <Transformation width="400" crop="scale" />
