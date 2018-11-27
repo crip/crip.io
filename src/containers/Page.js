@@ -87,6 +87,13 @@ const ReadMoreBtn = styled.a`
       text-decoration: none;
     }
   }
+
+  @media (max-width: 32em) {
+    .icon {
+      width: 34px;
+      height: 34px;
+    }
+  }
 `
 
 const ReadMore = ({ subtitle = 'Read more' }) => {
@@ -104,7 +111,7 @@ export default withRouteData(({ page }) => (
     <Head title={page.title} />
     <Navigation />
     <SmallHeader>
-      <Box width={[1, 1 / 2]} py={5}>
+      <Box width={[1, 1 / 2]} py={[4, 5]}>
         <Line />
         <PageTitle>{page.title}</PageTitle>
       </Box>

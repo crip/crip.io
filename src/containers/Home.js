@@ -4,6 +4,8 @@ import { Flex, Box } from '@rebass/grid'
 import styled from 'styled-components'
 import convert from 'htmr'
 import { Image, Transformation } from 'cloudinary-react'
+import sal from 'sal.js'
+import 'sal.js/dist/sal.css'
 import celebrate from 'assets/images/celebrate.svg'
 import cripcommunity from 'assets/images/cripcommunity.svg'
 import { HeroHeader } from '../components/header'
@@ -201,6 +203,10 @@ const Btn = styled.a`
 `
 
 class Home extends React.Component {
+  componentDidMount () {
+    sal({ once: true })
+  }
+
   async goToContent () {
     const content = document.querySelector('#content')
     if (content) {
@@ -217,7 +223,13 @@ class Home extends React.Component {
         <Navigation />
         <HeroHeader>
           <Flex>
-            <HeroContent width={[1, 1, 2 / 3, 1 / 2]} p={3}>
+            <HeroContent
+              width={[1, 1, 2 / 3, 1 / 2]}
+              p={3}
+              data-sal="fade"
+              data-sal-delay="100"
+              data-sal-easing="ease-out"
+            >
               {convert(header.contents)}
               <Btn onClick={async () => this.goToContent()}>
                 Join the ride <i className="icon icon-plus" />
@@ -243,7 +255,7 @@ class Home extends React.Component {
               </Text>
             </Box>
           </Flex>
-          <Box width={1} my={[0, 2]} px={3}>
+          <Box width={1} my={[0, 2]} px={3} data-sal="slide-up" data-sal-easing="ease-out">
             <Img
               cloudName="crip"
               publicId="Company/People/Crips/one-strong-crew.jpg"
@@ -270,7 +282,7 @@ class Home extends React.Component {
               <Text>It’ll be our business to do pleasure with you. Or, you know what we mean.</Text>
             </Box>
             <Box width={[1, 1 / 2]} p={3} style={{ overflow: 'hidden' }}>
-              <Poly>
+              <Poly data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
                 <ProfileImg
                   cloudName="crip"
                   publicId="Company/People/Management/viktor.jpg"
@@ -280,7 +292,7 @@ class Home extends React.Component {
                   <Transformation width="400" crop="scale" />
                 </ProfileImg>
               </Poly>
-              <Poly>
+              <Poly data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-out-bounce">
                 <ProfileImg
                   cloudName="crip"
                   publicId="Company/People/Management/johnie.jpg"
@@ -339,7 +351,7 @@ class Home extends React.Component {
               </Text>
             </Box>
             <Box width={[1, 1 / 2]} p={3} style={{ overflow: 'hidden' }}>
-              <Poly>
+              <Poly data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
                 <ProfileImg
                   cloudName="crip"
                   publicId="Company/People/Management/coffe.jpg"
@@ -349,7 +361,7 @@ class Home extends React.Component {
                   <Transformation width="400" crop="scale" />
                 </ProfileImg>
               </Poly>
-              <Poly>
+              <Poly data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-out-bounce">
                 <ProfileImg
                   cloudName="crip"
                   publicId="Company/People/Management/fredrik.jpg"
