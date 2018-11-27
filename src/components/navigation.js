@@ -15,6 +15,12 @@ const NavigationWrap = styled.div`
 const Inner = styled(Flex)`
   max-width: var(--main-width);
   margin: 0 auto;
+
+  @media (max-width: 32em) {
+    .hide-on-mobile {
+      display: none;
+    }
+  }
 `
 
 // const NavLink = styled(Link)`
@@ -33,7 +39,7 @@ class Navigation extends Component {
         <Inner p={3} alignItems="center" justifyContent="space-between">
           <Box>
             <Link exact to="/">
-              <LogoFull />
+              <LogoFull textClass="hide-on-mobile" />
             </Link>
           </Box>
           {/* <Box>

@@ -18,6 +18,10 @@ const Header = styled.div`
 const Inner = styled(Flex)`
   max-width: var(--main-width);
   margin: 0 auto;
+
+  @media (max-width: 32em) {
+    flex-direction: column;
+  }
 `
 
 const HeaderWavesLarge = styled.img`
@@ -64,7 +68,7 @@ const HeroHeader = ({ children }) => (
 const SmallHeader = ({ children }) => (
   <HeaderWrapper>
     <Header>
-      <Inner alignItems="center" justifyContent="center">
+      <Inner alignItems="baseline" p={3}>
         {children}
       </Inner>
     </Header>

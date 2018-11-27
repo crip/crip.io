@@ -210,15 +210,26 @@ export default {
               property="og:description"
               content="We are set to make a difference in the tech industry"
             />
-            <meta property="og:image" content="/assets/favicon/android-icon-192x192.png" />
+            <meta
+              property="og:image"
+              content="https://res.cloudinary.com/crip/image/upload/c_scale,w_600/v1543157960/Company/People/Management/cripintech.jpg"
+            />
             <meta property="og:url" content="https://crip.io" />
             <meta property="og:site_name" content="Crip in Tech" />
+            <meta
+              property="og:og:description"
+              content="We are set to make a difference in the tech industry, by connecting the industry with a new generation of tech consultants."
+            />
             <meta
               name="twitter:image:alt"
               content="We are set to make a difference in the tech industry"
             />
             <meta name="twitter:site" content="@cripintech" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta
+              name="description"
+              content="We are set to make a difference in the tech industry, by connecting the industry with a new generation of tech consultants."
+            />
             {renderMeta.styleTags}
             <script async src="https://www.google-analytics.com/analytics.js" />
             <script async src="/assets/js/autotrack.custom.js" />
