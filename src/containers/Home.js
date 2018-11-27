@@ -208,8 +208,8 @@ class Home extends React.Component {
   }
 
   async goToContent () {
-    const content = document.querySelector('#content')
-    if (content) {
+    if (typeof document !== 'undefined') {
+      const content = document.querySelector('#content')
       await scrollTo(content, {
         duration: 500,
       })
