@@ -87,16 +87,27 @@ const ReadMoreBtn = styled.a`
       text-decoration: none;
     }
   }
+
+  @media (max-width: 32em) {
+    .icon {
+      width: 34px;
+      height: 34px;
+    }
+  }
 `
 
 const ReadMore = ({ subtitle = 'Read more' }) => {
-  const cnt = document.querySelector('.maincontent')
-  return (
-    <ReadMoreBtn onClick={() => scrollTo(cnt, { duration: 250 })}>
-      <i className="icon icon-arrow-down" />
-      <span>{subtitle}</span>
-    </ReadMoreBtn>
-  )
+  if (typeof document !== 'undefined') {
+    const cnt = document.querySelector('.maincontent')
+    return (
+      <ReadMoreBtn onClick={() => scrollTo(cnt, { duration: 250 })}>
+        <i className="icon icon-arrow-down" />
+        <span>{subtitle}</span>
+      </ReadMoreBtn>
+    )
+  }
+
+  return null
 }
 
 export default withRouteData(({ page }) => (
@@ -104,7 +115,7 @@ export default withRouteData(({ page }) => (
     <Head title={page.title} />
     <Navigation />
     <SmallHeader>
-      <Box width={[1, 1 / 2]} py={5}>
+      <Box width={[1, 1 / 2]} py={[4, 5]}>
         <Line />
         <PageTitle>{page.title}</PageTitle>
       </Box>
