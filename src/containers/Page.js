@@ -98,12 +98,16 @@ const ReadMoreBtn = styled.a`
 
 const ReadMore = ({ subtitle = 'Read more' }) => {
   const cnt = document.querySelector('.maincontent')
-  return (
-    <ReadMoreBtn onClick={() => scrollTo(cnt, { duration: 250 })}>
-      <i className="icon icon-arrow-down" />
-      <span>{subtitle}</span>
-    </ReadMoreBtn>
-  )
+  if (typeof document !== 'undefined' && cnt) {
+    return (
+      <ReadMoreBtn onClick={() => scrollTo(cnt, { duration: 250 })}>
+        <i className="icon icon-arrow-down" />
+        <span>{subtitle}</span>
+      </ReadMoreBtn>
+    )
+  }
+
+  return null
 }
 
 export default withRouteData(({ page }) => (
