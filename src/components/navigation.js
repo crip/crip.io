@@ -4,25 +4,6 @@ import { Flex, Box } from '@rebass/grid'
 import styled from 'styled-components'
 import { LogoFull } from './logo'
 
-const NavigationWrap = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 20;
-`
-
-const Inner = styled(Flex)`
-  max-width: var(--main-width);
-  margin: 0 auto;
-
-  @media (max-width: 32em) {
-    .hide-on-mobile {
-      display: none;
-    }
-  }
-`
-
 const Hamburger = styled.button`
   position: relative;
   display: block;
@@ -94,41 +75,77 @@ const Hamburger = styled.button`
   }
 `
 
-// const NavLink = styled(Link)`
-//   color: white;
-//   text-decoration: none;
-//   font-weight: 700;
-//   text-transform: uppercase;
-//   letter-spacing: 0.04em;
-//   margin-left: 16px;
-// `
+const NavigationWrap = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+
+  &.active {
+    svg {
+      fill: var(--main-color-dark);
+    }
+    span {
+      border-color: var(--main-color-dark);
+    }
+  }
+`
+
+const Inner = styled(Flex)`
+  max-width: var(--main-width);
+  margin: 0 auto;
+
+  @media (max-width: 32em) {
+    .hide-on-mobile {
+      display: none;
+    }
+  }
+`
+
+const MenuWrapper = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 75%;
+  width: 100%;
+  background-color: var(--light-color);
+  z-index: 10;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+`
 
 class Navigation extends Component {
   state = {
     hm: '',
+    active: true,
   }
   render () {
     return (
-      <NavigationWrap as="header" role="banner">
-        <Inner p={3} alignItems="center" justifyContent="space-between">
-          <Box>
-            <Link exact to="/">
-              <LogoFull textClass="hide-on-mobile" />
-            </Link>
-          </Box>
-          <Box>
-            <Hamburger
-              onClick={() =>
-                this.setState(({ hm }) => ({ hm: hm === '' ? '-active' : '' })).bind(this)
-              }
-              className={this.state.hm}
-            >
-              <span />
-              <span />
-            </Hamburger>
-          </Box>
-        </Inner>
-      </NavigationWrap>
+      <React.Fragment>
+        <MenuWrapper>Hello World</MenuWrapper>
+        <NavigationWrap as="header" role="banner" className={this.state.active ? 'active' : ''}>
+          <Inner p={3} alignItems="center" justifyContent="space-between">
+            <Box>
+              <Link exact to="/">
+                <LogoFull textClass="hide-on-mobile" />
+              </Link>
+            </Box>
+            <Box>
+              <Hamburger
+                onClick={() =>
+                  this.setState(({ hm }) => ({ hm: hm === '' ? '-active' : '' })).bind(this)
+                }
+                className={this.state.hm}
+              >
+                <span />
+                <span />
+              </Hamburger>
+            </Box>
+          </Inner>
+        </NavigationWrap>
+      </React.Fragment>
     )
   }
 }
