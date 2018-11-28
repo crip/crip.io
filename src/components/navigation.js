@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { withSiteData, Link } from 'react-static'
 import { Flex, Box } from '@rebass/grid'
 import styled from 'styled-components'
+import posed from 'react-pose'
 import { LogoFull } from './logo'
 
 const Hamburger = styled.button`
@@ -104,7 +105,27 @@ const Inner = styled(Flex)`
   }
 `
 
-const MenuWrapper = styled.div`
+const menuProps = {
+  active: {
+    y: '0%',
+    opacity: 1,
+    staggerChildren: 100,
+    transition: {
+      duration: 200,
+      ease: 'easeOut',
+    },
+  },
+  inactive: {
+    y: '-100%',
+    opacity: 0,
+    transition: {
+      duration: 200,
+      ease: 'easeOut',
+    },
+  },
+}
+
+const MenuWrapper = styled(posed.div(menuProps))`
   position: absolute;
   top: 0;
   left: 0;
@@ -112,11 +133,6 @@ const MenuWrapper = styled.div`
   background-color: var(--light-color);
   z-index: 10;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  display: none;
-
-  &.active {
-    display: block;
-  }
 `
 
 const MenuInner = styled(Flex)`
@@ -133,18 +149,29 @@ const MenuLinks = styled.ul`
   padding: 0;
   list-style: none;
   text-align: right;
+`
 
-  li {
-    padding: 8 0:
-    display: block;
-    position: relative;
+const menuItemProps = {
+  active: {
+    opacity: 1,
+    x: '0px',
+    transition: {
+      delay: 250,
+    },
+  },
+  inactive: { opacity: 0, x: '16px' },
+}
 
-    &:hover,
-    &:focus {
-      .icon {
-        transform: translate(0px, 0px);
-        opacity: 1;
-      }
+const MenuItems = styled(posed.li(menuItemProps))`
+  padding: 8 0:
+  display: block;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    .icon {
+      transform: translate(0px, 0px);
+      opacity: 1;
     }
   }
 
@@ -190,7 +217,7 @@ const Menu = ({ menu }) => {
     return (
       <MenuLinks>
         {menu.map((item, index) => (
-          <li key={`menu-item-${index}`}>
+          <MenuItems key={`menu-item-${index}`}>
             <Link
               exact={item.path === '/'}
               to={item.path}
@@ -199,7 +226,7 @@ const Menu = ({ menu }) => {
               {item.name}
             </Link>
             {item.external && <i className="icon icon-cap-icon3" title="External" />}
-          </li>
+          </MenuItems>
         ))}
       </MenuLinks>
     )
@@ -217,10 +244,20 @@ const SocialMenuInner = styled.ul`
   max-width: var(--main-width);
   box-sizing: border-box;
   padding: 16px;
+`
 
-  li {
-    display: inline-block;
-  }
+const socialItemProps = {
+  active: {
+    opacity: 1,
+    transition: {
+      delay: 300,
+    },
+  },
+  inactive: { opacity: 0 },
+}
+
+const SocialMenuItems = styled(posed.li(socialItemProps))`
+  display: inline-block;
 
   a {
     display: inline-block;
@@ -255,12 +292,12 @@ const SocialMenu = ({ menu }) => {
     return (
       <SocialMenuInner>
         {menu.map((item, index) => (
-          <li key={`menu-item-${index}`}>
+          <SocialMenuItems key={`menu-item-${index}`}>
             <Link to={item.path}>
               <i className={`icon icon-${item.name.toLowerCase()}`} />
               <span>{item.name}</span>
             </Link>
-          </li>
+          </SocialMenuItems>
         ))}
       </SocialMenuInner>
     )
@@ -268,19 +305,29 @@ const SocialMenu = ({ menu }) => {
 }
 class Navigation extends Component {
   state = {
-    active: false,
+    isActive: false,
+  }
+  constructor () {
+    super()
+    this.toggleMenu = this.toggleMenu.bind(this)
+  }
+
+  toggleMenu () {
+    this.setState(({ isActive }) => ({ isActive: !isActive }))
   }
   render () {
     const { menus } = this.props
+    const { isActive } = this.state
+    const activeClass = isActive ? 'active' : ''
     return (
       <React.Fragment>
-        <MenuWrapper className={this.state.active ? 'active' : ''}>
+        <MenuWrapper pose={isActive ? 'active' : 'inactive'}>
           <MenuInner p={3}>
             <Menu menu={menus.main} />
             <SocialMenu menu={menus.follow} />
           </MenuInner>
         </MenuWrapper>
-        <NavigationWrap as="header" role="banner" className={this.state.active ? 'active' : ''}>
+        <NavigationWrap as="header" role="banner" className={activeClass}>
           <Inner p={3} alignItems="center" justifyContent="space-between">
             <Box>
               <Link exact to="/">
@@ -288,10 +335,7 @@ class Navigation extends Component {
               </Link>
             </Box>
             <Box>
-              <Hamburger
-                onClick={() => this.setState(({ active }) => ({ active: !active })).bind(this)}
-                className={this.state.active ? 'active' : ''}
-              >
+              <Hamburger onClick={this.toggleMenu} className={activeClass}>
                 <span />
                 <span />
               </Hamburger>
