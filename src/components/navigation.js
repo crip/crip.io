@@ -83,6 +83,10 @@ const NavigationWrap = styled.div`
   width: 100%;
   z-index: 20;
 
+  svg {
+    transition: fill 0.5s ease;
+  }
+
   &.active {
     svg {
       fill: var(--main-color-dark);

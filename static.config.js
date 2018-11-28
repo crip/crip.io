@@ -32,14 +32,14 @@ export default {
           path: '/join',
           name: 'Join us',
         },
-        {
-          path: '/for-partners',
-          name: 'For Partners',
-        },
-        {
-          path: '/contact',
-          name: 'Contact',
-        },
+        // {
+        //   path: '/for-partners',
+        //   name: 'For Partners',
+        // },
+        // {
+        //   path: '/contact',
+        //   name: 'Contact',
+        // },
         {
           path: 'https://podcast.crip.io',
           name: 'Podcast',
@@ -82,7 +82,7 @@ export default {
   }),
   getRoutes: async () => {
     const {
-      home, about, cookies, privacyPolicy,
+      home, about, cookies, privacyPolicy, joinUs,
     } = await jdown('content')
     return [
       {
@@ -104,6 +104,13 @@ export default {
         component: 'src/containers/Page',
         getData: () => ({
           page: privacyPolicy,
+        }),
+      },
+      {
+        path: '/join',
+        component: 'src/containers/Page',
+        getData: () => ({
+          page: joinUs,
         }),
       },
       {
