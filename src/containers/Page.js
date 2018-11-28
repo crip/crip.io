@@ -4,7 +4,6 @@ import convert from 'htmr'
 import styled from 'styled-components'
 import { Box } from '@rebass/grid'
 import { SmallHeader } from '../components/header'
-import Navigation from '../components/navigation'
 
 //
 
@@ -113,7 +112,6 @@ const ReadMore = ({ subtitle = 'Read more' }) => {
 export default withRouteData(({ page }) => (
   <div>
     <Head title={page.title} />
-    <Navigation />
     <SmallHeader>
       <Box width={[1, 1 / 2]} py={[4, 5]}>
         <Line />

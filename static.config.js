@@ -94,9 +94,9 @@ export default {
       },
       {
         path: '/about',
-        component: 'src/containers/About',
+        component: 'src/containers/Page',
         getData: () => ({
-          about,
+          page: about,
         }),
       },
       {

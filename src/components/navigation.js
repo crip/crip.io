@@ -32,7 +32,7 @@ const Hamburger = styled.button`
     margin: 6px 0 0 auto;
   }
 
-  &.-active {
+  &.active {
     span {
       width: 25px;
       transform: translateY(4px) rotate(45deg);
@@ -67,7 +67,7 @@ const Hamburger = styled.button`
       width: 100%;
     }
 
-    &.-active {
+    &.active {
       span {
         width: 25px;
       }
@@ -112,7 +112,11 @@ const MenuWrapper = styled.div`
   background-color: var(--light-color);
   z-index: 10;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  display: block;
+  display: none;
+
+  &.active {
+    display: block;
+  }
 `
 
 const MenuInner = styled(Flex)`
@@ -174,7 +178,7 @@ const MenuLinks = styled.ul`
 
   @media (max-width: 32em) {
     .icon {
-    font-size: 1rem;
+      font-size: 1rem;
       transform: translate(0px, 0px);
       opacity: 1;
     }
@@ -187,7 +191,13 @@ const Menu = ({ menu }) => {
       <MenuLinks>
         {menu.map((item, index) => (
           <li key={`menu-item-${index}`}>
-            <Link to={item.path}>{item.name}</Link>
+            <Link
+              exact={item.path === '/'}
+              to={item.path}
+              onClick={() => this.setState(({ active }) => ({ active: !active })).bind(this)}
+            >
+              {item.name}
+            </Link>
             {item.external && <i className="icon icon-cap-icon3" title="External" />}
           </li>
         ))}
@@ -258,14 +268,13 @@ const SocialMenu = ({ menu }) => {
 }
 class Navigation extends Component {
   state = {
-    hm: '',
-    active: true,
+    active: false,
   }
   render () {
     const { menus } = this.props
     return (
       <React.Fragment>
-        <MenuWrapper>
+        <MenuWrapper className={this.state.active ? 'active' : ''}>
           <MenuInner p={3}>
             <Menu menu={menus.main} />
             <SocialMenu menu={menus.follow} />
@@ -280,10 +289,8 @@ class Navigation extends Component {
             </Box>
             <Box>
               <Hamburger
-                onClick={() =>
-                  this.setState(({ hm }) => ({ hm: hm === '' ? '-active' : '' })).bind(this)
-                }
-                className={this.state.hm}
+                onClick={() => this.setState(({ active }) => ({ active: !active })).bind(this)}
+                className={this.state.active ? 'active' : ''}
               >
                 <span />
                 <span />

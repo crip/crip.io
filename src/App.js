@@ -3,6 +3,7 @@ import { Router, Head, withSiteData } from 'react-static'
 import { hot } from 'react-hot-loader'
 
 import Routes from 'react-static-routes'
+import Navigation from './components/navigation'
 import Footer from './partials/footer'
 import Cookies from './components/cookies'
 
@@ -12,6 +13,7 @@ const App = withSiteData(({ title, slogan }) => (
   <Router>
     <React.Fragment>
       <Head titleTemplate={`${title} - %s`} defaultTitle={`${title} - ${slogan}`} />
+      <Navigation />
       <div className="content">
         <Routes />
       </div>
