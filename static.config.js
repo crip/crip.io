@@ -23,26 +23,28 @@ export default {
           path: '/',
           name: 'Home',
         },
+
+        {
+          path: '/about',
+          name: 'About us',
+        },
+        {
+          path: '/join',
+          name: 'Join us',
+        },
+        {
+          path: '/for-partners',
+          name: 'For Partners',
+        },
+        {
+          path: '/contact',
+          name: 'Contact',
+        },
         {
           path: 'https://podcast.crip.io',
           name: 'Podcast',
+          external: true,
         },
-        // {
-        //   path: '/about',
-        //   name: 'About us',
-        // },
-        // {
-        //   path: '/for-crips',
-        //   name: 'For Crips',
-        // },
-        // {
-        //   path: '/for-partners',
-        //   name: 'For Partners',
-        // },
-        // {
-        //   path: '/contact',
-        //   name: 'Contact',
-        // },
       ],
       legal: [
         {

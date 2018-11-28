@@ -95,6 +95,7 @@ const NavigationWrap = styled.div`
 const Inner = styled(Flex)`
   max-width: var(--main-width);
   margin: 0 auto;
+  flex-grow: 1;
 
   @media (max-width: 32em) {
     .hide-on-mobile {
@@ -107,24 +108,169 @@ const MenuWrapper = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  height: 75%;
   width: 100%;
   background-color: var(--light-color);
   z-index: 10;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  display: flex;
-  justify-content: center;
+  display: block;
 `
 
+const MenuInner = styled(Flex)`
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: var(--main-width);
+  height: 80vh;
+  margin: 0 auto;
+`
+
+const MenuLinks = styled.ul`
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+
+  li {
+    padding: 8 0:
+    display: block;
+    position: relative;
+
+    &:hover,
+    &:focus {
+      .icon {
+        transform: translate(0px, 0px);
+        opacity: 1;
+      }
+    }
+  }
+
+  a {
+    font-size: calc(2rem + 2vw);
+    letter-spacing: -1px;
+    line-height: calc(3.5rem + 2vw);
+    display: inline-block;
+    font-weight: 300;
+    color: var(--gray);
+    text-decoration: none;
+    transition: color 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    &:hover,
+    &:focus,
+    &.active {
+      text-decoration: none;
+      color: var(--main-color);
+    }
+  }
+
+  .icon {
+    display: inline-block;
+    font-size: 1.5rem;
+    vertical-align: top;
+    color: var(--pink);
+    transform: translate(-10px, 10px);
+    opacity: 0;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  @media (max-width: 32em) {
+    .icon {
+    font-size: 1rem;
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
+  }
+`
+
+const Menu = ({ menu }) => {
+  if (Array.isArray(menu)) {
+    return (
+      <MenuLinks>
+        {menu.map((item, index) => (
+          <li key={`menu-item-${index}`}>
+            <Link to={item.path}>{item.name}</Link>
+            {item.external && <i className="icon icon-cap-icon3" title="External" />}
+          </li>
+        ))}
+      </MenuLinks>
+    )
+  }
+}
+
+const SocialMenuInner = styled.ul`
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: var(--main-width);
+  box-sizing: border-box;
+  padding: 16px;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: inline-block;
+    font-size: calc(1rem + 2vw);
+    margin-right: 16px;
+    color: var(--gray);
+    text-decoration: none;
+    transition: color 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    &:hover,
+    &:focus,
+    &.active {
+      text-decoration: none;
+      color: var(--main-color);
+    }
+  }
+
+  span {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+`
+
+const SocialMenu = ({ menu }) => {
+  if (Array.isArray(menu)) {
+    return (
+      <SocialMenuInner>
+        {menu.map((item, index) => (
+          <li key={`menu-item-${index}`}>
+            <Link to={item.path}>
+              <i className={`icon icon-${item.name.toLowerCase()}`} />
+              <span>{item.name}</span>
+            </Link>
+          </li>
+        ))}
+      </SocialMenuInner>
+    )
+  }
+}
 class Navigation extends Component {
   state = {
     hm: '',
     active: true,
   }
   render () {
+    const { menus } = this.props
     return (
       <React.Fragment>
-        <MenuWrapper>Hello World</MenuWrapper>
+        <MenuWrapper>
+          <MenuInner p={3}>
+            <Menu menu={menus.main} />
+            <SocialMenu menu={menus.follow} />
+          </MenuInner>
+        </MenuWrapper>
         <NavigationWrap as="header" role="banner" className={this.state.active ? 'active' : ''}>
           <Inner p={3} alignItems="center" justifyContent="space-between">
             <Box>
