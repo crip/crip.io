@@ -1,22 +1,18 @@
 import React from 'react'
 import { Link } from 'react-static'
 import styled from 'styled-components'
-import cookies from 'assets/images/cookies.svg'
 
 const Wrapper = styled.div`
   background-color: var(--main-color);
   color: var(--light-color);
   display: flex;
   position: fixed;
-  max-width: 600px;
-  bottom: 16px;
-  left: 16px;
-  border-radius: 4px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-
-  img {
-    margin-left: 16px;
-  }
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  box-sizing: border-box;
+  padding: 0.5em 1em;
+  justify-content: center;
 
   p {
     padding: 0 16px;
@@ -24,6 +20,7 @@ const Wrapper = styled.div`
 
   p a {
     color: var(--light-color);
+    text-decoration: underline;
   }
 
   @media (max-width: 32em) {
@@ -39,7 +36,7 @@ const Wrapper = styled.div`
 const Btn = styled.a`
   background-color: var(--secondary-color);
   color: var(--main-color-dark);
-  border-radius: 0 4px 4px 0;
+  border-radius: 4px;
   padding: 0 16px;
   display: flex;
   cursor: pointer;
@@ -79,12 +76,11 @@ class Cookies extends React.Component {
     if (noAction) {
       return (
         <Wrapper>
-          <img src={cookies} alt="Cookies" />
           <p>
-            By using this website, you accept the use of some delicious cookies. For more
-            information, read our <Link to="/cookies">Cookie Policy</Link>.
+            Yeah, we use cookies to track your every movement so your experience doesn't suck! :){' '}
+            <Link to="/cookies">Read our Cookie Policy</Link>.
           </p>
-          <Btn onClick={() => this.acceptCookies()}>Accept</Btn>
+          <Btn onClick={() => this.acceptCookies()}>Aight!</Btn>
         </Wrapper>
       )
     }
