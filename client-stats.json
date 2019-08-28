@@ -3,7 +3,7 @@
   "warnings": [],
   "version": "3.12.0",
   "hash": "046e19d7ab2fac244608",
-  "time": 13426,
+  "time": 12800,
   "publicPath": "https://crip.io/",
   "assetsByChunkName": {
     "src/containers/Home": [
@@ -11910,9 +11910,9 @@
             4
           ],
           "assets": [],
-          "issuer": "/home/travis/build/crip/crip.io/node_modules/react/cjs/react.production.min.js",
-          "issuerId": 58,
-          "issuerName": "./node_modules/react/cjs/react.production.min.js",
+          "issuer": "/home/travis/build/crip/crip.io/node_modules/react-dom/cjs/react-dom.production.min.js",
+          "issuerId": 60,
+          "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -20240,9 +20240,9 @@
         4
       ],
       "assets": [],
-      "issuer": "/home/travis/build/crip/crip.io/node_modules/react/cjs/react.production.min.js",
-      "issuerId": 58,
-      "issuerName": "./node_modules/react/cjs/react.production.min.js",
+      "issuer": "/home/travis/build/crip/crip.io/node_modules/react-dom/cjs/react-dom.production.min.js",
+      "issuerId": 60,
+      "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
