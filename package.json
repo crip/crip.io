@@ -15,7 +15,7 @@
         "@rebass/grid": "^6.0.0-4",
         "chokidar": "2.0.3",
         "cloudinary-react": "^1.0.6",
-        "htmr": "0.6.3",
+        "htmr": "0.8.7",
         "jdown": "^0.3.0",
         "react": "^16.0.0",
         "react-bulma-components": "^2.3.0",
