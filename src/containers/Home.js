@@ -7,7 +7,6 @@ import { Image, Transformation } from 'cloudinary-react'
 import celebrate from 'assets/images/celebrate.svg'
 import cripcommunity from 'assets/images/cripcommunity.svg'
 import { HeroHeader } from '../components/header'
-import Navigation from '../components/navigation'
 //
 
 const HeroContent = styled(Box)`
@@ -214,7 +213,6 @@ class Home extends React.Component {
     const { header } = this.props
     return (
       <div>
-        <Navigation />
         <HeroHeader>
           <Flex>
             <HeroContent width={[1, 1, 2 / 3, 1 / 2]} p={3}>

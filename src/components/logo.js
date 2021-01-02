@@ -1,7 +1,7 @@
 // prettier-ignore
 import React from 'react'
 
-const Logo = ({ fill = 'white', width = '100px', height = 'auto' }) => (
+const Logo = ({ fill = 'white', width = '100px', height = '100%' }) => (
   <svg
     version="1.1"
     x="0px"
@@ -31,7 +31,7 @@ const Logo = ({ fill = 'white', width = '100px', height = 'auto' }) => (
 )
 
 const LogoFull = ({
-  fill = 'white', width = '180px', height = 'auto', textClass = '',
+  fill = 'white', width = '180px', height = '100%', textClass = '',
 }) => (
   <svg
     version="1.1"

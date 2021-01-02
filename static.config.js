@@ -23,18 +23,15 @@ export default {
           path: '/',
           name: 'Home',
         },
+
         {
-          path: 'https://podcast.crip.io',
-          name: 'Podcast',
+          path: '/about',
+          name: 'About us',
         },
-        // {
-        //   path: '/about',
-        //   name: 'About us',
-        // },
-        // {
-        //   path: '/for-crips',
-        //   name: 'For Crips',
-        // },
+        {
+          path: '/join',
+          name: 'Join us',
+        },
         // {
         //   path: '/for-partners',
         //   name: 'For Partners',
@@ -43,6 +40,11 @@ export default {
         //   path: '/contact',
         //   name: 'Contact',
         // },
+        {
+          path: 'https://podcast.crip.io',
+          name: 'Podcast',
+          external: true,
+        },
       ],
       legal: [
         {
@@ -80,7 +82,7 @@ export default {
   }),
   getRoutes: async () => {
     const {
-      home, about, cookies, privacyPolicy,
+      home, about, cookies, privacyPolicy, joinUs,
     } = await jdown('content')
     return [
       {
@@ -92,9 +94,9 @@ export default {
       },
       {
         path: '/about',
-        component: 'src/containers/About',
+        component: 'src/containers/Page',
         getData: () => ({
-          about,
+          page: about,
         }),
       },
       {
@@ -102,6 +104,13 @@ export default {
         component: 'src/containers/Page',
         getData: () => ({
           page: privacyPolicy,
+        }),
+      },
+      {
+        path: '/join',
+        component: 'src/containers/Page',
+        getData: () => ({
+          page: joinUs,
         }),
       },
       {

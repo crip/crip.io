@@ -131,7 +131,7 @@ a {
   -webkit-text-decoration-skip: objects;
 }
 a:hover {
-  color: #004fcc;
+  color: var(--main-color);
   text-decoration: underline;
 }
 
